@@ -13,7 +13,7 @@
 - [X] Load reactivedrop_foo.txt from all addons (similar to particle_manifest.txt)
 - [X] Load closecaption_foo.txt from all addons
 - [ ] Load closecaption_foo.dat from all addons (need to determine if this is possible with compiled captions)
-- [ ] Rewrite translation sync tool to format better, avoid duplication
+- [X] Rewrite translation sync tool to format better, avoid duplication
 - [ ] Create "fail to load translations on purpose" cvar for testing
 - [ ] All official campaigns: make campaign, overview strings available for translation
 - [ ] All official campaigns: make objective strings available for translation
@@ -21,7 +21,7 @@
 - [ ] Possibly remove valve_, hl2_, gameui_, basemodui_ files
 - [ ] Look into translating other parts of Steam Community
 - [ ] Sweep UI for untranslatable strings
-- [ ] Make stats website translatable
+- [X] Make stats website translatable
 - [ ] Translation progress dashboard
 
 ## Official Campaigns
