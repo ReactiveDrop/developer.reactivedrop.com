@@ -13,12 +13,11 @@
 - [X] Load reactivedrop_foo.txt from all addons (similar to particle_manifest.txt)
 - [X] Load closecaption_foo.txt from all addons
 - [ ] Load closecaption_foo.dat from all addons (need to determine if this is possible with compiled captions)
-- [X] Rewrite translation sync tool to format better, avoid duplication
+- [x] Rewrite translation sync tool to format better, avoid duplication
 - [ ] Create "fail to load translations on purpose" cvar for testing
-- [ ] All official campaigns: make campaign, overview strings available for translation
+- [x] All official campaigns: make campaign, overview strings available for translation
 - [ ] All official campaigns: make objective strings available for translation
 - [ ] All official campaigns: make misc (game_text, env_instructor_hint, etc.) strings available for translation
-- [ ] Possibly remove valve_, hl2_, gameui_, basemodui_ files
 - [ ] Look into translating other parts of Steam Community
 - [ ] Sweep UI for untranslatable strings
 - [X] Make stats website translatable
@@ -42,7 +41,7 @@
 ## Scripting / Challenges
 
 - [ ] Research possibility of giving challenges access to UI for voting/menus
-- [ ] fog_volume equivalent for specific marines
+- [ ] fog\_volume equivalent for specific marines
 
 ## Menus / Controller
 
@@ -60,3 +59,9 @@
 - [ ] Badges on stats website for contributors with what their contribution was
 - [ ] Donation links on stats website for contributors?
 - [ ] Full list of contributors by role on stats website
+
+## TileGen
+
+- [ ] Method of compiling tileset to bsp file
+- [ ] Entity that moves tiles around to create playable space at runtime
+- [ ] MissionChooser support for generating and distributing a layout
