@@ -10,8 +10,8 @@
 
 ## Translation
 
-- [X] Load reactivedrop_foo.txt from all addons (similar to particle_manifest.txt)
-- [X] Load closecaption_foo.txt from all addons
+- [x] Load reactivedrop_foo.txt from all addons (similar to particle_manifest.txt)
+- [x] Load closecaption_foo.txt from all addons
 - [ ] Load closecaption_foo.dat from all addons (need to determine if this is possible with compiled captions)
 - [x] Rewrite translation sync tool to format better, avoid duplication
 - [ ] Create "fail to load translations on purpose" cvar for testing
@@ -49,7 +49,7 @@
 - [ ] Remake mission selection a la Warframe inventory screen
 - [ ] Make d-pad use radial menus to access swap marine, offhand, offhand 2, emote
 - [ ] Research viability of using ISteamInput API without engine updates
-- [ ] Create advanced game settings menu
+- [x] Create advanced game settings menu
 - [ ] Main menu commander profile
 - [ ] Categorized achievements list
 - [ ] Have received feedback that "select character" button in briefing is not as obviously interactable as it could be
