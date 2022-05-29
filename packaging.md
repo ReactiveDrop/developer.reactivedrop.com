@@ -87,8 +87,205 @@ A more complicated version of the challenge might include files named `scripts/v
 
 ## Missions
 
-*This section coming soon.*
+Missions require an overview file, which is a VDF file located in `resource/overviews` with the same name as the BSP file and a `.txt` extension.
+
+Mission overviews have two main parts: the minimap and the mission details.
+
+```vdf
+"GAME"
+{
+	// These values come from cl_leveloverview when on a 1024x768 resolution.
+	"pos_x" "12345"
+	"pos_y" "6789"
+	"scale" "10.0"
+
+	// This texture should contain a stylized view of your map. it is used on the minimap.
+	"material" "vgui/swarm/overviews/cookie9_cool_mission"
+	// This texture is a fancier version of your minimap image, used in briefing.
+	"briefingmaterial" "vgui/swarm/overviews/cookie9_cool_mission_briefing"
+
+	// This section is optional and only needed if you are using minimap layering.
+	// The briefing material will not be replaced by these, only the minimap.
+	"vertical_sections"
+	{
+		"vgui/swarm/overviews/cookie9_cool_mission_underground"
+		{
+			// Z coordinate of the marines' feet.
+			"AltitudeMin" "-300"
+			"AltitudeMax" "-100"
+		}
+	}
+
+	// This determines how your mission looks in the mission chooser and during briefing.
+	"missiontitle" "Cool Mission"
+	"description" "Shoot guns at bugs in this cool mission!"
+
+	// These three fields are optional but recommended.
+	"author" "Cookie9"
+	"website" "https://example.com/cookie9/cool-mission"
+	"version" "1.0"
+
+	// This should be a 4:3 aspect ratio image representing your mission for the mission chooser.
+	"image" "swarm/missionpics/cookie9_cool_mission"
+
+	// If your mission is not part of a campaign, this is how you add credits at the end.
+	// A .txt extension is automatically added. Ignored if the mission is part of a campaign.
+	"CustomCreditsFile" "script/cookie9_cool_mission_credits"
+
+	// Tags affect how the game treats your mission.
+	// These are different than the searchable Workshop tags,
+	// although some tags affect the Workshop uploader.
+	//
+	// This example includes all tags the game currently understands,
+	// but you should only include the ones that make sense for your mission.
+	//
+	// Don't include tags that the game doesn't understand,
+	// as they might mean something unexpected in the future.
+
+	// Adds your mission to the Bonus Missions tab in the mission chooser.
+	// Recommended for standard missions that are not part of a campaign.
+	"tag" "bonus"
+
+	// For missions that don't have a pre-set ending point, usually used with the "points" tag.
+	// Adds your mission to the Endless tab in the mission chooser.
+	// Should not be used on the same mission as "bonus" or for missions in a campaign.
+	//
+	// It is recommended that you tag survival missions with a pre-defined number of waves as "bonus"
+	// and then add the "Survival" tag when uploading to the Workshop instead of using this tag.
+	"tag" "endless"
+
+	// This tag will make your mission's leaderboard show points in descending order instead of time in ascending order.
+	// Use the AddPoints input on asw_gamerules to award points to the squad.
+	"tag" "points"
+
+	// Allows your mission to upload leaderboard scores even when the mission fails. Sometimes useful with "endless".
+	"tag" "upload_on_failure"
+
+	// For Deathmatch maps. Adds your mission to the Deathmatch tab in the mission chooser.
+	// Should not be part of a campaign. The map must contain an asw_deathmatch_mode entity.
+	"tag" "deathmatch"
+}
+```
 
 ## Campaigns
 
-*This section coming soon.*
+Campaigns are collections of missions that are not otherwise visible in the mission chooser with a VDF file located in `resource/campaigns`.
+
+The file should have a `.txt` extension and have a unique name, but the name doesn't need to match anything else in your addon.
+
+```vdf
+"GAME"
+{
+	"CampaignName" "Cookie9's Cool Campaign"
+	"CampaignDescription" "Shoot many guns at many bugs in this cool campaign!"
+	"CustomCreditsFile" "script/cookie9_cool_campaign_credits"
+
+	// The icon that will appear in the mission chooser.
+	"ChooseCampaignTexture" "swarm/campaigns/cookie9_cool_campaign"
+
+	// These should be between 0 and 1023, but are not currently used in the game.
+	// If they were, they would determine the location of the campaign on a galactic map.
+	"GalaxyX" "123"
+	"GalaxyY" "456"
+
+	// These next fields determine how the campaign map looks.
+	// These are safe defaults, but it is highly recommended that you make something unique for your campaign.
+	"CampaignTextureName" "swarm/campaign/jacob_galacticmap"
+	"CampaignTextureLayer1" "swarm/Campaign/CampaignMap_EmptyLayer"
+	"CampaignTextureLayer2" "swarm/Campaign/CampaignMap_EmptyLayer"
+	"CampaignTextureLayer3" "swarm/Campaign/CampaignMap_EmptyLayer"
+
+	// Search lights appear on the campaign map. Set Searchlight\*X to 0 to hide the search light.
+	// Coordinates are from 0 to 1023; angles are in degrees counterclockwise from the right.
+	"Searchlight1X" "217"
+	"Searchlight1Y" "860"
+	"Searchlight1Angle" "80"
+	"Searchlight2X" "263"
+	"Searchlight2Y" "751"
+	"Searchlight2Angle" "100"
+	"Searchlight3X" "92"
+	"Searchlight3Y" "446"
+	"Searchlight3Angle" "90"
+	"Searchlight4X" "580"
+	"Searchlight4Y" "266"
+	"Searchlight4Angle" "90"
+
+	// The first mission in a campaign file is the "starting point", only shown on the map.
+	"MISSION"
+	{
+		"MapName" "start_area"
+
+		// Location coordinates are from 0 to 1023. Description is shown on the campaign map.
+		"LocationX" "330"
+		"LocationY" "780"
+		"LocationDescription" "Atmospheric Entry"
+
+		// The starting point should be linked to the first mission in your campaign.
+		"Links" "cookie9_coolcampaign_01"
+	}
+
+	"MISSION"
+	{
+		"MissionName" "Ice Cold"
+
+		// MapName should match the name of your bsp file.
+		"MapName" "cookie9_coolcampaign_01"
+
+		"LocationX" "525"
+		"LocationY" "700"
+		"LocationDescription" "Ice Cream Factory"
+		"ShortBriefing" "Go to the ice cream factory."
+
+		// DifficultyModifier changes the mission difficulty.
+		// 3 is about equivalent to increasing the skill level by one tier, eg. from normal to hard.
+		"DifficultyModifier" "0"
+
+		// ThreatString is not currently used, but can be any text.
+		"ThreatString" "Low"
+
+		"AlwaysVisible" "1"
+		"NeedsMoreThanOneMarine" "0"
+
+		// Link your first mission to the starting point and to the second mission.
+		"Links" "start_area cookie9_coolcampaign_02"
+	}
+
+	"MISSION"
+	{
+		"MissionName" "Unfrozen Warehouse"
+		"MapName" "cookie9_coolcampaign_02"
+		"LocationX" "360"
+		"LocationY" "506"
+		"LocationDescription" "Road Salt Storage"
+		"DifficultyModifier" "0"
+		"ThreatString" "Medium"
+		"AlwaysVisible" "1"
+		"NeedsMoreThanOneMarine" "0"
+
+		// The short briefing is shown on the campaign transition screen.
+		"ShortBriefing" "Find the salt at the salt store."
+
+		// Missions in the middle of your campaign should link to the mission immediately before and after them.
+		"Links" "cookie9_coolcampaign_01 cookie9_coolcampaign_03"
+	}
+
+	"MISSION"
+	{
+		"MissionName" "Cold Fusion"
+		"MapName" "cookie9_coolcampaign_03"
+		"LocationX" "820"
+		"LocationY" "200"
+		"LocationDescription" "Ice Cream Reactor"
+		"DifficultyModifier" "0"
+		"ThreatString" "High"
+		"AlwaysVisible" "1"
+		"NeedsMoreThanOneMarine" "0"
+		"ShortBriefing" "Turn off the reactor."
+
+		// The last mission in your campaign only has one link.
+		"Links" "cookie9_coolcampaign_02"
+	}
+
+	// The game doesn't currently understand any tags for campaigns.
+}
+```
