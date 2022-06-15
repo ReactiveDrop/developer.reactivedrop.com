@@ -18,6 +18,7 @@
 - [x] All official campaigns: make campaign, overview strings available for translation
 - [ ] All official campaigns: make objective strings available for translation
 - [ ] All official campaigns: make misc (game_text, env_instructor_hint, etc.) strings available for translation
+- [ ] All official campaigns: make campaign credits strings available for translation
 - [ ] Look into translating other parts of Steam Community
 - [ ] Sweep UI for untranslatable strings
 - [X] Make stats website translatable
