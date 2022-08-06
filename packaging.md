@@ -29,11 +29,13 @@ A basic `addoninfo.txt` file looks like this:
 }
 ```
 
+If your addon intentionally overrides files from another addon (for example, a minimap replacement), you can add an `overrideaddon` key with the workshop ID of the other addon. If you override files from multiple other addons, you can add multiple `overrideaddon` keys.
+
 There are other fields in `addoninfo.txt`, but they are optional or not read by the game.
 
 `addonimage.jpg` is a small (256x256 pixels or smaller - it will be in memory at all times when the addon is installed) preview image for the addon. The preview image is optional, and the Steam Workshop preview image will be used by the game instead if your addon is on the workshop. AddonInfo is required for the game to load your addon.
 
-**Keep in mind that unless otherwise stated, the game will only load a file with a given name from the last installed addon that provides it.** Make sure your filenames are unique - for example, include your name or your addon's name in the filename.
+**Keep in mind that unless otherwise stated, the game will only load a file with a given name from the first installed addon that provides it.** Make sure your filenames are unique - for example, include your name or your addon's name in the filename.
 
 ## Augmented Files
 
