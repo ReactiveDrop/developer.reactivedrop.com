@@ -2,6 +2,9 @@
 
 - [Data Tables](/tables.html)
 - [Addon Packaging Guide](/packaging.html)
+- [Translation Files](/language.html)
+- [Door Model Creation](/door.html)
+- [Donation Items](/donation-items.html)
 
 ## Quick Links
 
