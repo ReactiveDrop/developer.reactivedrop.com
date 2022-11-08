@@ -3,10 +3,10 @@
 Doors require a single body group of 5 models:
 
 0. Undamaged (this is the only state where the door can move)
-1. Partially damaged from front (toward positive Y)
-2. Completely damaged from front (toward positive Y, `door_rear_fall` can play in this state)
-3. Partially damaged from rear (toward negative Y)
-4. Completely damaged from rear (toward negative Y, `door_front_fall` can play in this state)
+1. Partially damaged from front (toward positive X)
+2. Completely damaged from front (toward positive X, `door_rear_fall` can play in this state)
+3. Partially damaged from rear (toward negative X)
+4. Completely damaged from rear (toward negative X, `door_front_fall` can play in this state)
 
 ## Physics
 
