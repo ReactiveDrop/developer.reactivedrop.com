@@ -1,22 +1,22 @@
-# Alien Swarm: Reactive Drop Addon Packaging Guide
+# Alien Swarm: Reactive Drop Add-On Packaging Guide
 
 ## VPK Files
 
-Addons are distributed in [VPK (Valve PacK) files](https://developer.valvesoftware.com/wiki/VPK). The simplest way to make one is to drag a folder onto `vpk.exe`, which comes with Alien Swarm: Reactive Drop in the `bin` folder (the same folder that includes Hammer and HLMV, not the folder that includes `client.dll`).
+Add-Ons are distributed in [VPK (Valve PacK) files](https://developer.valvesoftware.com/wiki/VPK). The simplest way to make one is to drag a folder onto `vpk.exe`, which comes with Alien Swarm: Reactive Drop in the `bin` folder (the same folder that includes Hammer and HLMV, not the folder that includes `client.dll`).
 
 VPK files, including the more complicated `pak01_dir.vpk` that stores most of the game's files, can be viewed and extracted with [GCFScape](https://developer.valvesoftware.com/wiki/GCFScape).
 
-If your addon is not in a VPK (for example, during development) you may wish to add `-override_vpk` to your command line arguments, which will cause loose files to be used instead of files inside packages, instead of the default behavior of preferring VPKs.
+If your add-on is not in a VPK (for example, during development) you may wish to add `-override_vpk` to your command line arguments, which will cause loose files to be used instead of files inside packages, instead of the default behavior of preferring VPKs.
 
 All files stored in a VPK are lowercase, and there is only one dot in each file's name. This means that `CoolSword.dx90.vtx` will be named `coolsword.vtx` inside the VPK.
 
-## Addon File Structure
+## Add-On File Structure
 
-There are two files specific to addons: `addoninfo.txt` and `addonimage.jpg`.
+There are two files specific to add-ons: `addoninfo.txt` and `addonimage.jpg`.
 
-All other files in an addon replace (or in some cases described later in this document, augment) files in the `reactivedrop` folder. If your addon contains a file named `materials/example.vmt` (for an unpacked addon, this could be at `reactivedrop/addons/MyAddon/materials/example.vmt`), the game acts as if that file were located at `reactivedrop/materials/example.vmt`.
+All other files in an add-on replace (or in some cases described later in this document, augment) files in the `reactivedrop` folder. If your add-on contains a file named `materials/example.vmt` (for an unpacked add-on, this could be at `reactivedrop/addons/MyAddon/materials/example.vmt`), the game acts as if that file were located at `reactivedrop/materials/example.vmt`.
 
-`addoninfo.txt` is a [VDF](https://developer.valvesoftware.com/wiki/KeyValues) file that describes your addon.
+`addoninfo.txt` is a [VDF](https://developer.valvesoftware.com/wiki/KeyValues) file that describes your add-on.
 
 A basic `addoninfo.txt` file looks like this:
 
@@ -29,17 +29,17 @@ A basic `addoninfo.txt` file looks like this:
 }
 ```
 
-If your addon intentionally overrides files from another addon (for example, a minimap replacement), you can add an `overrideaddon` key with the workshop ID of the other addon. If you override files from multiple other addons, you can add multiple `overrideaddon` keys.
+If your add-on intentionally overrides files from another add-on (for example, a minimap replacement), you can add an `overrideaddon` key with the workshop ID of the other add-on. If you override files from multiple other add-ons, you can add multiple `overrideaddon` keys.
 
 There are other fields in `addoninfo.txt`, but they are optional or not read by the game.
 
-`addonimage.jpg` is a small (256x256 pixels or smaller - it will be in memory at all times when the addon is installed) preview image for the addon. The preview image is optional, and the Steam Workshop preview image will be used by the game instead if your addon is on the workshop. AddonInfo is required for the game to load your addon.
+`addonimage.jpg` is a small (256x256 pixels or smaller - it will be in memory at all times when the add-on is installed) preview image for the add-on. The preview image is optional, and the Steam Workshop preview image will be used by the game instead if your add-on is on the workshop. AddonInfo is required for the game to load your add-on.
 
-**Keep in mind that unless otherwise stated, the game will only load a file with a given name from the first installed addon that provides it.** Make sure your filenames are unique - for example, include your name or your addon's name in the filename.
+**Keep in mind that unless otherwise stated, the game will only load a file with a given name from the first installed add-on that provides it.** Make sure your filenames are unique - for example, include your name or your add-on's name in the filename.
 
 ## Augmented Files
 
-In a few rare cases, the game loads a file from *all* addons that provide it and merges them.
+In a few rare cases, the game loads a file from *all* add-ons that provide it and merges them.
 
 These files are:
 
@@ -48,19 +48,19 @@ These files are:
 - `particles/particles_manifest.txt` - List of particle effect files.
 - `resource/swarmopedia.txt` - Swarmopedia entries.
 
-Augmented files in your addon should only contain content you added or changed. Do not include the entire contents of the file from the game, as that will cause higher memory usage and cause you to unintentionally revert changes from other addons.
+Augmented files in your add-on should only contain content you added or changed. Do not include the entire contents of the file from the game, as that will cause higher memory usage and cause you to unintentionally revert changes from other add-ons.
 
-**Any filename not listed here other than `addoninfo.txt` and `addonimage.jpg` will only be loaded from one addon.** Again, make sure your filenames are unique.
+**Any filename not listed here other than `addoninfo.txt` and `addonimage.jpg` will only be loaded from one add-on.** Again, make sure your filenames are unique.
 
-## Packaging an "Other" Addon
+## Packaging an "Other" Add-On
 
-"Other" addons are addons that do not include any missions, campaigns, or challenges. They can be model, sound, or texture replacements, unofficial translations, configuration files, asset libraries, loading screens, and so on.
+"Other" add-ons are add-ons that do not include any missions, campaigns, or challenges. They can be model, sound, or texture replacements, unofficial translations, configuration files, asset libraries, loading screens, and so on.
 
-Packaging an "Other" addon is simple - you just need `addoninfo.txt`, the files you want to add or replace, and optionally `addonimage.jpg`. Put them into a folder and drag the folder onto `vpk.exe`, then upload your addon from the Workshop management screen in the game.
+Packaging an "Other" add-on is simple - you just need `addoninfo.txt`, the files you want to add or replace, and optionally `addonimage.jpg`. Put them into a folder and drag the folder onto `vpk.exe`, then upload your add-on from the Workshop management screen in the game.
 
 As with anything on the Steam Community, [you need to have legal permission to share the files you're uploading](https://steamcommunity.com/workshop/workshoplegalagreement/). Valve has [given permission](https://partner.steamgames.com/doc/sdk/uploading/distributing_source_engine) to use assets from Valve games in content you share on Steam, so long as it is not misrepresented as being endorsed by Valve.
 
-It is recommended that you rename any file you copied over from another Valve IP if you modify it, as another addon may include an unmodified version of the same file and cause conflicts.
+It is recommended that you rename any file you copied over from another Valve IP if you modify it, as another add-on may include an unmodified version of the same file and cause conflicts.
 
 ## Challenges
 
@@ -68,7 +68,7 @@ Challenges are VDF files located in `resource/challenges`.
 
 Simple challenges change console variables (convars) when they are activated, and more complex challenges include scripts or spawn definitions as well.
 
-For example, an addon might include a file named `resource/challenges/cookie9_slippery.txt` with these contents:
+For example, an add-on might include a file named `resource/challenges/cookie9_slippery.txt` with these contents:
 
 ```vdf
 "CHALLENGE" {
@@ -83,7 +83,7 @@ For example, an addon might include a file named `resource/challenges/cookie9_sl
 }
 ```
 
-This addon would also include `materials/vgui/swarm/challenges/cookie9_slippery.vmt` and the texture for that material.
+This add-on would also include `materials/vgui/swarm/challenges/cookie9_slippery.vmt` and the texture for that material.
 
 A more complicated version of the challenge might include files named `scripts/vscript/challenge_cookie9_slippery.nut` or `resource/alien_selection_cookie9_slippery.txt`.
 
@@ -173,7 +173,7 @@ Mission overviews have two main parts: the minimap and the mission details.
 
 Campaigns are collections of missions that are not otherwise visible in the mission chooser with a VDF file located in `resource/campaigns`.
 
-The file should have a `.txt` extension and have a unique name, but the name doesn't need to match anything else in your addon.
+The file should have a `.txt` extension and have a unique name, but the name doesn't need to match anything else in your add-on.
 
 ```vdf
 "GAME"
@@ -291,3 +291,37 @@ The file should have a `.txt` extension and have a unique name, but the name doe
 	// The game doesn't currently understand any tags for campaigns.
 }
 ```
+
+## Publishing an add-on on the Steam Workshop
+
+Before you can publish an add-on on the Steam workshop, you need:
+
+- To read and accept the [Workshop legal agreement](https://steamcommunity.com/sharedfiles/workshoplegalagreement).
+- To enable the Developer Console in Alien Swarm: Reactive Drop. There is a checkbox at the bottom of the keyboard settings.
+- A thumbnail for the add-on. (16:9 aspect ratio, JPEG format, maximum size 1 megabyte)
+- The VPK containing your add-on's files.
+- A title and description for your add-on.
+- Optionally, tags and preview screenshots or video for your add-on. (Tags like "Campaign", "Bonus", "Endless", "Deathmatch", "Challenge", and "Other" are automatically added by the game.)
+
+### Publishing a new add-on
+
+1. Go to Workshop › Manage on the main menu.
+2. Select "Create New Add-On". If this is your first time or you have cleared your settings, you may need to enter a console command, which the game will inform you of.
+3. Select "New Workshop Add-On" from your list of add-ons, then click "Edit".
+4. Select the VPK and JPEG files for your add-on.
+5. Enter the title, tags, and description for your add-on.
+6. If you are updating an existing add-on, enter some change notes in the Change Log section. These notes are added as a post on the Change Notes tab on the Steam Workshop page for your add-on.
+7. When the form is filled out, select "Publish". Your add-on will initially be uploaded as hidden (only visible to you, people you invite as co-authors, and admins), and you can change the visibility and description at any time on the Steam Workshop website. Tags can only easily be edited by uploading a new version of the add-on.
+8. The Steam Overlay or your browser will open to the page for your add-on. From there, you can edit the title, description, and visibility, add links to other add-ons that must also be installed for yours to work, add other players as co-authors, and add preview images or video.
+
+### Preview Screenshots
+
+If you are uploading preview screenshots of missions, it is very important to upload them in a specific order so the stats website will display the correct image for each mission.
+
+If your add-on contains multiple types of missions, the preview images must be sorted with campaign missions first, then bonus, endless, and finally deathmatch maps.
+
+Campaign missions are first sorted by campaign filename in alphabetical order, then by their placement within the campaign. Other maps are in alphabetical order by their filename within their map type's section of the list.
+
+If you want to include multiple preview images for each mission, each mission should have the same number of preview images. The first preview image for each mission will be used by the stats website.
+
+If you have a number of preview images on your add-on that is not a multiple of the number of missions or the preview images are not in this order, the stats website may display the wrong image for a mission's leaderboard.
