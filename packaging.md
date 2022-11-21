@@ -58,7 +58,7 @@ Augmented files in your add-on should only contain content you added or changed.
 
 Packaging an "Other" add-on is simple - you just need `addoninfo.txt`, the files you want to add or replace, and optionally `addonimage.jpg`. Put them into a folder and drag the folder onto `vpk.exe`, then upload your add-on from the Workshop management screen in the game.
 
-As with anything on the Steam Community, [you need to have legal permission to share the files you're uploading](https://steamcommunity.com/workshop/workshoplegalagreement/). Valve has [given permission](https://partner.steamgames.com/doc/sdk/uploading/distributing_source_engine) to use assets from Valve games in content you share on Steam, so long as it is not misrepresented as being endorsed by Valve.
+As with anything on the Steam Community, [you need to have legal permission to share the files you're uploading](https://steamcommunity.com/workshop/workshoplegalagreement/?appid=563560). Valve has [given permission](https://partner.steamgames.com/doc/sdk/uploading/distributing_source_engine) to use assets from Valve games in content you share on Steam, so long as it is not misrepresented as being endorsed by Valve.
 
 It is recommended that you rename any file you copied over from another Valve IP if you modify it, as another add-on may include an unmodified version of the same file and cause conflicts.
 
@@ -296,7 +296,7 @@ The file should have a `.txt` extension and have a unique name, but the name doe
 
 Before you can publish an add-on on the Steam workshop, you need:
 
-- To read and accept the [Workshop legal agreement](https://steamcommunity.com/sharedfiles/workshoplegalagreement).
+- To read and accept the [Workshop legal agreement](https://steamcommunity.com/workshop/workshoplegalagreement/?appid=563560).
 - To enable the Developer Console in Alien Swarm: Reactive Drop. There is a checkbox at the bottom of the keyboard settings.
 - A thumbnail for the add-on. (16:9 aspect ratio, JPEG format, maximum size 1 megabyte)
 - The VPK containing your add-on's files.
