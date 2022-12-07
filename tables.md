@@ -105,7 +105,7 @@ Alien health is increased or decreased by 20% for each point of mission difficul
 | 25    | 2150                     | 37800            | IAF High Velocity Sentry Cannon |
 | 26    | 2200                     | 40000            | MTD6 Smart Bomb                 |
 | 27    | 2250                     | 42250            | Grenade Launcher                |
-| 28    | 2300                     | 44550            | Desert Eagle                    |
+| 28    | 2300                     | 44550            | PS50 Bulldog                    |
 | 29    | 2350                     | 46900            | IAF HAS42 Devastator            |
 | 30    | 2400                     | 49300            | 22A4-2 Combat Rifle             |
 | 31    | 2450                     | 51750            | IAF Medical Amplifier Gun       |
