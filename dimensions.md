@@ -35,7 +35,7 @@
 | Antlion Guard (both) | 60×60×110 |
 | Headcrab (all variants) | 24×24×12 |
 
-\*Marine hulls are biased 2 units south (regardless of camera orientation).
+\*Marine hulls are biased 2 units south (regardless of camera orientation).  
 \*Buzzer hulls are vertically centered. All other hulls start at the origin and go up.
 
 ## Player View
