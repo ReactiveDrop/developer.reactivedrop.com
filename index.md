@@ -1,6 +1,7 @@
 # Alien Swarm: Reactive Drop Developer Information
 
 - [Data Tables](/tables.html)
+- [Physical Dimensions](/dimensions.html)
 - [Add-On Packaging Guide](/packaging.html)
 - [Translation Files](/language.html)
 - [Door Model Creation](/door.html)

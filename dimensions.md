@@ -1,3 +1,49 @@
+# Mapping Distances
+
+## Architecture
+
+| Object | Dimensions |
+|---|---|
+| 1 foot | 16 units |
+| Maximum Climbable Step | 24 units or 45.573\* degree slope |
+| Small Vent | 64×64 |
+| Small Hallway | 192 wide |
+| Large Hallway | 384 wide |
+| Very Large Hallway | 896 wide |
+| Standard heavy door | 32×128×160 |
+| Vault door | 16×160×160 |
+
+\*The exact maximum slope angle is arccos(0.7).
+
+## Creature Hulls
+
+| Creatures | Dimensions |
+|---|---|
+| Marine | 32×32×70\* |
+| Colonist, all zombies | 26×26×72 |
+| Drone (all variants) | 40×40×69 |
+| Ranger | 40×40×69 |
+| Buzzer | 20×20×20\* |
+| Boomer | 60×60×110 |
+| Parasite, Xenomite, Grub | 24×24×12 |
+| Shieldbug | 80×80×72 |
+| Mortarbug | 46×46×69 |
+| Harvester | 46×46×69 |
+| Shaman | 32×32×64 |
+| Queen | 240×240×160 |
+| Antlion (both) | 32×32×64 |
+| Antlion Guard (both) | 60×60×110 |
+| Headcrab (all variants) | 24×24×12 |
+
+\*Marine hulls are biased 2 units south (regardless of camera orientation).
+\*Buzzer hulls are vertically centered. All other hulls start at the origin and go up.
+
+## Player View
+
+With `asw_controls 1`, the camera has a fixed angle when moving the mouse. Unless explicitly disabled in `asw_gamerules`, players can rotate the camera's yaw axis in 90 degree increments. For other values of `asw_controls`, the player has full control of the camera angle.
+
+The player can also change the center point of their view on the X and Y axes by moving their mouse. The default values for maximum camera shifting offsets are 300 left/right, 200 forward, and 380 back.
+
 <form id="calculator" class="d-flex">
 <fieldset class="flex-item-equal"><legend>Calculator</legend>
 <label>Camera Pitch <input type="number" min="0" max="90" id="pitch" value="60" size="5" tabindex="0"></label>
