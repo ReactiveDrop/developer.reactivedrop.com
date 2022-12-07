@@ -20,20 +20,23 @@
 | Creatures | Dimensions |
 |---|---|
 | Marine | 32×32×70\* |
-| Colonist, all zombies | 26×26×72 |
+| Colonist | 26×26×72 |
 | Drone (all variants) | 40×40×69 |
 | Ranger | 40×40×69 |
 | Buzzer | 20×20×20\* |
 | Boomer | 60×60×110 |
-| Parasite, Xenomite, Grub | 24×24×12 |
+| Parasite | 24×24×12 |
 | Shieldbug | 80×80×72 |
 | Mortarbug | 46×46×69 |
 | Harvester | 46×46×69 |
+| Xenomite | 24×24×12 |
+| Grub | 24×24×12 |
 | Shaman | 32×32×64 |
 | Queen | 240×240×160 |
 | Antlion (both) | 32×32×64 |
 | Antlion Guard (both) | 60×60×110 |
 | Headcrab (all variants) | 24×24×12 |
+| Headcrab Zombie (all variants) | 26×26×72 |
 
 \*Marine hulls are biased 2 units south (regardless of camera orientation).  
 \*Buzzer hulls are vertically centered. All other hulls start at the origin and go up.
@@ -46,12 +49,12 @@ The player can also change the center point of their view on the X and Y axes by
 
 <form id="calculator" class="d-flex">
 <fieldset class="flex-item-equal"><legend>Calculator</legend>
-<label>Camera Pitch <input type="number" min="0" max="90" id="pitch" value="60" size="5" tabindex="0"></label>
-<label>Distance <input type="number" min="0" max="10000" id="dist" value="412" size="5" tabindex="0"></label><br>
-<label>Field of View <input type="number" min="20" max="75" id="fov" value="75" size="5" tabindex="0"></label><br>
-<label>Aspect Ratio <input type="number" min="1" max="1000" id="aspect_w" value="16" size="5" tabindex="0"></label>
-<label>by <input type="number" min="1" max="1000" id="aspect_h" value="9" size="5" tabindex="0"></label><br>
-<label>Distance Above Floor <input type="number" min="-8192" max="8192" id="test_z" value="0" size="5" tabindex="0"></label>
+<label>Camera Pitch <input type="number" min="0" max="90" id="pitch" value="60" size="5" tabindex="0" required></label>
+<label>Distance <input type="number" min="0" max="10000" id="dist" value="412" size="5" tabindex="0" required></label><br>
+<label>Field of View <input type="number" min="20" max="75" id="fov" value="75" size="5" tabindex="0" required></label><br>
+<label>Aspect Ratio <input type="number" min="1" max="1000" id="aspect_w" value="16" size="5" tabindex="0" required></label>
+<label>by <input type="number" min="1" max="1000" id="aspect_h" value="9" size="5" tabindex="0" required></label><br>
+<label>Distance Above Floor <input type="number" min="-8192" max="8192" id="test_z" value="0" size="5" tabindex="0" required></label>
 </fieldset>
 <fieldset class="flex-item-equal"><legend>Result</legend>
 <p id="result1"></p>
