@@ -77,6 +77,10 @@ For example, an add-on might include a file named `resource/challenges/cookie9_s
 	"author" "Cookie9"
 	"icon" "swarm/challenges/cookie9_slippery"
 
+	// if there are no allowed_mode keys, it defaults to coop.
+	"allowed_mode" "coop"
+	"allowed_mode" "deathmatch"
+
 	"convars" {
 		"asw_marine_friction" "0.2"
 	}
