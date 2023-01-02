@@ -158,6 +158,8 @@ Mission overviews have two main parts: the minimap and the mission details.
 	//
 	// It is recommended that you tag survival missions with a pre-defined number of waves as "bonus"
 	// and then add the "Survival" tag when uploading to the Workshop instead of using this tag.
+	//
+	// Speedruns for missions with this tag are sorted in descending order on the leaderboard.
 	"tag" "endless"
 
 	// This tag will make your mission's leaderboard show points in descending order instead of time in ascending order.
