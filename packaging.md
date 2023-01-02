@@ -203,7 +203,7 @@ The file should have a `.txt` extension and have a unique name, but the name doe
 	"CampaignTextureLayer2" "swarm/Campaign/CampaignMap_EmptyLayer"
 	"CampaignTextureLayer3" "swarm/Campaign/CampaignMap_EmptyLayer"
 
-	// Search lights appear on the campaign map. Set Searchlight\*X to 0 to hide the search light.
+	// Search lights appear on the campaign map. Set Searchlight*X to 0 to hide the search light.
 	// Coordinates are from 0 to 1023; angles are in degrees counterclockwise from the right.
 	"Searchlight1X" "217"
 	"Searchlight1Y" "860"
