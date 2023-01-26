@@ -81,6 +81,10 @@ For example, an add-on might include a file named `resource/challenges/cookie9_s
 	"allowed_mode" "coop"
 	"allowed_mode" "deathmatch"
 
+	// adding this line causes clients to download your addon, allowing you to package models/textures/sounds/particles with it.
+	"required_on_client" "1"
+
+	// any convar can be changed by a challenge, including cheats.
 	"convars" {
 		"asw_marine_friction" "0.2"
 	}
