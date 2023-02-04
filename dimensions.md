@@ -31,15 +31,19 @@
 | Harvester | 46×46×69 |
 | Xenomite | 24×24×12 |
 | Grub | 24×24×12 |
-| Shaman | 32×32×64 |
+| Mender | 32×32×64 |
 | Queen | 240×240×160 |
 | Antlion (both) | 32×32×64 |
 | Antlion Guard (both) | 60×60×110 |
 | Headcrab (all variants) | 24×24×12 |
 | Headcrab Zombie (all variants) | 26×26×72 |
+| Combine Soldier (all variants) | 26×26×72 |
+| Combine Hunter | 44x44x100 |
+| Combine Strider, Dropship, Gunship | 76x76x76\* |
+| Combine Scanner, Claw Scanner | 20x20x20\* |
 
 \*Marine hulls are biased 2 units south (regardless of camera orientation).  
-\*Buzzer hulls are vertically centered. All other hulls start at the origin and go up.
+\*Flying creature hulls are vertically centered. All other hulls start at the origin and go up. Striders are considered to be flying creatures.
 
 ## Player View
 
