@@ -19,7 +19,7 @@
 
 | Creatures | Dimensions |
 |---|---|
-| Marine | 32×32×70\* |
+| Marine | 32×32×72\* |
 | Colonist | 26×26×72 |
 | Drone (all variants) | 40×40×69 |
 | Ranger | 40×40×69 |

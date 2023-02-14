@@ -48,6 +48,9 @@ $keyvalues {
 		crush_length_1	26.64
 		crush_length_2	53.28
 		crush_length_3	80.00
+
+		hit_sound	"ASW_Door.MeleeHit"
+		dent_sound	"ASW_Door.Dented"
 	}
 }
 ```
