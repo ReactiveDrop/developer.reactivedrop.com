@@ -1,3 +1,9 @@
+<style>
+.markdown-body table tr {
+	background-color: transparent;
+}
+</style>
+
 <table style="background-color: #10202e; color: #fff">
 <thead>
 <tr>
