@@ -175,42 +175,56 @@
 <td>-</td>
 <td>Civilian Grade</td>
 <td>-</td>
-<td>-</td>
+<td>Common</td>
 </tr>
 <tr>
 <th style="background-color: #10202e; color: #5e98d9">#5E98D9</th>
 <td>-</td>
 <td>Freelance</td>
 <td>Industrial Grade</td>
-<td>-</td>
+<td>Uncommon</td>
 </tr>
 <tr>
 <th style="background-color: #10202e; color: #4b69ff">#4B69FF</th>
 <td>-</td>
 <td>Mercenary Grade</td>
 <td>Mil-Spec / High Grade</td>
-<td>-</td>
+<td>Rare</td>
 </tr>
 <tr>
 <th style="background-color: #10202e; color: #8847ff">#8847FF</th>
 <td>-</td>
 <td>Commando Grade</td>
 <td>Restricted / Remarkable</td>
-<td>-</td>
+<td>Mythical</td>
 </tr>
 <tr>
 <th style="background-color: #10202e; color: #d32ce6">#D32CE6</th>
 <td>-</td>
 <td>Assassin</td>
 <td>Classified / Exotic</td>
-<td>-</td>
+<td>Legendary</td>
 </tr>
 <tr>
 <th style="background-color: #10202e; color: #eb4b4b">#EB4B4B</th>
 <td>-</td>
 <td>Elite</td>
 <td>Covert / Extraordinary</td>
+<td>Ancient</td>
+</tr>
+<tr>
+<th style="background-color: #10202e; color: #ade55c">#ADE55C</th>
 <td>-</td>
+<td>-</td>
+<td>-</td>
+<td>Arcana</td>
+</tr>
+<tr>
+<th style="background-color: #10202e; color: #fff34f">#FFF34F</th>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>Seasonal</td>
 </tr>
 <tr>
 <th style="background-color: #10202e; color: #e4ae39">#E4AE39</th>
@@ -218,6 +232,13 @@
 <td>-</td>
 <td>Contraband</td>
 <td>-</td>
+</tr>
+<tr>
+<th style="background-color: #10202e; color: #b28a33">#B28A33</th>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>Immortal</td>
 </tr>
 </tbody>
 </table>
