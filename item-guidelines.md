@@ -70,7 +70,7 @@
 <td>-</td>
 <td>Unusual</td>
 <td>Rare Special (★)</td>
-<td>Unusual</td>
+<td>Unusual / Cursed</td>
 </tr>
 <tr>
 <th style="background-color: #10202e; color: #8847ff">#8847FF</th>
@@ -85,13 +85,6 @@
 <td>Haunted</td>
 <td>-</td>
 <td>-</td>
-</tr>
-<tr>
-<th style="background-color: #10202e; color: #8650ac">#8650AC</th>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>Cursed</td>
 </tr>
 <tr>
 <th style="background-color: #10202e; color: #4682b4">#4682B4</th>
