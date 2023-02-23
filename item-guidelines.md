@@ -1,10 +1,4 @@
-<style>
-.markdown-body table tr {
-	background-color: transparent;
-}
-</style>
-
-<table style="background-color: #10202e; color: #fff">
+<table>
 <thead>
 <tr>
 <th rowspan="2">Color</th>
@@ -18,8 +12,8 @@
 </tr>
 </thead>
 <tbody>
-<tr style="color: #b2b2b2">
-<td>#B2B2B2</td>
+<tr>
+<th style="background-color: #10202e; color: #b2b2b2">#B2B2B2</th>
 <td>-</td>
 <td>-</td>
 <td>-</td>
