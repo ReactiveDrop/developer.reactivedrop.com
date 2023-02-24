@@ -39,7 +39,7 @@
 </tr>
 <tr>
 <th style="background-color: #102735; color: #4d7455">#4D7455</th>
-<td>(donation medals)</td>
+<td>(donation receipt medals)</td>
 <td>Genuine</td>
 <td>Genuine</td>
 <td>Genuine</td>
