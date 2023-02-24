@@ -18,14 +18,21 @@
 <tbody>
 <tr>
 <th style="background-color: #102735; color: #b2b2b2">#B2B2B2</th>
-<td>(default item name color)</td>
+<td>Normal (default item name color, crafting items)</td>
 <td>Normal / Stock</td>
 <td>-</td>
 <td>Base</td>
 </tr>
 <tr>
+<th style="background-color: #102735; color: #6a6156">#6A6156</th>
+<td>-</td>
+<td>-</td>
+<td>Consumer Grade / Base Grade</td>
+<td>-</td>
+</tr>
+<tr>
 <th style="background-color: #102735; color: #ffd700">#FFD700</th>
-<td>(HoIAF medals)</td>
+<td>Tournament (HoIAF medals)</td>
 <td>Unique</td>
 <td>Souvenir</td>
 <td>Standard</td>
@@ -39,14 +46,14 @@
 </tr>
 <tr>
 <th style="background-color: #102735; color: #4d7455">#4D7455</th>
-<td>(donation receipt medals)</td>
+<td>Genuine (donation receipt medals)</td>
 <td>Genuine</td>
 <td>Genuine</td>
 <td>Genuine</td>
 </tr>
 <tr>
 <th style="background-color: #102735; color: #cf6a32">#CF6A32</th>
-<td>(stat-tracking items)</td>
+<td>Strange (stat-tracking items)</td>
 <td>Strange</td>
 <td>StatTrak™</td>
 <td>Inscribed</td>
@@ -60,56 +67,42 @@
 </tr>
 <tr>
 <th style="background-color: #102735; color: #38f3ab">#38F3AB</th>
-<td>(joke medals)</td>
+<td>Haunted (joke medals)</td>
 <td>Haunted</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<th style="background-color: #102735; color: #ff00ff">#FF00FF</th>
-<td>(beta tester medal)</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr>
 <th style="background-color: #102735; color: #70b04a">#70B04A</th>
-<td>(legendary-quality community medals + community unique medals)</td>
+<td>Community (legendary-quality community medals + community unique medals)</td>
 <td>Community / Self-Made</td>
 <td>Prototype</td>
 <td>Self-Made</td>
 </tr>
 <tr>
 <th style="background-color: #20102e; color: #a50f79">#A50F79</th>
-<td>-</td>
+<td>Valve (if someone from Valve plays the game and we find out, we'll probably make a custom medal for them)</td>
 <td>Valve</td>
 <td>-</td>
 <td>Valve</td>
 </tr>
 <tr>
 <th style="background-color: #20102e; color: #563560">#563560</th>
-<td>(Reactive Drop Team unique medals)</td>
+<td>Team (Reactive Drop Team unique medals)</td>
 <td>-</td>
 <td>-</td>
-<td>-</td>
-</tr>
-<tr>
-<th style="background-color: #102735; color: #6a6156">#6A6156</th>
-<td>-</td>
-<td>-</td>
-<td>Consumer Grade / Base Grade</td>
 <td>-</td>
 </tr>
 <tr>
 <th style="background-color: #102735; color: #b0c3d9">#B0C3D9</th>
-<td>-</td>
+<td>Common (any common medal not in another set)</td>
 <td>Civilian Grade</td>
 <td>-</td>
 <td>Common</td>
 </tr>
 <tr>
 <th style="background-color: #102735; color: #5e98d9">#5E98D9</th>
-<td>-</td>
+<td>Uncommon (any uncommon medal not in another set)</td>
 <td>Freelance Grade</td>
 <td>Industrial Grade</td>
 <td>Uncommon</td>
@@ -131,14 +124,14 @@
 <tr>
 <th style="background-color: #102735; color: #d32ce6">#D32CE6</th>
 <td>-</td>
-<td>Assassin</td>
+<td>Assassin Grade</td>
 <td>Classified / Exotic</td>
 <td>Legendary</td>
 </tr>
 <tr>
 <th style="background-color: #102735; color: #eb4b4b">#EB4B4B</th>
 <td>-</td>
-<td>Elite</td>
+<td>Elite Grade</td>
 <td>Covert / Extraordinary</td>
 <td>Ancient</td>
 </tr>
@@ -148,6 +141,13 @@
 <td>-</td>
 <td>Contraband</td>
 <td>-</td>
+</tr>
+<tr>
+<th style="background-color: #102735; color: #b28a33">#B28A33</th>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>Immortal</td>
 </tr>
 </tbody>
 </table>
@@ -168,6 +168,13 @@ Weird ones:
 </tr>
 </thead>
 <tbody>
+<tr>
+<th style="background-color: #102735; color: #ff00ff">#FF00FF</th>
+<td>Error (beta tester medal)</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
 <tr>
 <th style="background-color: #102735; color: #eb4b4b">#EB4B4B</th>
 <td>-</td>
@@ -251,13 +258,6 @@ Weird ones:
 <td>-</td>
 <td>-</td>
 <td>Seasonal</td>
-</tr>
-<tr>
-<th style="background-color: #102735; color: #b28a33">#B28A33</th>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>Immortal</td>
 </tr>
 </tbody>
 </table>
