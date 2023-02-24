@@ -80,14 +80,14 @@
 <td>Self-Made</td>
 </tr>
 <tr>
-<th style="background-color: #102735; color: #a50f79">#A50F79</th>
+<th style="background-color: #20102e; color: #a50f79">#A50F79</th>
 <td>-</td>
 <td>Valve</td>
 <td>-</td>
 <td>Valve</td>
 </tr>
 <tr>
-<th style="background-color: #102735; color: #563560">#563560</th>
+<th style="background-color: #20102e; color: #563560">#563560</th>
 <td>(Reactive Drop Team unique medals)</td>
 <td>-</td>
 <td>-</td>
