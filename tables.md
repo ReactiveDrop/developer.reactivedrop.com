@@ -79,13 +79,13 @@ Alien health is increased or decreased by 20% for each point of mission difficul
 | Level | Experience from Previous | Total Experience | Unlocked Weapons                |
 |-------|--------------------------|------------------|---------------------------------|
 | 1     | *N/A*                    | 0                | Starting Weapons\*              |
-| 2     | 1000                     | 1000             | l3a Tactical Heavy Armor        |
+| 2     | 1000                     | 1000             | L3A Tactical Heavy Armor        |
 | 3     | 1050                     | 2050             | Model 35 Pump-action Shotgun    |
 | 4     | 1100                     | 3150             | X33 Damage Amplifier            |
 | 5     | 1150                     | 4300             | IAF Tesla Cannon                |
 | 6     | 1200                     | 5500             | Hornet Barrage                  |
 | 7     | 1250                     | 6750             | Precision Rail Rifle            |
-| 8     | 1300                     | 8050             | Freeze Grenades                 |
+| 8     | 1300                     | 8050             | CR-18 Freeze Grenades                 |
 | 9     | 1350                     | 9400             | IAF Medical Gun                 |
 | 10    | 1400                     | 10800            | Adrenaline                      |
 | 11    | 1450                     | 12250            | K80 Personal Defense Weapon     |
@@ -99,7 +99,7 @@ Alien health is increased or decreased by 20% for each point of mission difficul
 | 19    | 1850                     | 25650            | AVK-36 Marksman Rifle           |
 | 20    | 1900                     | 27550            | IAF Power Fist Attachment       |
 | 21    | 1950                     | 29500            | IAF Incendiary Sentry Gun       |
-| 22    | 2000                     | 31500            | Hand Grenades                   |
+| 22    | 2000                     | 31500            | FG-01 Hand Grenades                   |
 | 23    | 2050                     | 33550            | Chainsaw                        |
 | 24    | 2100                     | 35650            | MNV34 Nightvision Goggles       |
 | 25    | 2150                     | 37800            | IAF High Velocity Sentry Cannon |
