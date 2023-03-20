@@ -81,7 +81,7 @@ Alien health is increased or decreased by 20% for each point of mission difficul
 | 1     | *N/A*                    | 0                | Starting Weapons\*              |
 | 2     | 1000                     | 1000             | L3A Tactical Heavy Armor        |
 | 3     | 1050                     | 2050             | Model 35 Pump-action Shotgun    |
-| 4     | 1100                     | 3150             | X33 Damage Amplifier            |
+| 4     | 1100                     | 3150             | X-33 Damage Amplifier            |
 | 5     | 1150                     | 4300             | IAF Tesla Cannon                |
 | 6     | 1200                     | 5500             | Hornet Barrage                  |
 | 7     | 1250                     | 6750             | Precision Rail Rifle            |
