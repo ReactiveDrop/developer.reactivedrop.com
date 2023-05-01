@@ -30,7 +30,7 @@ Campaign is split into 7 areas:
 
 ## Start Area (TODO) `#rd_contract_area_al_start`
 
-- Area Reward: TODONAME Ricochet Rifle
+- Area Reward: v60 Ricochet Rifle
 
 ## Area A (TODO) `#rd_contract_area_al_nw`
 

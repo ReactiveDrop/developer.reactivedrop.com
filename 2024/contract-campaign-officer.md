@@ -8,12 +8,12 @@
 Override:
 
 ```
-     ,----- AREA B -----,
+     ,----- AREA D -----,
     /                    \
-AREA A-,               ,AREA C
+AREA B-,               ,-AREA C
    |   |---------------|   |
    |  /                 \  |
-start                   AREA D
+start                    AREA A
 ```
 
 Campaign is split into 5 areas:
@@ -28,15 +28,15 @@ Campaign is split into 5 areas:
 
 - Area Reward: NA-23 Incendiary Grenades
 
-## Area A (TODO) `#rd_contract_area_of_`
+## Area A (TODO) `#rd_contract_area_of_se`
 
 - Area Reward: 1 intel
 
-## Area B (TODO) `#rd_contract_area_of_`
+## Area B (TODO) `#rd_contract_area_of_nw`
 
 - Area Reward: 1 intel
 
-## Area C (TODO) `#rd_contract_area_of_`
+## Area C (TODO) `#rd_contract_area_of_ne`
 
 - Area Reward: 1 intel
 

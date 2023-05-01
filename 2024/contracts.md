@@ -39,8 +39,8 @@ First Area:
 - **Tech:** EC-02 Stun Grenades
 - **Weapons:** IAF Railgun Sentry
 - **Locations:** "Connoisseur" (medal that tracks "successful workshop missions")
-- **Aliens:** TODONAME Ricochet Rifle
-- **Special Requests:** TODONAME Flechette Launcher
+- **Aliens:** v60 Ricochet Rifle
+- **Special Requests:** X-117 Flechette Launcher
 
 Final Area:
 
@@ -74,7 +74,7 @@ OCM Gift Shop:
 	- XXXX Uncommon Crafting Material (buy YYYY credits / sell ZZZZ credits)
 	- XXXX Rare Crafting Material (buy YYYY credits / sell ZZZZ credits)
 	- XXXX Regional Crafting Material (buy YYYY credits / sell ZZZZ credits)
-	- Without selling crafting materials or intel, the amount of common credits available is XXXX.
+	- Without selling crafting materials or intel, the amount of credits available is XXXX.
 
 ## Campaigns
 

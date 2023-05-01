@@ -36,7 +36,7 @@ Campaign is split into 6 areas:
 ## Dr. Jacques Moreau's Lab `#rd_contract_area_sr_start`
 
 - Translator note: This is the scientist mentioned in some Nam Humanum mail files.
-- Area Reward: TODONAME Flechette Launcher
+- Area Reward: X-117 Flechette Launcher
 
 ### A Personnel Request `#rd_contract_obj_sr_start`
 
