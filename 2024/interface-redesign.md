@@ -20,6 +20,8 @@ The main menu has, for a long time, been just a list of places away from the mai
 
 Taking cues from Dota 2, Team Fortress 2, and CS:GO, this screen works best if the buttons players need to click are clearly labelled and in a consistent place (we will be adopting the power button style of exit button, the gear for settings, etc.) and the main content of the screen is interesting to look at but ignorable if you've seen it many times.
 
+Additionally, only a small fraction of players read update notes, so highlighting major updates on the main menu may be a good use of space.
+
 We'll create multiple new looping background videos for the main menu, with the first being an improved version of the current Landing Bay themed one and others being brand new (themed on other campaigns?)
 
 The way the main menu chooses background videos will be moddable, with options to keep or remove the "vanilla" ones and support for multiple mods adding videos without overriding each other.

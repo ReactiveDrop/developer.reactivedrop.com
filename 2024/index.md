@@ -8,7 +8,7 @@ The 6th anniversary was heavily geared towards giving mission and challenge auth
 
 - [Armory Expansion](armory-expansion.html)
 - [Redesigned UI](interface-redesign.html)
-- [Inventory Management](inventory-management.html) *(will need to partially release this sooner)*
+- [Inventory Management](inventory-management.html)
 - [OCM Contracts](contracts.html)
 - [Crafting / Strange Items](crafting.html)
 - Mapping Competition: `#SpaceStation2024` *(temp theme, subject to change)*
