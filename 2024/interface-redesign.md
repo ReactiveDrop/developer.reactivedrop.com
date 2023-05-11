@@ -14,7 +14,7 @@ The overall goals of the redesign are:
 
 ## Menus
 
-### Main Menu
+### [Main Menu](interface-mockup-mainmenu.html)
 
 The main menu has, for a long time, been just a list of places away from the main menu that players are encouraged to go. There's a large amount of blank space on the main menu that could be better used to advertise trending workshop addons, new game updates, upcoming unlocks for the player, Heroes of the Interstellar Armed Forces, and maybe some live global stats.
 
@@ -30,7 +30,7 @@ The way the main menu chooses background videos will be moddable, with options t
 
 Loading screens have very little content, and therefore very little to adjust. Changes here are going to mostly relate to when things go wrong - loading screens need the ability to abort loading, and need to be better at telling players what went wrong and why when a player is disconnected.
 
-### Settings
+### [Settings](interface-mockup-settings.html)
 
 Alien Swarm: Reactive Drop's settings screens are a mess due to having been added and re-added over the course of multiple decades of Source Engine. The goal for this redesign is to make it closer to what modern multiplayer Source Engine games (CS:GO, Dota 2) use, with everything accessible from one tabbed settings screen with a custom layout and inline previews.
 
@@ -42,7 +42,7 @@ The server browser is completely disconnected from the lobby browser, doesn't gi
 
 The mission chooser is mostly in a good state already, but could use some minor touch-ups.
 
-### Swarmopedia
+### [Swarmopedia](interface-mockup-swarmopedia.html)
 
 We'll be splitting the medals tab out and making it part of [inventory management](inventory-management.html) and renaming "Collections" to "Swarmopedia" and the Swarmopedia tab to "Aliens". Additionally, we'll be adding a tab that contains information about obtainable Steam inventory items, a tab that contains information about marines, and a tab that contains general articles that can be about anything (predominantly lore). Apart from the changes to tabs, the Swarmopedia is mostly in a good state already.
 

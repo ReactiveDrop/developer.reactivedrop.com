@@ -70,3 +70,58 @@ div {
 ul {
 	margin: 0;
 }
+
+.top-bar {
+	left: 0;
+	top: 0;
+	width: var(--xfull);
+	height: calc(var(--yres) * 24);
+}
+.settings-button {
+	left: 0;
+	top: 0;
+	width: calc(var(--yres) * 24);
+	height: calc(var(--yres) * 24);
+}
+.quit-button {
+	left: calc(var(--xfull) - var(--yres) * 24);
+	top: 0;
+	width: calc(var(--yres) * 24);
+	height: calc(var(--yres) * 24);
+}
+.top-bar-logo {
+	left: calc(var(--yres) * 32);
+	top: 0;
+	width: calc(var(--yres) * 64);
+	height: calc(var(--yres) * 32);
+}
+.loadout-button {
+	left: calc(var(--xhalf) + var(--yres) * -164);
+	top: 0;
+	width: calc(var(--yres) * 64);
+	height: calc(var(--yres) * 24);
+}
+.inventory-button {
+	left: calc(var(--xhalf) + var(--yres) * -98);
+	top: 0;
+	width: calc(var(--yres) * 64);
+	height: calc(var(--yres) * 24);
+}
+.recordings-button {
+	left: calc(var(--xhalf) + var(--yres) * -32);
+	top: 0;
+	width: calc(var(--yres) * 64);
+	height: calc(var(--yres) * 24);
+}
+.swarmopedia-button {
+	left: calc(var(--xhalf) + var(--yres) * 34);
+	top: 0;
+	width: calc(var(--yres) * 64);
+	height: calc(var(--yres) * 24);
+}
+.contracts-button {
+	left: calc(var(--xhalf) + var(--yres) * 100);
+	top: 0;
+	width: calc(var(--yres) * 64);
+	height: calc(var(--yres) * 24);
+}
