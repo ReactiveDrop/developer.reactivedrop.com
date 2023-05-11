@@ -102,7 +102,7 @@ ul {
 	height: calc(var(--yres) * 24);
 }
 .inventory-button {
-	left: calc(var(--xhalf) + var(--yres) * -98);
+	left: calc(var(--xhalf) + var(--yres) * 100);
 	top: 0;
 	width: calc(var(--yres) * 64);
 	height: calc(var(--yres) * 24);
@@ -120,7 +120,7 @@ ul {
 	height: calc(var(--yres) * 24);
 }
 .contracts-button {
-	left: calc(var(--xhalf) + var(--yres) * 100);
+	left: calc(var(--xhalf) + var(--yres) * -98);
 	top: 0;
 	width: calc(var(--yres) * 64);
 	height: calc(var(--yres) * 24);
