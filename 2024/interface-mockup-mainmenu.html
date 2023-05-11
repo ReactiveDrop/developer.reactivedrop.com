@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Reactive Drop 2024 Main Menu Layout</title>
+<link rel="stylesheet" href="interface-mockup-shared.css">
+<style>
+.top-bar {
+	left: 0;
+	top: 0;
+	width: var(--xfull);
+	height: calc(var(--yres) * 24);
+}
+.settings-button {
+	left: 0;
+	top: 0;
+	width: calc(var(--yres) * 24);
+	height: calc(var(--yres) * 24);
+}
+.quit-button {
+	left: calc(var(--xfull) - var(--yres) * 24);
+	top: 0;
+	width: calc(var(--yres) * 24);
+	height: calc(var(--yres) * 24);
+}
+.top-bar-logo {
+	left: calc(var(--yres) * 32);
+	top: 0;
+	width: calc(var(--yres) * 64);
+	height: calc(var(--yres) * 32);
+}
+.commander-profile {
+	left: calc(var(--yres) * 5);
+	top: calc(var(--yres) * 40);
+	width: calc(var(--yres) * 145);
+	height: calc(var(--yres) * 72);
+}
+.commander-avatar {
+	left: calc(var(--yres) * 2);
+	top: calc(var(--yres) * 2);
+	width: calc(var(--yres) * 32);
+	height: calc(var(--yres) * 32);
+}
+.commander-name {
+	left: calc(var(--yres) * 36);
+	top: calc(var(--yres) * 2);
+	width: calc(var(--yres) * 73);
+	height: calc(var(--yres) * 24);
+}
+.commander-promotion {
+	left: calc(var(--yres) * 111);
+	top: calc(var(--yres) * 2);
+	width: calc(var(--yres) * 32);
+	height: calc(var(--yres) * 32);
+}
+.commander-lvl {
+	left: calc(var(--yres) * 111);
+	top: calc(var(--yres) * 24);
+	width: calc(var(--yres) * 32);
+	height: calc(var(--yres) * 10);
+	z-index: 1;
+}
+.commander-xp {
+	left: calc(var(--yres) * 36);
+	top: calc(var(--yres) * 25);
+	width: calc(var(--yres) * 73);
+	height: calc(var(--yres) * 8);
+}
+.medal-1 {
+	left: calc(var(--yres) * 2);
+	top: calc(var(--yres) * 38);
+	width: calc(var(--yres) * 32);
+	height: calc(var(--yres) * 32);
+}
+.medal-2 {
+	left: calc(var(--yres) * 36);
+	top: calc(var(--yres) * 38);
+	width: calc(var(--yres) * 32);
+	height: calc(var(--yres) * 32);
+}
+.medal-3 {
+	left: calc(var(--yres) * 70);
+	top: calc(var(--yres) * 38);
+	width: calc(var(--yres) * 32);
+	height: calc(var(--yres) * 32);
+}
+.hoiaf-next-medal {
+	left: calc(var(--yres) * 111);
+	top: calc(var(--yres) * 38);
+	width: calc(var(--yres) * 32);
+	height: calc(var(--yres) * 32);
+}
+.create-lobby {
+	left: calc(var(--yres) * 5);
+	top: calc(var(--yres) * 125);
+	width: calc(var(--yres) * 145);
+	height: calc(var(--yres) * 30);
+}
+.play-offline {
+	left: calc(var(--yres) * 20);
+	top: calc(var(--yres) * 160);
+	width: calc(var(--yres) * 130);
+	height: calc(var(--yres) * 25);
+}
+.friends-playing {
+	left: calc(var(--yres) * 20);
+	top: calc(var(--yres) * 285);
+	width: calc(var(--yres) * 130);
+	height: calc(var(--yres) * 90);
+}
+.server-quick-list {
+	left: calc(var(--yres) * 20);
+	top: calc(var(--yres) * 190);
+	width: calc(var(--yres) * 130);
+	height: calc(var(--yres) * 90);
+}
+.featured-workshop {
+	left: calc(var(--yres) * 20);
+	top: calc(var(--yres) * 380);
+	width: calc(var(--yres) * 130);
+	height: calc(var(--yres) * 75);
+}
+.stats-ticker {
+	left: 0;
+	top: calc(var(--yfull) - var(--yres) * 12);
+	width: var(--xfull);
+	height: calc(var(--yres) * 12);
+}
+</style>
+</head>
+<body>
+<div class="top-bar">
+<div class="settings-button" title="Settings button (gear icon)">Sett</div>
+<div class="quit-button" title="Quit button (power icon)">Quit</div>
+<div class="top-bar-logo">AS:RD Logo</div>
+<div class="commander-profile">
+<div class="commander-avatar">Avatar</div>
+<div class="commander-name">Commander Name</div>
+<div class="commander-promotion">Promotion</div>
+<div class="commander-xp">Commander XP Bar</div>
+<div class="commander-lvl">Level 34</div>
+<div class="medal-1">Medal 1</div>
+<div class="medal-2">Medal 2</div>
+<div class="medal-3">Medal 3</div>
+<div class="hoiaf-next-medal">HoIAF Next Medal</div>
+</div>
+<div class="create-lobby">Create Lobby</div>
+<div class="play-offline">Play Offline</div>
+<div class="server-quick-list">Active or HoIAF Servers<ul><li>Name1</li><li>Name2</li><li>Name3</li><li>...and 10 lobbies</li></ul></div>
+<div class="friends-playing">Friends Playing<ul><li>Name1</li><li>Name2</li><li>Name3</li></ul></div>
+<div class="featured-workshop">Featured Workshop Items</div>
+<div class="stats-ticker">Stats Marquee &bull; marines killed by drone claws this month: 12345 &bull; missions success rate this week: 2%</div>
+</div>
+</body>
+</html>

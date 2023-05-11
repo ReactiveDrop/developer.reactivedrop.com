@@ -1,0 +1,72 @@
+html {
+	--aspect: calc(var(--aspect-w) / var(--aspect-h));
+	--xres: calc(min(100vw, 100vh * var(--aspect)) / 640);
+	--yres: calc(min(100vh, 100vw / var(--aspect)) / 480);
+	--xhalf: calc(var(--xres) * 320);
+	--yhalf: calc(var(--yres) * 240);
+	--xfull: calc(var(--xres) * 640);
+	--yfull: calc(var(--yres) * 480);
+	background-color: #111;
+	--aspect-w: 5;
+	--aspect-h: 4;
+	--aspect-text: "5:4";
+	overflow: hidden;
+}
+html::before {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	content: var(--aspect-text);
+	font: 50vmin/100vh sans-serif;
+	text-align: center;
+	color: #aaa1;
+}
+@media (min-aspect-ratio: 31/24) {
+	html {
+		--aspect-w: 4;
+		--aspect-h: 3;
+		--aspect-text: "4:3";
+	}
+}
+@media (min-aspect-ratio: 22/15) {
+	html {
+		--aspect-w: 16;
+		--aspect-h: 10;
+		--aspect-text: "16:10";
+	}
+}
+@media (min-aspect-ratio: 76/45) {
+	html {
+		--aspect-w: 16;
+		--aspect-h: 9;
+		--aspect-text: "16:9";
+	}
+}
+@media (min-aspect-ratio: 37/18) {
+	html {
+		--aspect-w: 21;
+		--aspect-h: 9;
+		--aspect-text: "21:9";
+	}
+}
+
+body {
+	margin: calc(50vh - var(--yhalf)) calc(50vw - var(--xhalf));
+	box-shadow: 0 0 calc(var(--yres) * 16) #666;
+	width: var(--xfull);
+	height: var(--yfull);
+	position: relative;
+	font-family: sans-serif;
+}
+div {
+	position: absolute;
+	box-shadow: 0 0 0 1px inset #000;
+	background-color: #aaa6;
+	color: #000;
+	cursor: default;
+}
+ul {
+	margin: 0;
+}

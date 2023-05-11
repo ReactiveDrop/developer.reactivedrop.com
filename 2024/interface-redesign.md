@@ -10,7 +10,7 @@ The overall goals of the redesign are:
 - Ensure important information for new players is immediately visible.
 - Maintain access to all currently-existing player functionality.
 - Ensure all UI works and is comfortable for any player count and on any common screen aspect ratio (4:3, 5:4, 16:9, 16:10, 21:9, ultra-wide)
-- Maintain and expand mod-ability.
+- Maintain (and expand!) mod-ability.
 
 ## Menus
 
@@ -64,15 +64,21 @@ We're going to make a brand new briefing screen that can handle everything the g
 
 ### Debriefing / Transition
 
-TODO.
+The ready checks on mission completion are more of an annoyance than anything useful. If possible, it would be interesting to start loading the next mission as soon as it is known for sure and show the debriefing screen during the loading process.
 
 ### Heads-Up Display
 
 TODO.
 
+### Chat Commands
+
+A customizable chat wheel with predefined (and translated!) phrases would not be a bad use of our time.
+
 ### Closed Captions
 
-TODO.
+It might be interesting to set up closed captions (and possibly other messages related to characters) so that they appear closer to who's talking (as an option, of course. the classic style will remain available.)
+
+Warframe has captions for people talking on the side of your screen directly below their portrait and the Dota 2 relic level up UI could make for a good way of displaying marine and alien captions.
 
 ### Objectives
 
@@ -80,7 +86,9 @@ TODO.
 
 ### Hacking / Computers / PDAs
 
-TODO.
+The hacking UI is mostly okay. Could use a pass to ensure that controller support is the best it can be.
+
+We might want to consider adding new forms of hacks for use by mappers and challenge authors, such as the rhythm game hack that Warframe's Duviri Paradox update added or the Simon Says hack that Helldivers uses extensively.
 
 ### Spectating
 
