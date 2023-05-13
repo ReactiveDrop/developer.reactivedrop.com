@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="interface-mockup-shared.css">
 <style>
 .commander-profile {
-	left: calc(var(--yres) * 5);
+	left: calc(var(--yres) * 10);
 	top: calc(var(--yres) * 40);
 	width: calc(var(--yres) * 145);
 	height: calc(var(--yres) * 72);
@@ -24,16 +24,16 @@
 	height: calc(var(--yres) * 24);
 }
 .commander-promotion {
-	left: calc(var(--yres) * 111);
+	left: calc(var(--yres) * 115);
 	top: calc(var(--yres) * 2);
-	width: calc(var(--yres) * 32);
-	height: calc(var(--yres) * 32);
+	width: calc(var(--yres) * 24);
+	height: calc(var(--yres) * 24);
 }
 .commander-lvl {
 	left: calc(var(--yres) * 111);
 	top: calc(var(--yres) * 24);
 	width: calc(var(--yres) * 32);
-	height: calc(var(--yres) * 10);
+	height: calc(var(--yres) * 8);
 	z-index: 1;
 }
 .commander-xp {
@@ -67,34 +67,34 @@
 	height: calc(var(--yres) * 32);
 }
 .create-lobby {
-	left: calc(var(--yres) * 5);
+	left: calc(var(--yres) * 10);
 	top: calc(var(--yres) * 125);
 	width: calc(var(--yres) * 145);
 	height: calc(var(--yres) * 30);
 }
 .play-offline {
-	left: calc(var(--yres) * 20);
+	left: calc(var(--yres) * 10);
 	top: calc(var(--yres) * 160);
 	width: calc(var(--yres) * 130);
 	height: calc(var(--yres) * 25);
 }
 .friends-playing {
-	left: calc(var(--yres) * 20);
+	left: calc(var(--yres) * 10);
 	top: calc(var(--yres) * 285);
 	width: calc(var(--yres) * 130);
 	height: calc(var(--yres) * 90);
 }
 .server-quick-list {
-	left: calc(var(--yres) * 20);
+	left: calc(var(--yres) * 10);
 	top: calc(var(--yres) * 190);
 	width: calc(var(--yres) * 130);
 	height: calc(var(--yres) * 90);
 }
 .popular-workshop {
-	left: calc(var(--yres) * 20);
+	left: calc(var(--yres) * 10);
 	top: calc(var(--yres) * 380);
 	width: calc(var(--yres) * 130);
-	height: calc(var(--yres) * 75);
+	height: calc(var(--yres) * 74);
 }
 .hoiaf-top10-1 {
 	left: calc(var(--xfull) - var(--yres) * 210);
@@ -164,39 +164,39 @@
 }
 .event-timers {
 	left: calc(var(--xfull) - var(--yres) * 210);
-	top: calc(var(--yres) * 280);
+	top: calc(var(--yres) * 279);
 	width: calc(var(--yres) * 200);
 	height: calc(var(--yres) * 25);
 }
 .news-area {
 	left: calc(var(--xfull) - var(--yres) * 210);
-	top: calc(var(--yres) * 310);
+	top: calc(var(--yres) * 309);
 	width: calc(var(--yres) * 200);
 	height: calc(var(--yres) * 115);
 }
 .view-latest-notes {
 	left: calc(var(--xfull) - var(--yres) * 210);
-	top: calc(var(--yres) * 430);
+	top: calc(var(--yres) * 429);
 	width: calc(var(--yres) * 200);
 	height: calc(var(--yres) * 25);
 }
 .beta-disclaimer {
-	left: calc(var(--yres) * 155);
+	left: calc(var(--yres) * 160);
 	top: calc(var(--yres) * 40);
 	width: calc(var(--yres) * 300);
 	height: calc(var(--yres) * 60);
 }
 .workshop-download-progress {
-	left: calc(var(--yres) * 155);
-	top: calc(var(--yres) * 410);
+	left: calc(var(--yres) * 145);
+	top: calc(var(--yres) * 409);
 	width: calc(var(--yres) * 145);
 	height: calc(var(--yres) * 45);
 }
 .stats-ticker {
 	left: 0;
-	top: calc(var(--yfull) - var(--yres) * 12);
+	top: calc(var(--yfull) - var(--yres) * 20);
 	width: var(--xfull);
-	height: calc(var(--yres) * 12);
+	height: calc(var(--yres) * 20);
 }
 </style>
 </head>
@@ -223,10 +223,10 @@
 <div class="hoiaf-next-medal">HoIAF Next Medal</div>
 </div></a>
 <div class="create-lobby">Create Lobby</div>
-<div class="play-offline">Play Offline</div>
-<div class="server-quick-list">Active or HoIAF Servers<ul><li>Name1</li><li>Name2</li><li>Name3</li><li>...and 10 lobbies</li></ul></div>
+<div class="play-offline">Singleplayer</div>
+<div class="server-quick-list">Public Lobbies<ul><li>Server Name1</li><li>Server Name2</li><li>Server Name3</li><li>...and 10 more</li></ul></div>
 <div class="friends-playing">Friends Playing<ul><li>Name1</li><li>Name2</li><li>Name3</li></ul></div>
-<div class="popular-workshop">Popular Workshop Items</div>
+<div class="popular-workshop">Workshop Showcase</div>
 <div class="hoiaf-top10-1">1. HoIAF Top 10</div>
 <div class="hoiaf-top10-2">2. HoIAF Top 10</div>
 <div class="hoiaf-top10-3">3. HoIAF Top 10</div>
@@ -240,7 +240,7 @@
 <div class="hoiaf-season-ends">Heroes of the Interstellar Armed Forces Season 11 ends in 3 days 5 hours</div>
 <div class="event-timers">Mapping Competition 2023 "Boss Fight" (50 days remain)</div>
 <div class="news-area">News Area</div>
-<div class="view-latest-notes">View Latest Patch Notes</div>
+<div class="view-latest-notes">Latest Update - 2023-05-01</div>
 <div class="beta-disclaimer">Beta branch disclaimer</div>
 <div class="workshop-download-progress">Workshop download progress</div>
 <div class="stats-ticker">Stats Marquee &bull; marines killed by drone claws this month: 12345 &bull; missions success rate this week: 2%</div>

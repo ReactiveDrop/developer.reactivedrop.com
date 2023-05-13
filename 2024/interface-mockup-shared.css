@@ -96,32 +96,32 @@ ul {
 	height: calc(var(--yres) * 32);
 }
 .loadout-button {
-	left: calc(var(--xhalf) + var(--yres) * -164);
+	left: calc(var(--xhalf) + var(--yres) * -166);
 	top: 0;
 	width: calc(var(--yres) * 64);
-	height: calc(var(--yres) * 24);
+	height: calc(var(--yres) * 26);
 }
 .inventory-button {
-	left: calc(var(--xhalf) + var(--yres) * 100);
+	left: calc(var(--xhalf) + var(--yres) * 104);
 	top: 0;
 	width: calc(var(--yres) * 64);
-	height: calc(var(--yres) * 24);
+	height: calc(var(--yres) * 26);
 }
 .recordings-button {
 	left: calc(var(--xhalf) + var(--yres) * -32);
 	top: 0;
 	width: calc(var(--yres) * 64);
-	height: calc(var(--yres) * 24);
+	height: calc(var(--yres) * 26);
 }
 .swarmopedia-button {
-	left: calc(var(--xhalf) + var(--yres) * 34);
+	left: calc(var(--xhalf) + var(--yres) * 36);
 	top: 0;
 	width: calc(var(--yres) * 64);
-	height: calc(var(--yres) * 24);
+	height: calc(var(--yres) * 26);
 }
 .contracts-button {
-	left: calc(var(--xhalf) + var(--yres) * -98);
+	left: calc(var(--xhalf) + var(--yres) * -100);
 	top: 0;
 	width: calc(var(--yres) * 64);
-	height: calc(var(--yres) * 24);
+	height: calc(var(--yres) * 26);
 }
