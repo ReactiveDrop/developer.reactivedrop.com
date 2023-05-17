@@ -90,7 +90,7 @@ ul {
 	height: calc(var(--yres) * 24);
 }
 .top-bar-logo {
-	left: calc(var(--yres) * 32);
+	left: calc(var(--yres) * 48);
 	top: 0;
 	width: calc(var(--yres) * 64);
 	height: calc(var(--yres) * 32);
