@@ -6,15 +6,19 @@ If you have been contacted by a Reactive Drop Team admin to create a donation it
 
 2. Enter the command:
 
-    ```
-    ugc_curated_create
-    ```
+   ```
+   ugc_curated_create
+   ```
 
 3. The Steam Overlay (or your system web browser if you have the Steam Overlay disabled) will open to a new Steam Workshop curated item.
 
-4. Edit the title of the item and set up the revenue split on the website.
+4. You will need to have your Steam Workshop payment info set up, which can be done from a link on the page you just opened or on <https://steamcommunity.com/my/workshoppaymentinfo>.
 
-5. Send the Reactive Drop Team admin a link to the item you created.
+5. Edit the title of the item and set up the revenue split on the Steam Workshop website. The title is just for Reactive Drop Team admins; nobody else will see it. Usually, leaving the revenue split at 100% for yourself is correct.
+
+6. Send the Reactive Drop Team admin a link to the item you created.
+
+7. Optional: Suggest a tool or service that helped you: <https://steamcommunity.com/workshop/suggestserviceproviders/?appid=563560>. Some of the portion of the donation that Valve takes as fees will go there instead.
 
 ## For Admins
 

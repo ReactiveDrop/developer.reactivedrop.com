@@ -96,7 +96,7 @@ ul {
 	height: calc(var(--yres) * 32);
 }
 .loadout-button {
-	left: calc(var(--xhalf) + var(--yres) * -166);
+	left: calc(var(--xhalf) + var(--yres) * -168);
 	top: 0;
 	width: calc(var(--yres) * 64);
 	height: calc(var(--yres) * 26);
