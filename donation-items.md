@@ -16,9 +16,11 @@ If you have been contacted by a Reactive Drop Team admin to create a donation it
 
 5. Edit the title of the item and set up the revenue split on the Steam Workshop website. The title is just for Reactive Drop Team admins; nobody else will see it. Usually, leaving the revenue split at 100% for yourself is correct.
 
-6. Send the Reactive Drop Team admin a link to the item you created.
+6. **Important:** If your tax and bank information requires approval because this is your first curated workshop contribution, make sure you come back once you're approved (it usually takes one or two days) and click the big green "finalize revenue share" button.
 
-7. Optional: Suggest a tool or service that helped you: <https://steamcommunity.com/workshop/suggestserviceproviders/?appid=563560>. Some of the portion of the donation that Valve takes as fees will go there instead.
+7. **Optional:** Suggest a tool or service that helped you: <https://steamcommunity.com/workshop/suggestserviceproviders/?appid=563560>. Some of the portion of the donation that Valve takes as fees will go there instead.
+
+8. Send the Reactive Drop Team admin a link to the item you created.
 
 ## For Admins
 
