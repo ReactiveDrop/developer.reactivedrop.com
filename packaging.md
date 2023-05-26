@@ -46,7 +46,9 @@ These files are:
 - `resource/reactivedrop_*.txt` - Translation files (any language). English is always loaded as a fallback for translations that are missing from the player's selected language.
 - `resource/closecaption_*.txt` - Dialogue translations (any language). Again, English is loaded as a fallback.
 - `particles/particles_manifest.txt` - List of particle effect files.
+- `resource/background_movie.txt` - Main menu background movies.
 - `resource/swarmopedia.txt` - Swarmopedia entries.
+- `resource/ticker.txt` - Main menu stock ticker content.
 
 Augmented files in your add-on should only contain content you added or changed. Do not include the entire contents of the file from the game, as that will cause higher memory usage and cause you to unintentionally revert changes from other add-ons.
 
