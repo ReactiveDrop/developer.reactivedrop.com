@@ -101,26 +101,26 @@
 .controls-wrapper-social {
 	left: calc(var(--yres) * 8);
 	top: calc(var(--yres) * 132);
-	width: calc(var(--yres) * 176);
+	width: calc(var(--yres) * 192);
 	height: calc(var(--yres) * 240);
 }
 .controls-wrapper-useequipment {
-	left: calc(var(--yres) * 192);
+	left: calc(var(--yres) * 209);
 	top: calc(var(--yres) * 132);
-	width: calc(var(--yres) * 176);
+	width: calc(var(--yres) * 192);
 	height: calc(var(--yres) * 180);
 }
 .controls-wrapper-selectmarine {
-	left: calc(var(--yres) * 376);
+	left: calc(var(--yres) * 410);
 	top: calc(var(--yres) * 132);
-	width: calc(var(--yres) * 176);
+	width: calc(var(--yres) * 192);
 	height: calc(var(--yres) * 132);
 }
 .controls-list {
-	width: calc(var(--yres) * 160);
+	width: calc(var(--yres) * 176);
 }
 .controls-list-item {
-	width: calc(var(--yres) * 160);
+	width: calc(var(--yres) * 176);
 	height: calc(var(--yres) * 12);
 	position: relative;
 }
@@ -133,7 +133,7 @@
 .controls-list-item-key {
 	left: calc(var(--yres) * 100);
 	top: calc(var(--yres) * 1);
-	width: calc(var(--yres) * 59);
+	width: calc(var(--yres) * 75);
 	height: calc(var(--yres) * 10);
 }
 .controls-list-social {
@@ -141,12 +141,25 @@
 	top: calc(var(--yres) * 148);
 }
 .controls-list-useequipment {
-	left: calc(var(--yres) * 200);
+	left: calc(var(--yres) * 217);
 	top: calc(var(--yres) * 148);
 }
 .controls-list-selectmarine {
-	left: calc(var(--yres) * 384);
+	left: calc(var(--yres) * 418);
 	top: calc(var(--yres) * 148);
+}
+.controls-reset {
+	left: calc(var(--yres) * 8);
+	top: calc(var(--yres) * 380);
+	width: calc(var(--yres) * 200);
+	height: calc(var(--yres) * 12);
+}
+.controls-developerconsole {
+	left: calc(var(--yres) * 402);
+	top: calc(var(--yres) * 380);
+	width: calc(var(--yres) * 200);
+	height: calc(var(--yres) * 12);
+	text-align: right;
 }
 </style>
 </head>
@@ -192,7 +205,13 @@ bind "SPACE" "+jump" // bind "JOY1" "+jump"
 Controller (dropdown list, top middle)
 TODO
 -->
-<div class="controls-wrapper-controller">Controller</div>
+<div class="controls-wrapper-controller">Controller
+<br>
+<br>Movement stick... left
+<br>Automatically crouch... no
+<br>Automatically shoot when aiming... no
+<br>Automatically aim to movement direction... yes
+</div>
 
 <!--
 Actions (big, top right, 5x2)
@@ -315,6 +334,8 @@ bind "F8" "+selectmarine8"
 <div class="controls-list-item"><div class="controls-list-item-label">Select Marine 8</div><div class="controls-list-item-key">F8</div></div>
 <div class="controls-list-item"><div class="controls-list-item-label">Wheel: Select Marine</div><div class="controls-list-item-key"></div></div>
 </div>
+<div class="controls-developerconsole">Enable developer console</div>
+<div class="controls-reset">Reset to defaults</div>
 </div>
 </body>
 </html>
