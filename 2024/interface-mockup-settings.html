@@ -9,6 +9,14 @@
 	width: calc(var(--yres) * 32);
 	height: calc(var(--yres) * 32);
 }
+.controls-key-big > .controls-key-controller {
+	left: calc(var(--yres) * 20);
+	top: calc(var(--yres) * 2);
+	width: calc(var(--yres) * 10);
+	height: calc(var(--yres) * 10);
+	border-radius: 100%;
+	text-align: center;
+}
 .controls-key-big > span {
 	position: absolute;
 	font-size: calc(var(--yres) * 7);
@@ -130,10 +138,18 @@
 	width: calc(var(--yres) * 99);
 	height: calc(var(--yres) * 10);
 }
-.controls-list-item-key {
-	left: calc(var(--yres) * 100);
+.controls-list-item-controller-key {
+	left: calc(var(--yres) * 101);
 	top: calc(var(--yres) * 1);
-	width: calc(var(--yres) * 75);
+	width: calc(var(--yres) * 10);
+	height: calc(var(--yres) * 10);
+	border-radius: 100%;
+	text-align: center;
+}
+.controls-list-item-key {
+	left: calc(var(--yres) * 112);
+	top: calc(var(--yres) * 1);
+	width: calc(var(--yres) * 63);
 	height: calc(var(--yres) * 10);
 }
 .controls-list-social {
@@ -160,6 +176,12 @@
 	width: calc(var(--yres) * 200);
 	height: calc(var(--yres) * 12);
 	text-align: right;
+}
+.controls-customwheels {
+	left: calc(var(--yres) * 442);
+	top: calc(var(--yres) * 300);
+	width: calc(var(--yres) * 128);
+	height: calc(var(--yres) * 48);
 }
 </style>
 </head>
@@ -199,7 +221,7 @@ bind "SPACE" "+jump" // bind "JOY1" "+jump"
 <div class="controls-key-big controls-key-back">S<br><span>back</span></div>
 <div class="controls-key-big controls-key-right">D<br><span>right</span></div>
 <div class="controls-key-big controls-key-walk">SHIFT<br><span>crouch / slow</span></div>
-<div class="controls-key-big controls-key-jump">SPACE<br><span>roll / jump</span></div>
+<div class="controls-key-big controls-key-jump">SPACE<div class="controls-key-controller">A</div><br><span>roll / jump</span></div>
 
 <!--
 Controller (dropdown list, top middle)
@@ -211,6 +233,7 @@ TODO
 <br>Automatically crouch... no
 <br>Automatically shoot when aiming... no
 <br>Automatically aim to movement direction... yes
+<br>Stick up in first person looks... down
 </div>
 
 <!--
@@ -228,13 +251,13 @@ bind "MWHEELDOWN" "ASW_SelectSecondary"
 bind "t" "ASW_DropExtra"
 -->
 <div class="controls-wrapper-actions">Actions</div>
-<div class="controls-key-big controls-key-attack">MOUSE1<br><span>shoot weapon</span></div>
-<div class="controls-key-big controls-key-attack2">MOUSE3<br><span>alternate fire</span></div>
-<div class="controls-key-big controls-key-use">E<br><span>interact / pick up</span></div>
+<div class="controls-key-big controls-key-attack">MOUSE1<div class="controls-key-controller">R2</div><br><span>shoot weapon</span></div>
+<div class="controls-key-big controls-key-attack2">MOUSE3<div class="controls-key-controller">L2</div><br><span>alternate fire</span></div>
+<div class="controls-key-big controls-key-use">E<div class="controls-key-controller">X</div><br><span>interact / pick up</span></div>
 <div class="controls-key-big controls-key-selectprimary">MWHEELUP<br><span>switch to primary weapon</span></div>
 <div class="controls-key-big controls-key-drop">G<br><span>drop weapon</span></div>
-<div class="controls-key-big controls-key-invlast">Q<br><span>switch weapons</span></div>
-<div class="controls-key-big controls-key-alt1">MOUSE2<br><span>melee attack</span></div>
+<div class="controls-key-big controls-key-invlast">Q<div class="controls-key-controller">Y</div><br><span>switch weapons</span></div>
+<div class="controls-key-big controls-key-alt1">MOUSE2<div class="controls-key-controller">B</div><br><span>melee attack</span></div>
 <div class="controls-key-big controls-key-reload">R<br><span>reload weapon</span></div>
 <div class="controls-key-big controls-key-selectsecondary">MWHEELDOWN<br><span>switch to secondary weapon</span></div>
 <div class="controls-key-big controls-key-dropextra">T<br><span>drop equipment</span></div>
@@ -259,17 +282,17 @@ bind "m" "cl_select_loadout"
 <div class="controls-list controls-list-social">
 <div class="controls-list-item"><div class="controls-list-item-label">Text chat</div><div class="controls-list-item-key">Y</div></div>
 <div class="controls-list-item"><div class="controls-list-item-label">Push to talk</div><div class="controls-list-item-key">C</div></div>
-<div class="controls-list-item"><div class="controls-list-item-label">Chat wheel</div><div class="controls-list-item-key">Z</div></div>
-<div class="controls-list-item"><div class="controls-list-item-label">"Follow me!"</div><div class="controls-list-item-key">V</div></div>
-<div class="controls-list-item"><div class="controls-list-item-label">"Hold position!"</div><div class="controls-list-item-key">X</div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">Chat wheel</div><div class="controls-list-item-controller-key">&darr;</div><div class="controls-list-item-key">Z</div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">"Follow me!"</div><div class="controls-list-item-controller-key">R3</div><div class="controls-list-item-key">V</div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">"Hold position!"</div><div class="controls-list-item-controller-key">L3</div><div class="controls-list-item-key">X</div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">Position bot marine</div><div class="controls-list-item-key"></div></div>
 <div class="controls-list-item"><div class="controls-list-item-label">"Medic!"</div><div class="controls-list-item-key"></div></div>
 <div class="controls-list-item"><div class="controls-list-item-label">"Need ammo!"</div><div class="controls-list-item-key"></div></div>
 <div class="controls-list-item"><div class="controls-list-item-label">"What?"</div><div class="controls-list-item-key"></div></div>
 <div class="controls-list-item"><div class="controls-list-item-label">"Watch out!"</div><div class="controls-list-item-key"></div></div>
-<div class="controls-list-item"><div class="controls-list-item-label">Position bot marine</div><div class="controls-list-item-key"></div></div>
 <div class="controls-list-item"><div class="controls-list-item-label">Vote yes</div><div class="controls-list-item-key">9</div></div>
 <div class="controls-list-item"><div class="controls-list-item-label">Vote no</div><div class="controls-list-item-key">0</div></div>
-<div class="controls-list-item"><div class="controls-list-item-label">View mission details</div><div class="controls-list-item-key">TAB</div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">View mission details</div><div class="controls-list-item-controller-key">SELECT</div><div class="controls-list-item-key">TAB</div></div>
 <div class="controls-list-item"><div class="controls-list-item-label">Player list / voting</div><div class="controls-list-item-key">F9</div></div>
 <div class="controls-list-item"><div class="controls-list-item-label">Rotate camera left</div><div class="controls-list-item-key">LEFTARROW</div></div>
 <div class="controls-list-item"><div class="controls-list-item-label">Rotate camera right</div><div class="controls-list-item-key">RIGHTARROW</div></div>
@@ -297,7 +320,7 @@ bind "8" "asw_squad_hotbar 7"
 <div class="controls-list controls-list-useequipment">
 <div class="controls-list-item"><div class="controls-list-item-label">Deploy primary weapon</div><div class="controls-list-item-key"></div></div>
 <div class="controls-list-item"><div class="controls-list-item-label">Deploy secondary weapon</div><div class="controls-list-item-key"></div></div>
-<div class="controls-list-item"><div class="controls-list-item-label">Use offhand item (welder, flares, etc.)</div><div class="controls-list-item-key">1</div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">Use offhand item (welder, flares, etc.)</div><div class="controls-list-item-controller-key">L1</div><div class="controls-list-item-key">1</div></div>
 <div class="controls-list-item"><div class="controls-list-item-label">Use Squad Equipment 2</div><div class="controls-list-item-key">2</div></div>
 <div class="controls-list-item"><div class="controls-list-item-label">Use Squad Equipment 3</div><div class="controls-list-item-key">3</div></div>
 <div class="controls-list-item"><div class="controls-list-item-label">Use Squad Equipment 4</div><div class="controls-list-item-key">4</div></div>
@@ -306,8 +329,8 @@ bind "8" "asw_squad_hotbar 7"
 <div class="controls-list-item"><div class="controls-list-item-label">Use Squad Equipment 7</div><div class="controls-list-item-key">7</div></div>
 <div class="controls-list-item"><div class="controls-list-item-label">Use Squad Equipment 8</div><div class="controls-list-item-key">8</div></div>
 <div class="controls-list-item"><div class="controls-list-item-label">Wheel: Use Equipment</div><div class="controls-list-item-key"></div></div>
-<div class="controls-list-item"><div class="controls-list-item-label">Wheel: Use Equipment (variant 1)</div><div class="controls-list-item-key"></div></div>
-<div class="controls-list-item"><div class="controls-list-item-label">Wheel: Use Equipment (variant 2)</div><div class="controls-list-item-key"></div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">Wheel: Use Equipment (variant 1)</div><div class="controls-list-item-controller-key">&larr;</div><div class="controls-list-item-key"></div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">Wheel: Use Equipment (variant 2)</div><div class="controls-list-item-controller-key">&rarr;</div><div class="controls-list-item-key"></div></div>
 </div>
 
 <!--
@@ -332,10 +355,11 @@ bind "F8" "+selectmarine8"
 <div class="controls-list-item"><div class="controls-list-item-label">Select Marine 6</div><div class="controls-list-item-key">F6</div></div>
 <div class="controls-list-item"><div class="controls-list-item-label">Select Marine 7</div><div class="controls-list-item-key">F7</div></div>
 <div class="controls-list-item"><div class="controls-list-item-label">Select Marine 8</div><div class="controls-list-item-key">F8</div></div>
-<div class="controls-list-item"><div class="controls-list-item-label">Wheel: Select Marine</div><div class="controls-list-item-key"></div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">Wheel: Select Marine</div><div class="controls-list-item-controller-key">&uarr;</div><div class="controls-list-item-key"></div></div>
 </div>
-<div class="controls-developerconsole">Enable developer console</div>
 <div class="controls-reset">Reset to defaults</div>
+<div class="controls-developerconsole">Enable developer console</div>
+<div class="controls-customwheels">Manage custom wheels</div>
 </div>
 </body>
 </html>
