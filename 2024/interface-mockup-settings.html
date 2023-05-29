@@ -5,6 +5,149 @@
 <title>Reactive Drop 2024 Settings Layout</title>
 <link rel="stylesheet" href="interface-mockup-shared.css">
 <style>
+.controls-key-big {
+	width: calc(var(--yres) * 32);
+	height: calc(var(--yres) * 32);
+}
+.controls-key-big > span {
+	position: absolute;
+	font-size: calc(var(--yres) * 7);
+	bottom: 0;
+	right: 0;
+	text-align: right;
+}
+.controls-wrapper-movement {
+	left: calc(var(--yres) * 8);
+	top: calc(var(--yres) * 32);
+	width: calc(var(--yres) * 158);
+	height: calc(var(--yres) * 92);
+}
+.controls-key-forward {
+	left: calc(var(--yres) * 50);
+	top: calc(var(--yres) * 50);
+}
+.controls-key-left {
+	left: calc(var(--yres) * 16);
+	top: calc(var(--yres) * 84);
+}
+.controls-key-back {
+	left: calc(var(--yres) * 50);
+	top: calc(var(--yres) * 84);
+}
+.controls-key-right {
+	left: calc(var(--yres) * 84);
+	top: calc(var(--yres) * 84);
+}
+.controls-key-walk {
+	left: calc(var(--yres) * 126);
+	top: calc(var(--yres) * 50);
+}
+.controls-key-jump {
+	left: calc(var(--yres) * 126);
+	top: calc(var(--yres) * 84);
+}
+.controls-wrapper-controller {
+	left: calc(var(--yres) * 174);
+	top: calc(var(--yres) * 32);
+	width: calc(var(--yres) * 236);
+	height: calc(var(--yres) * 92);
+}
+.controls-wrapper-actions {
+	left: calc(var(--yres) * 418);
+	top: calc(var(--yres) * 32);
+	width: calc(var(--yres) * 184);
+	height: calc(var(--yres) * 92);
+}
+.controls-key-attack {
+	left: calc(var(--yres) * 426);
+	top: calc(var(--yres) * 50);
+}
+.controls-key-attack2 {
+	left: calc(var(--yres) * 460);
+	top: calc(var(--yres) * 50);
+}
+.controls-key-use {
+	left: calc(var(--yres) * 494);
+	top: calc(var(--yres) * 50);
+}
+.controls-key-selectprimary {
+	left: calc(var(--yres) * 528);
+	top: calc(var(--yres) * 50);
+}
+.controls-key-drop {
+	left: calc(var(--yres) * 562);
+	top: calc(var(--yres) * 50);
+}
+.controls-key-invlast {
+	left: calc(var(--yres) * 426);
+	top: calc(var(--yres) * 84);
+}
+.controls-key-alt1 {
+	left: calc(var(--yres) * 460);
+	top: calc(var(--yres) * 84);
+}
+.controls-key-reload {
+	left: calc(var(--yres) * 494);
+	top: calc(var(--yres) * 84);
+}
+.controls-key-selectsecondary {
+	left: calc(var(--yres) * 528);
+	top: calc(var(--yres) * 84);
+}
+.controls-key-dropextra {
+	left: calc(var(--yres) * 562);
+	top: calc(var(--yres) * 84);
+}
+.controls-wrapper-social {
+	left: calc(var(--yres) * 8);
+	top: calc(var(--yres) * 132);
+	width: calc(var(--yres) * 176);
+	height: calc(var(--yres) * 240);
+}
+.controls-wrapper-useequipment {
+	left: calc(var(--yres) * 192);
+	top: calc(var(--yres) * 132);
+	width: calc(var(--yres) * 176);
+	height: calc(var(--yres) * 180);
+}
+.controls-wrapper-selectmarine {
+	left: calc(var(--yres) * 376);
+	top: calc(var(--yres) * 132);
+	width: calc(var(--yres) * 176);
+	height: calc(var(--yres) * 132);
+}
+.controls-list {
+	width: calc(var(--yres) * 160);
+}
+.controls-list-item {
+	width: calc(var(--yres) * 160);
+	height: calc(var(--yres) * 12);
+	position: relative;
+}
+.controls-list-item-label {
+	left: calc(var(--yres) * 1);
+	top: calc(var(--yres) * 1);
+	width: calc(var(--yres) * 99);
+	height: calc(var(--yres) * 10);
+}
+.controls-list-item-key {
+	left: calc(var(--yres) * 100);
+	top: calc(var(--yres) * 1);
+	width: calc(var(--yres) * 59);
+	height: calc(var(--yres) * 10);
+}
+.controls-list-social {
+	left: calc(var(--yres) * 16);
+	top: calc(var(--yres) * 148);
+}
+.controls-list-useequipment {
+	left: calc(var(--yres) * 200);
+	top: calc(var(--yres) * 148);
+}
+.controls-list-selectmarine {
+	left: calc(var(--yres) * 384);
+	top: calc(var(--yres) * 148);
+}
 </style>
 </head>
 <body>
@@ -17,6 +160,161 @@
 <a href="interface-mockup-recordings.html"><div class="recordings-button">Recordings</div></a>
 <a href="interface-mockup-swarmopedia.html"><div class="swarmopedia-button">Swarmopedia</div></a>
 <a href="interface-mockup-contracts.html"><div class="contracts-button">Contracts</div></a>
+</div>
+<div class="settings-wrapper">
+<div class="settings-tab settings-tab-controls">Controls</div>
+<div class="settings-tab settings-tab-options">Options</div>
+<div class="settings-tab settings-tab-audio">Audio</div>
+<div class="settings-tab settings-tab-video">Video</div>
+<div class="settings-tab settings-tab-accessibility">Accessibility</div>
+<div class="settings-tab settings-tab-about">About</div>
+
+<!--
+Movement (big, top left, 1+3 followed by 1x2)
+bind "w" "+forward"
+
+bind "a" "+moveleft"
+bind "s" "+back"
+bind "d" "+moveright"
+
+bind "SHIFT" "+walk"
+bind "SPACE" "+jump" // bind "JOY1" "+jump"
+-->
+<div class="controls-wrapper-movement">Movement</div>
+<div class="controls-key-big controls-key-forward">W<br><span>forward</span></div>
+<div class="controls-key-big controls-key-left">A<br><span>left</span></div>
+<div class="controls-key-big controls-key-back">S<br><span>back</span></div>
+<div class="controls-key-big controls-key-right">D<br><span>right</span></div>
+<div class="controls-key-big controls-key-walk">SHIFT<br><span>crouch / slow</span></div>
+<div class="controls-key-big controls-key-jump">SPACE<br><span>roll / jump</span></div>
+
+<!--
+Controller (dropdown list, top middle)
+TODO
+-->
+<div class="controls-wrapper-controller">Controller</div>
+
+<!--
+Actions (big, top right, 5x2)
+bind "MOUSE1" "+attack" // bind "Z AXIS NEG" "+attack"
+bind "MOUSE3" "+attack2" // bind "Z AXIS POS" "+attack2"
+bind "e" "+use" // bind "JOY3" "+use"
+bind "MWHEELUP" "ASW_SelectPrimary"
+bind "g" "ASW_Drop"
+
+bind "q" "ASW_InvLast" // bind "JOY4" "asw_InvNext" (also treat asw_InvPrev as the same command)
+bind "MOUSE2" "+alt1" // bind "JOY2" "+alt1"
+bind "r" "+reload" // bind "JOY6" "+reload"
+bind "MWHEELDOWN" "ASW_SelectSecondary"
+bind "t" "ASW_DropExtra"
+-->
+<div class="controls-wrapper-actions">Actions</div>
+<div class="controls-key-big controls-key-attack">MOUSE1<br><span>shoot weapon</span></div>
+<div class="controls-key-big controls-key-attack2">MOUSE3<br><span>alternate fire</span></div>
+<div class="controls-key-big controls-key-use">E<br><span>interact / pick up</span></div>
+<div class="controls-key-big controls-key-selectprimary">MWHEELUP<br><span>switch to primary weapon</span></div>
+<div class="controls-key-big controls-key-drop">G<br><span>drop weapon</span></div>
+<div class="controls-key-big controls-key-invlast">Q<br><span>switch weapons</span></div>
+<div class="controls-key-big controls-key-alt1">MOUSE2<br><span>melee attack</span></div>
+<div class="controls-key-big controls-key-reload">R<br><span>reload weapon</span></div>
+<div class="controls-key-big controls-key-selectsecondary">MWHEELDOWN<br><span>switch to secondary weapon</span></div>
+<div class="controls-key-big controls-key-dropextra">T<br><span>drop equipment</span></div>
+
+<!--
+Social / Extras (list, bottom left)
+bind "y" "say"
+bind "c" "+voicerecord"
+bind "z" "+mouse_menu" // bind "POV_DOWN" "+mouse_menu"
+bind "v" "asw_orderMarinesFollow" // bind "JOY10" "asw_orderMarinesFollow"
+bind "x" "asw_orderMarinesHold" // bind "JOY9" "asw_orderMarinesHold"
+bind "9" "vote_yes"
+bind "0" "vote_no"
+bind "TAB" "ingamebriefing" // bind "JOY7" "ingamebriefing"
+bind "F9" "playerlist"
+bind "LEFTARROW" "rotatecameraleft"
+bind "RIGHTARROW" "rotatecameraright"
+bind "f" "+secondary"
+bind "m" "cl_select_loadout"
+-->
+<div class="controls-wrapper-social">Social / Extras</div>
+<div class="controls-list controls-list-social">
+<div class="controls-list-item"><div class="controls-list-item-label">Text chat</div><div class="controls-list-item-key">Y</div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">Push to talk</div><div class="controls-list-item-key">C</div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">Chat wheel</div><div class="controls-list-item-key">Z</div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">"Follow me!"</div><div class="controls-list-item-key">V</div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">"Hold position!"</div><div class="controls-list-item-key">X</div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">"Medic!"</div><div class="controls-list-item-key"></div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">"Need ammo!"</div><div class="controls-list-item-key"></div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">"What?"</div><div class="controls-list-item-key"></div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">"Watch out!"</div><div class="controls-list-item-key"></div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">Position bot marine</div><div class="controls-list-item-key"></div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">Vote yes</div><div class="controls-list-item-key">9</div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">Vote no</div><div class="controls-list-item-key">0</div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">View mission details</div><div class="controls-list-item-key">TAB</div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">Player list / voting</div><div class="controls-list-item-key">F9</div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">Rotate camera left</div><div class="controls-list-item-key">LEFTARROW</div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">Rotate camera right</div><div class="controls-list-item-key">RIGHTARROW</div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">Alternate fire</div><div class="controls-list-item-key">F</div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">Select marine (Deathmatch)</div><div class="controls-list-item-key">M</div></div>
+</div>
+
+<!--
+Use Equipment (list, bottom middle)
+"ASW_ActivatePrimary"
+"ASW_ActivateSecondary"
+bind "1" "+grenade1" // bind "JOY5" "+grenade1"
+bind "2" "asw_squad_hotbar 1"
+bind "3" "asw_squad_hotbar 2"
+bind "4" "asw_squad_hotbar 3"
+bind "5" "asw_squad_hotbar 4"
+bind "6" "asw_squad_hotbar 5"
+bind "7" "asw_squad_hotbar 6"
+bind "8" "asw_squad_hotbar 7"
+"+mouse_menu ASW_UseExtra"
+// bind "POV_LEFT" "+mouse_menu ASW_UseExtra1"
+// bind "POV_RIGHT" "+mouse_menu ASW_UseExtra2"
+-->
+<div class="controls-wrapper-useequipment">Use Equipment</div>
+<div class="controls-list controls-list-useequipment">
+<div class="controls-list-item"><div class="controls-list-item-label">Deploy primary weapon</div><div class="controls-list-item-key"></div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">Deploy secondary weapon</div><div class="controls-list-item-key"></div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">Use offhand item (welder, flares, etc.)</div><div class="controls-list-item-key">1</div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">Use Squad Equipment 2</div><div class="controls-list-item-key">2</div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">Use Squad Equipment 3</div><div class="controls-list-item-key">3</div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">Use Squad Equipment 4</div><div class="controls-list-item-key">4</div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">Use Squad Equipment 5</div><div class="controls-list-item-key">5</div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">Use Squad Equipment 6</div><div class="controls-list-item-key">6</div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">Use Squad Equipment 7</div><div class="controls-list-item-key">7</div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">Use Squad Equipment 8</div><div class="controls-list-item-key">8</div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">Wheel: Use Equipment</div><div class="controls-list-item-key"></div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">Wheel: Use Equipment (variant 1)</div><div class="controls-list-item-key"></div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">Wheel: Use Equipment (variant 2)</div><div class="controls-list-item-key"></div></div>
+</div>
+
+<!--
+Select Marine (list, bottom right)
+bind "F1" "+selectmarine1"
+bind "F2" "+selectmarine2"
+bind "F3" "+selectmarine3"
+bind "F4" "+selectmarine4"
+bind "F5" "+selectmarine5"
+bind "F6" "+selectmarine6"
+bind "F7" "+selectmarine7"
+bind "F8" "+selectmarine8"
+// bind "POV_UP" "+mouse_menu ASW_SelectMarine"
+-->
+<div class="controls-wrapper-selectmarine">Select Marine</div>
+<div class="controls-list controls-list-selectmarine">
+<div class="controls-list-item"><div class="controls-list-item-label">Select Marine 1</div><div class="controls-list-item-key">F1</div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">Select Marine 2</div><div class="controls-list-item-key">F2</div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">Select Marine 3</div><div class="controls-list-item-key">F3</div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">Select Marine 4</div><div class="controls-list-item-key">F4</div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">Select Marine 5</div><div class="controls-list-item-key">F5</div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">Select Marine 6</div><div class="controls-list-item-key">F6</div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">Select Marine 7</div><div class="controls-list-item-key">F7</div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">Select Marine 8</div><div class="controls-list-item-key">F8</div></div>
+<div class="controls-list-item"><div class="controls-list-item-label">Wheel: Select Marine</div><div class="controls-list-item-key"></div></div>
+</div>
 </div>
 </body>
 </html>

@@ -125,3 +125,33 @@ ul {
 	width: calc(var(--yres) * 64);
 	height: calc(var(--yres) * 26);
 }
+.settings-wrapper {
+	left: calc(var(--xhalf) - var(--yres) * 305);
+	top: calc(var(--yres) * 60);
+	width: calc(var(--yres) * 610);
+	height: calc(var(--yres) * 400);
+}
+.settings-tab {
+	top: calc(var(--yres) * 2);
+	width: calc(var(--yres) * 64);
+	height: calc(var(--yres) * 24);
+}
+.settings-tab-controls {
+	left: calc(var(--yres) * 2);
+}
+.settings-tab-options {
+	left: calc(var(--yres) * 68);
+}
+.settings-tab-audio {
+	left: calc(var(--yres) * 134);
+}
+.settings-tab-video {
+	left: calc(var(--yres) * 200);
+}
+.settings-tab-accessibility {
+	left: calc(var(--yres) * 266);
+	width: calc(var(--yres) * 96);
+}
+.settings-tab-about {
+	left: calc(var(--yres) * 544);
+}
