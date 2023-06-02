@@ -30,7 +30,7 @@ The way the main menu chooses background videos will be moddable, with options t
 
 Loading screens have very little content, and therefore very little to adjust. Changes here are going to mostly relate to when things go wrong - loading screens need the ability to abort loading, and need to be better at telling players what went wrong and why when a player is disconnected.
 
-### [Settings](interface-mockup-settings.html)
+### [Settings](interface-mockup-settings-controls.html)
 
 Alien Swarm: Reactive Drop's settings screens are a mess due to having been added and re-added over the course of multiple decades of Source Engine. The goal for this redesign is to make it closer to what modern multiplayer Source Engine games (CS:GO, Dota 2) use, with everything accessible from one tabbed settings screen with a custom layout and inline previews.
 

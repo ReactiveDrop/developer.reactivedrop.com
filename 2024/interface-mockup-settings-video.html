@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Reactive Drop 2024 Settings Layout (Video)</title>
+<link rel="stylesheet" href="interface-mockup-shared.css">
+<style>
+.video-dropdown {
+	left: calc(var(--yres) * 16);
+	width: calc(var(--yres) * 270);
+	height: calc(var(--yres) * 12);
+	line-height: calc(var(--yres) * 12);
+}
+.video-dropdown > div {
+	top: calc(var(--yres) * 1);
+	right: calc(var(--yres) * 1);
+	width: calc(var(--yres) * 130);
+	height: calc(var(--yres) * 10);
+	line-height: calc(var(--yres) * 10);
+}
+.video-screen-resolution {
+	top: calc(var(--yres) * 40);
+	height: calc(var(--yres) * 17);
+	font-size: calc(var(--yres) * 15);
+	line-height: calc(var(--yres) * 17);
+}
+.video-screen-resolution > div {
+	height: calc(var(--yres) * 15);
+	font-size: calc(var(--yres) * 15);
+	line-height: calc(var(--yres) * 15);
+}
+.video-display-mode {
+	top: calc(var(--yres) * 62);
+}
+.video-display-mode-tip {
+	left: calc(var(--yres) * 16);
+	top: calc(var(--yres) * 74);
+	width: calc(var(--yres) * 270);
+	height: calc(var(--yres) * 24);
+	font-size: calc(var(--yres) * 7);
+}
+.video-brightness {
+	top: calc(var(--yres) * 99);
+	color: #333;
+}
+.video-brightness-tip {
+	left: calc(var(--yres) * 16);
+	top: calc(var(--yres) * 111);
+	width: calc(var(--yres) * 270);
+	height: calc(var(--yres) * 24);
+	font-size: calc(var(--yres) * 7);
+	color: #333;
+}
+.video-rendering-pipeline {
+	top: calc(var(--yres) * 136);
+}
+.video-rendering-pipeline-tip {
+	left: calc(var(--yres) * 16);
+	top: calc(var(--yres) * 148);
+	width: calc(var(--yres) * 270);
+	height: calc(var(--yres) * 24);
+	font-size: calc(var(--yres) * 7);
+}
+.video-vsync {
+	top: calc(var(--yres) * 173);
+}
+.video-vsync-tip {
+	left: calc(var(--yres) * 16);
+	top: calc(var(--yres) * 185);
+	width: calc(var(--yres) * 270);
+	height: calc(var(--yres) * 24);
+	font-size: calc(var(--yres) * 7);
+}
+.video-quality-hint-fast {
+	left: calc(var(--yres) * 376);
+	top: calc(var(--yres) * 40);
+	width: calc(var(--yres) * 96);
+	height: calc(var(--yres) * 12);
+	font-size: calc(var(--yres) * 12);
+}
+.video-quality-hint-high {
+	left: calc(var(--yres) * 498);
+	top: calc(var(--yres) * 40);
+	width: calc(var(--yres) * 96);
+	height: calc(var(--yres) * 12);
+	font-size: calc(var(--yres) * 12);
+	text-align: right;
+}
+.video-quality-category {
+	left: calc(var(--yres) * 292);
+	width: calc(var(--yres) * 302);
+	height: calc(var(--yres) * 12);
+	line-height: calc(var(--yres) * 12);
+}
+.video-quality-category > span {
+	display: inline-block;
+	white-space: nowrap;
+	width: calc(var(--yres) * 64);
+}
+.video-quality-category > label {
+	padding-left: calc(var(--yres) * 15);
+}
+.video-quality-more-spaced > label:not(:first-of-type) {
+	padding-left: calc(var(--yres) * 40);
+}
+.video-quality-less-spaced > label:not(:first-of-type) {
+	padding-left: 0;
+}
+.video-quality-cpu {
+	top: calc(var(--yres) * 52);
+}
+.video-quality-cpu-tip {
+	left: calc(var(--yres) * 292);
+	top: calc(var(--yres) * 64);
+	width: calc(var(--yres) * 302);
+	height: calc(var(--yres) * 18);
+	font-size: calc(var(--yres) * 7);
+}
+.video-quality-gpu {
+	top: calc(var(--yres) * 83);
+}
+.video-quality-gpu-tip {
+	left: calc(var(--yres) * 292);
+	top: calc(var(--yres) * 95);
+	width: calc(var(--yres) * 302);
+	height: calc(var(--yres) * 18);
+	font-size: calc(var(--yres) * 7);
+}
+.video-quality-vram {
+	top: calc(var(--yres) * 115);
+}
+.video-quality-vram-tip {
+	left: calc(var(--yres) * 292);
+	top: calc(var(--yres) * 127);
+	width: calc(var(--yres) * 302);
+	height: calc(var(--yres) * 18);
+	font-size: calc(var(--yres) * 7);
+}
+.video-quality-aa {
+	top: calc(var(--yres) * 147);
+}
+.video-quality-aa-tip {
+	left: calc(var(--yres) * 292);
+	top: calc(var(--yres) * 159);
+	width: calc(var(--yres) * 302);
+	height: calc(var(--yres) * 18);
+	font-size: calc(var(--yres) * 7);
+}
+.video-quality-filtering {
+	top: calc(var(--yres) * 179);
+}
+.video-quality-filtering-tip {
+	left: calc(var(--yres) * 292);
+	top: calc(var(--yres) * 191);
+	width: calc(var(--yres) * 302);
+	height: calc(var(--yres) * 18);
+	font-size: calc(var(--yres) * 7);
+}
+.video-extra-category {
+	width: calc(var(--yres) * 187);
+	height: calc(var(--yres) * 12);
+	line-height: calc(var(--yres) * 12);
+}
+.video-extra-category > div {
+	top: calc(var(--yres) * 1);
+	right: calc(var(--yres) * 1);
+	width: calc(var(--yres) * 64);
+	height: calc(var(--yres) * 10);
+	line-height: calc(var(--yres) * 10);
+}
+.video-extra-tip {
+	width: calc(var(--yres) * 187);
+	height: calc(var(--yres) * 30);
+	font-size: calc(var(--yres) * 7);
+}
+.video-extra-col0 {
+	left: calc(var(--yres) * 16);
+}
+.video-extra-col1 {
+	left: calc(var(--yres) * 211);
+	width: calc(var(--yres) * 188);
+}
+.video-extra-col2 {
+	left: calc(var(--yres) * 407);
+}
+.video-extra-row0 {
+	top: calc(var(--yres) * 216);
+}
+.video-extra-row1 {
+	top: calc(var(--yres) * 228);
+}
+.video-extra-row2 {
+	top: calc(var(--yres) * 260);
+}
+.video-extra-row3 {
+	top: calc(var(--yres) * 272);
+}
+.video-extra-row4 {
+	top: calc(var(--yres) * 304);
+}
+.video-extra-row5 {
+	top: calc(var(--yres) * 316);
+}
+.video-extra-row6 {
+	top: calc(var(--yres) * 348);
+}
+.video-extra-row7 {
+	top: calc(var(--yres) * 360);
+}
+</style>
+</head>
+<body>
+<div class="top-bar">
+<a href="interface-mockup-settings-controls.html"><div class="settings-button" title="Settings button (gear icon)">Sett</div></a>
+<a href="interface-redesign.html"><div class="quit-button" title="Quit button (power icon)">Quit</div></a>
+<a href="interface-mockup-mainmenu.html"><div class="top-bar-logo">AS:RD Logo</div></a>
+<a href="interface-mockup-loadout.html"><div class="loadout-button">Loadout</div></a>
+<a href="interface-mockup-inventory.html"><div class="inventory-button">Inventory</div></a>
+<a href="interface-mockup-recordings.html"><div class="recordings-button">Recordings</div></a>
+<a href="interface-mockup-swarmopedia.html"><div class="swarmopedia-button">Swarmopedia</div></a>
+<a href="interface-mockup-contracts.html"><div class="contracts-button">Contracts</div></a>
+</div>
+<div class="settings-wrapper">
+<a href="interface-mockup-settings-controls.html"><div class="settings-tab settings-tab-controls">Controls</div></a>
+<a href="interface-mockup-settings-options.html"><div class="settings-tab settings-tab-options">Options</div></a>
+<a href="interface-mockup-settings-audio.html"><div class="settings-tab settings-tab-audio">Audio</div></a>
+<a href="interface-mockup-settings-video.html"><div class="settings-tab settings-tab-video">Video</div></a>
+<a href="interface-mockup-settings-about.html"><div class="settings-tab settings-tab-about">About</div></a>
+<!--
+[top left]
+
+Screen Resolution [setting.defaultres / setting.defaultresheight] [drop-down]
+[auto-filled]
+
+[ignoring setting.aspectratiomode]
+
+Display Mode [setting.fullscreen / setting.nowindowborder] [drop-down]
+Exclusive Full Screen - Takes full control of the monitor. Allows you to play the game full-screen at a resolution different than what your desktop is set to. May cause problems when switching applications on some machines.
+Borderless Window - Sometimes called "desktop friendly full screen". Allows you to switch applications more easily while still covering the entire monitor. Can be set to a smaller resolution than your monitor.
+Window - Standard operating system window with a title bar. Can be moved and resized. Resizing may cause issues.
+
+// Screen Brightness [setting.mat_monitorgamma] [this setting is an adjustable bar]
+// (Only works in Exclusive Full Screen mode.)
+
+Rendering Pipeline [setting.mat_queue_mode] [radio buttons]
+Single-Threaded (Compatibility)	Multi-Threaded (Fastest)
+Does not affect graphical quality. It is recommended that you use Multi-Threaded rendering unless it causes problems on your hardware.
+
+V-Sync [setting.mat_vsync / setting.mat_triplebuffered]
+Unsynchronized - Render frames as fast as possible, limited to your monitor's refresh rate. May cause screen tearing on some graphics set-ups.
+Double Buffering - Synchronizes frame rate with your monitor's ability to display frames. May reduce frame rate if your computer cannot render frames fast enough.
+Triple Buffering - Smooth out frame rate by rendering two frames ahead. Slightly increases input latency.
+-->
+<div class="video-dropdown video-screen-resolution">Screen Resolution <div class="example-screen-resolution">x</div></div>
+<div class="video-dropdown video-display-mode">Display Mode <div>Borderless Window</div></div>
+<div class="video-display-mode-tip">Sometimes called "desktop friendly full screen". Allows you to switch applications more easily while still covering the entire monitor. Can be set to a smaller resolution than your monitor.</div>
+<div class="video-dropdown video-brightness">Screen Brightness <div><input type="range" disabled></div></div>
+<div class="video-brightness-tip">Only works in Exclusive Full Screen mode.</div>
+<div class="video-dropdown video-rendering-pipeline">Rendering Pipeline <div>Multi-Threaded</div></div>
+<div class="video-rendering-pipeline-tip">Does not affect graphical quality. It is recommended that you use Multi-Threaded rendering unless it causes problems on your hardware.</div>
+<div class="video-dropdown video-vsync">V-Sync <div>Double Buffering</div></div>
+<div class="video-vsync-tip">Synchronizes frame rate with your monitor's ability to display frames. May reduce frame rate if your computer cannot render frames fast enough.</div>
+
+<!--
+[top right, options are radio buttons]
+Faster < - - - - > Higher Quality
+
+Effect Detail [setting.cpu_level]
+[0] Low [1] Medium [2] High
+Affected by CPU (processor) performance. Affects impact effects, physics-controlled debris animations, and precipitation.
+
+Shader Detail [setting.gpu_level]
+[0] Low [1] Medium [2] High [3] Ultra
+Affected by GPU (graphics card) performance. Affects lighting and material detail, fog, stains, and bullet holes.
+
+Texture Detail [setting.gpu_mem_level]
+[0] Low [1] Medium [2] High [3] Ultra
+Affected by GPU (graphics card) memory capacity and speed. Affects sharpness of textures.
+
+[will remove setting.mem_level]
+[TODO: revisit what settings are in each EKV file; remove settings that are user-controlled; remove duplicates]
+[TODO: add gpu_mem_level 3 with mat_picmip -10]
+
+Anti-Aliasing [setting.mat_antialias (MSAA) / setting.mat_aaquality (CSAA)]
+None	2x	4x	6x	8x	16x	8xQ	16xQ [visible options determined by GPU]
+Smooths out jagged edges on objects. Available options depend on your graphics card.
+
+Texture Filtering [setting.mat_forceaniso]
+Bi-linear	Tri-linear	Anisotropic 2x	Anisotropic 4x	Anisotropic 8x	Anisotropic 16x
+Higher quality filtering makes textures viewed from a shallow angle or from far away clearer.
+-->
+<div class="video-quality-hint-fast">Faster</div>
+<div class="video-quality-hint-high">Higher Quality</div>
+<div class="video-quality-category video-quality-cpu video-quality-more-spaced"><span>Effect Detail</span> <label><input type="radio" name="cpu"> Low</label> <label><input type="radio" name="cpu"> Medium</label> <label><input type="radio" name="cpu"> High</label></div>
+<div class="video-quality-cpu-tip">Affected by CPU (processor) performance. Affects impact effects, physics-controlled debris animations, and precipitation.</div>
+<div class="video-quality-category video-quality-gpu"><span>Shader Detail</span> <label><input type="radio" name="gpu"> Low</label> <label><input type="radio" name="gpu"> Medium</label> <label><input type="radio" name="gpu"> High</label> <label><input type="radio" name="gpu"> Ultra</label></div>
+<div class="video-quality-gpu-tip">Affected by GPU (graphics card) performance. Affects lighting and material detail, fog, stains, and bullet holes.</div>
+<div class="video-quality-category video-quality-vram"><span>Texture Detail</span> <label><input type="radio" name="vram"> Low</label> <label><input type="radio" name="vram"> Medium</label> <label><input type="radio" name="vram"> High</label> <label><input type="radio" name="vram"> Ultra</label></div>
+<div class="video-quality-vram-tip">Affected by GPU (graphics card) memory capacity and speed. Affects sharpness of textures.</div>
+<div class="video-quality-category video-quality-aa video-quality-less-spaced"><span>Anti-Aliasing</span> <label><input type="radio" name="aa"> None</label> <label><input type="radio" name="aa"> 2x</label> <label><input type="radio" name="aa"> 4x</label> <label><input type="radio" name="aa"> 8x</label> <label><input type="radio" name="aa"> 16x</label> <label><input type="radio" name="aa"> 8xQ</label> <label><input type="radio" name="aa"> 16xQ</label></div>
+<div class="video-quality-aa-tip">Smooths out jagged edges on objects. Available options depend on your graphics card.</div>
+<div class="video-quality-category video-quality-filtering video-quality-less-spaced"><span>Texture Filtering</span> <label><input type="radio" name="filtering"> Bi-linear</label> <label><input type="radio" name="filtering"> Tri-linear</label> <label><input type="radio" name="filtering"> Anisotropic 2x</label> <label><input type="radio" name="filtering"> 4x</label> <label><input type="radio" name="filtering"> 8x</label> <label><input type="radio" name="filtering"> 16x</label></div>
+<div class="video-quality-filtering-tip">Higher quality filtering makes textures viewed from a shallow angle or from far away clearer.</div>
+
+<!--
+[bottom, three columns, dropdowns]
+
+Film Grain [setting.mat_grain_scale_override]
+[0] Disabled [-1] Enabled
+Adds a simulated film grain (fuzziness) effect to the screen, controlled by the mission.
+It is recommended to disable this if you are recording gameplay as it can negatively affect video encoding.
+
+Local Contrast [mat_local_contrast_enable]
+[0] Disabled [1] Enabled
+Controls whether missions can change the sharpness of a scene for dramatic effect.
+
+Depth Blur [mat_depth_blur_strength_override]
+[0] Disabled [-1] Enabled
+Controls whether missions can make objects far below the marines blurry for a simulated camera focus effect.
+
+Weather Effects [rd_func_precipitation_enable]
+[0] Disabled [1] Enabled
+Controls some rain and snow effects.
+-->
+<div class="video-extra-category video-extra-col0 video-extra-row0">Film Grain <div>Enabled</div></div>
+<div class="video-extra-tip video-extra-col0 video-extra-row1">Adds a simulated film grain (fuzziness) effect to the screen, controlled by the mission.<br>It is recommended to disable this if you are recording gameplay as it can negatively affect video encoding.</div>
+<div class="video-extra-category video-extra-col0 video-extra-row2">Local Contrast <div>Enabled</div></div>
+<div class="video-extra-tip video-extra-col0 video-extra-row3">Controls whether missions can change the sharpness of a scene for dramatic effect.</div>
+<div class="video-extra-category video-extra-col0 video-extra-row4">Depth Blur <div>Enabled</div></div>
+<div class="video-extra-tip video-extra-col0 video-extra-row5">Controls whether missions can make objects far below the marines blurry for a simulated camera focus effect.</div>
+<div class="video-extra-category video-extra-col0 video-extra-row6">Weather Effects <div>Enabled</div></div>
+<div class="video-extra-tip video-extra-col0 video-extra-row7">Controls some rain and snow effects.</div>
+
+<!--
+Light and Specular Blooms [mat_bloom_scalefactor_scalar]
+[0] Disabled [0.3] Reduced [1] Enabled
+An effect where brightly glowing objects "spill" light into the surrounding area.
+
+High Quality Dynamic Shadows [rd_env_projectedtexture_enabled]
+[0] Disabled [1] Enabled
+Some missions contain stationary or moving area lights that produce dramatic shadows of marines and aliens. If this option is disabled, these lights will be turned off entirely.
+
+Flashlight Dynamic Shadows [rd_flashlightshadows]
+[0] Disabled [1] Enabled
+Controls whether the Flashlight Attachment equipment casts high quality dynamic shadows.
+
+Flashlight Light Spill [rd_flashlight_dlight_enable]
+[0] Disabled [1] Enabled
+Controls whether the Flashlight Attachment equipment adds light to the area outside its beam.
+-->
+<div class="video-extra-category video-extra-col1 video-extra-row0">Light and Specular Blooms <div>Enabled</div></div>
+<div class="video-extra-tip video-extra-col1 video-extra-row1">An effect where brightly glowing objects "spill" light into the surrounding area.</div>
+<div class="video-extra-category video-extra-col1 video-extra-row2">High Quality Dynamic Shadows <div>Enabled</div></div>
+<div class="video-extra-tip video-extra-col1 video-extra-row3">Some missions contain stationary or moving area lights that produce dramatic shadows of marines and aliens. If this option is disabled, these lights will be turned off entirely.</div>
+<div class="video-extra-category video-extra-col1 video-extra-row4">Flashlight Dynamic Shadows <div>Enabled</div></div>
+<div class="video-extra-tip video-extra-col1 video-extra-row5">Controls whether the Flashlight Attachment equipment casts high quality dynamic shadows.</div>
+<div class="video-extra-category video-extra-col1 video-extra-row6">Flashlight Light Spill <div>Disabled</div></div>
+<div class="video-extra-tip video-extra-col1 video-extra-row7">Controls whether the Flashlight Attachment equipment adds light to the area outside its beam.</div>
+
+<!--
+High-Quality Beacons [rd_simple_beacons]
+[1] Disabled [0] Enabled
+Controls whether items such as the IAF Heal Beacon and X-33 Damage Amplifier cause light distortion, glowing, and pulsing effects.
+
+Muzzle Flash Lights [muzzleflash_light]
+[0] Disabled [1] Enabled
+Controls whether guns light up nearby surfaces and objects when fired.
+
+Alien Shadows [asw_alien_shadows / asw_directional_shadows]
+[0/0] Disabled [0/1] Flashlight Only [1/1] Enabled
+Controls whether aliens have shadows. Warning: Setting this to "Enabled" may have a large affect on the frame rate of the game.
+
+Low Health Vignetting [rd_health_effect]
+[0] Disabled [1] Enabled
+Controls whether the edges of the screen glow red when the marine is at low health.
+-->
+<div class="video-extra-category video-extra-col2 video-extra-row0">High-Quality Beacons <div>Enabled</div></div>
+<div class="video-extra-tip video-extra-col2 video-extra-row1">Controls whether items such as the IAF Heal Beacon and X-33 Damage Amplifier cause light distortion, glowing, and pulsing effects.</div>
+<div class="video-extra-category video-extra-col2 video-extra-row2">Muzzle Flash Lights <div>Enabled</div></div>
+<div class="video-extra-tip video-extra-col2 video-extra-row3">Controls whether guns light up nearby surfaces and objects when fired.</div>
+<div class="video-extra-category video-extra-col2 video-extra-row4">Alien Shadows <div>Disabled</div></div>
+<div class="video-extra-tip video-extra-col2 video-extra-row5">Controls whether aliens have shadows. Warning: Setting this to "Enabled" may have a large affect on the frame rate of the game.</div>
+<div class="video-extra-category video-extra-col2 video-extra-row6">Low Health Vignetting <div>Enabled</div></div>
+<div class="video-extra-tip video-extra-col2 video-extra-row7">Controls whether the edges of the screen glow red when the marine is at low health.</div>
+</div>
+</body>
+</html>
