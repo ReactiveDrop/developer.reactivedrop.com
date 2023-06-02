@@ -148,7 +148,7 @@ ul {
 	font-size: calc(var(--yres) * 15);
 }
 .inventory-button {
-	left: calc(var(--xhalf) + var(--yres) * 104);
+	left: calc(var(--xhalf) + var(--yres) * 172);
 	top: 0;
 	width: calc(var(--yres) * 64);
 	height: calc(var(--yres) * 26);
@@ -170,6 +170,13 @@ ul {
 }
 .contracts-button {
 	left: calc(var(--xhalf) + var(--yres) * -100);
+	top: 0;
+	width: calc(var(--yres) * 64);
+	height: calc(var(--yres) * 26);
+	font-size: calc(var(--yres) * 15);
+}
+.workshop-button {
+	left: calc(var(--xhalf) + var(--yres) * 104);
 	top: 0;
 	width: calc(var(--yres) * 64);
 	height: calc(var(--yres) * 26);
