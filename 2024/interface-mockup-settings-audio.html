@@ -5,6 +5,119 @@
 <title>Reactive Drop 2024 Settings Layout (Audio)</title>
 <link rel="stylesheet" href="interface-mockup-shared.css">
 <style>
+.audio-mixer {
+	left: calc(var(--yres) * 16);
+	height: calc(var(--yres) * 12);
+	width: calc(var(--yres) * 240);
+}
+.audio-mixer > div {
+	left: calc(var(--yres) * 100);
+	top: calc(var(--yres) * 1);
+	width: calc(var(--yres) * 139);
+	height: calc(var(--yres) * 10);
+}
+.audio-overall {
+	top: calc(var(--yres) * 40);
+}
+.audio-mixer-music-menus {
+	top: calc(var(--yres) * 60);
+}
+.audio-mixer-music-ingame {
+	top: calc(var(--yres) * 74);
+}
+.audio-mixer-voice-dialogue {
+	top: calc(var(--yres) * 94);
+}
+.audio-mixer-voice-players {
+	top: calc(var(--yres) * 108);
+}
+.audio-mixer-voice-aliens {
+	top: calc(var(--yres) * 122);
+}
+.audio-mixer-interface {
+	top: calc(var(--yres) * 142);
+}
+.audio-mixer-environment-ambient {
+	top: calc(var(--yres) * 162);
+}
+.audio-mixer-environment-physics {
+	top: calc(var(--yres) * 176);
+}
+.audio-mixer-combat-damage {
+	top: calc(var(--yres) * 196);
+}
+.audio-mixer-combat-weapons {
+	top: calc(var(--yres) * 210);
+}
+.audio-mixer-explosions {
+	top: calc(var(--yres) * 230);
+}
+.audio-mixer-other {
+	top: calc(var(--yres) * 250);
+}
+.audio-config {
+	left: calc(var(--yres) * 264);
+	height: calc(var(--yres) * 12);
+	width: calc(var(--yres) * 330);
+}
+.audio-config > div {
+	left: calc(var(--yres) * 150);
+	top: calc(var(--yres) * 1);
+	width: calc(var(--yres) * 179);
+	height: calc(var(--yres) * 10);
+}
+.audio-config-config {
+	top: calc(var(--yres) * 40);
+}
+.audio-config-quality {
+	top: calc(var(--yres) * 54);
+}
+.audio-config-captions {
+	top: calc(var(--yres) * 68);
+}
+.audio-config-captionlang {
+	top: calc(var(--yres) * 82);
+}
+.audio-config-dialogue {
+	top: calc(var(--yres) * 96);
+}
+.audio-config-lowhealth {
+	top: calc(var(--yres) * 110);
+}
+.audio-customize-music {
+	left: calc(var(--yres) * 264);
+	top: calc(var(--yres) * 130);
+	width: calc(var(--yres) * 330);
+	height: calc(var(--yres) * 10);
+	text-align: center;
+}
+.audio-config-voice-enable {
+	top: calc(var(--yres) * 150);
+}
+.audio-config-voice-icon {
+	top: calc(var(--yres) * 164);
+}
+.audio-config-voice-sensitivity {
+	top: calc(var(--yres) * 178);
+}
+.audio-config-voice-boost {
+	top: calc(var(--yres) * 192);
+}
+.audio-config-voice-test {
+	top: calc(var(--yres) * 206);
+}
+.audio-config-hit-enable {
+	top: calc(var(--yres) * 226);
+}
+.audio-config-hit-volume {
+	top: calc(var(--yres) * 240);
+}
+.audio-config-kill-enable {
+	top: calc(var(--yres) * 260);
+}
+.audio-config-kill-volume {
+	top: calc(var(--yres) * 274);
+}
 </style>
 </head>
 <body>
@@ -26,8 +139,6 @@
 <a href="interface-mockup-settings-video.html"><div class="settings-tab settings-tab-video">Video</div></a>
 <a href="interface-mockup-settings-about.html"><div class="settings-tab settings-tab-about">About</div></a>
 <!--
-TODO:
-
 volume
 rd_mixer_volume_music_menus
 rd_mixer_volume_music_ingame
@@ -41,15 +152,39 @@ rd_mixer_volume_combat_damage
 rd_mixer_volume_combat_weapons
 rd_mixer_volume_explosions
 rd_mixer_volume_other
+-->
+<div class="audio-mixer audio-overall">Game Volume <div><input type="range"></div></div>
+<div class="audio-mixer audio-mixer-music-menus">Music (Menus) <div><input type="range"></div></div>
+<div class="audio-mixer audio-mixer-music-ingame">Music (In-Game) <div><input type="range"></div></div>
+<div class="audio-mixer audio-mixer-voice-dialogue">Story Dialogue <div><input type="range"></div></div>
+<div class="audio-mixer audio-mixer-voice-players">Voice Chat <div><input type="range"></div></div>
+<div class="audio-mixer audio-mixer-voice-aliens">Alien Voices <div><input type="range"></div></div>
+<div class="audio-mixer audio-mixer-interface">Menus <div><input type="range"></div></div>
+<div class="audio-mixer audio-mixer-environment-ambient">Environment <div><input type="range"></div></div>
+<div class="audio-mixer audio-mixer-environment-physics">Impacts <div><input type="range"></div></div>
+<div class="audio-mixer audio-mixer-combat-damage">Damage <div><input type="range"></div></div>
+<div class="audio-mixer audio-mixer-combat-weapons">Weapons <div><input type="range"></div></div>
+<div class="audio-mixer audio-mixer-explosions">Explosions <div><input type="range"></div></div>
+<div class="audio-mixer audio-mixer-other">Other Sounds <div><input type="range"></div></div>
 
-snd_surround_speakers
+<!--
+snd_surround_speakers / dsp_enhance_stereo
 snd_pitch_quality / dsp_slow_cpu / dsp_enhance_stereo
 closecaption / cc_subtitles
-cc_lang
 rd_skip_all_dialogue
+rd_hearbeat
+-->
+<div class="audio-config audio-config-config">Speaker Configuration <div>2 Speakers</div></div>
+<div class="audio-config audio-config-quality">Sound Quality <div>High</div></div>
+<div class="audio-config audio-config-captions">Captioning <div>Full Captions</div></div>
+<div class="audio-config audio-config-captionlang">Caption Language <div>Same as Text</div></div>
+<div class="audio-config audio-config-dialogue">Story Dialogue <div>Enabled</div></div>
+<div class="audio-config audio-config-lowhealth">Low Health Sound <div>Enabled</div></div>
 
-voice_modenable / voice_enable
-voice_vox
+<div class="audio-customize-music">Customize Combat Music</div>
+
+<!--
+voice_modenable / voice_enable / voice_vox
 asw_voice_side_icon
 [voice sensitivity]
 [set voice receive volume to 100% as we use the mixer now]
@@ -58,6 +193,25 @@ voice_mixer_boost
 
 [customize combat music]
 -->
+<div class="audio-config audio-config-voice-enable">Voice Chat <div>Push to Talk</div></div>
+<div class="audio-config audio-config-voice-icon">Icon Position <div>Near Character</div></div>
+<div class="audio-config audio-config-voice-sensitivity">Voice Sensitivity <div><input type="range" disabled></div></div>
+<div class="audio-config audio-config-voice-boost">Boost Microphone Gain <div>Enabled</div></div>
+<div class="audio-config audio-config-voice-test">Test Microphone <div><progress value="0"></progress></div></div>
+
+<!--
+tf_dingalingaling / tf_dingalingaling_effect
+tf_dingaling_volume
+-->
+<div class="audio-config audio-config-hit-enable">Sound on Hit <div>Disabled</div></div>
+<div class="audio-config audio-config-hit-volume">Hit Sound Volume <div><input type="range" disabled></div></div>
+
+<!--
+tf_dingalingaling_lasthit / tf_dingalingaling_last_effect
+tf_dingaling_lasthit_volume
+-->
+<div class="audio-config audio-config-kill-enable">Sound on Kill <div>Disabled</div></div>
+<div class="audio-config audio-config-kill-volume">Kill Sound Volume <div><input type="range" disabled></div></div>
 </div>
 </body>
 </html>
