@@ -1,6 +1,5 @@
 "kv"
 {
-	"lower_body" "0"
 	"r_shadow_half_update_rate" "1"
 	"r_rainparticledensity" "0"
 	"cl_particle_fallback_base" "3"
@@ -17,7 +16,6 @@
 	"cl_phys_maxticks" "3"
 	"r_worldlightmin" "0.005"
 	"props_break_max_pieces" "2"
-	"z_mob_simple_shadows" "2"
 	"cl_ragdoll_maxcount_gib" "5"
 	"cl_ragdoll_maxcount_generic" "10"
 	"cl_ragdoll_maxcount_special" "2"
@@ -25,7 +23,6 @@
 	"sv_ragdoll_maxcount_gib" "5"
 	"sv_ragdoll_maxcount_generic" "10"
 	"sv_ragdoll_maxcount_special" "2"
-	"z_infected_decals" "0"
 	"cl_impacteffects_limit_general" "10"
 	"cl_impacteffects_limit_exit" "3"
 	"cl_impacteffects_limit_water" "2"

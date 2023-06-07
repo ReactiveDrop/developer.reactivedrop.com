@@ -23,15 +23,16 @@ Shader Detail (gpu_level)
 
 Paged Pool Memory (mem_level)
 
-- [low (0)](mem_level_0_pc.txt)
-- [medium (1)](mem_level_1_pc.txt)
-- [high (2)](mem_level_2_pc.txt)
+- [0-1200 megabytes of RAM (0)](mem_level_0_pc.txt)
+- [1200-1800 megabytes of RAM (1)](mem_level_1_pc.txt)
+- [1800+ megabytes of RAM (2)](mem_level_2_pc.txt)
 
-Model / Texture Detail (gpu_mem_level)
+Texture Detail (gpu_mem_level)
 
 - [low (0)](gpu_mem_level_0_pc.txt)
 - [medium (1)](gpu_mem_level_1_pc.txt)
 - [high (2)](gpu_mem_level_2_pc.txt)
+- [ultra (3)](gpu_mem_level_3_pc.txt)
 
 ## Unused
 
