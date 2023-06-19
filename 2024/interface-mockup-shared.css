@@ -184,7 +184,7 @@ ul {
 }
 .settings-wrapper {
 	left: calc(var(--xhalf) - var(--yres) * 305);
-	top: calc(var(--yres) * 60);
+	top: calc(var(--yres) * 40);
 	width: calc(var(--yres) * 610);
 	height: calc(var(--yres) * 400);
 }

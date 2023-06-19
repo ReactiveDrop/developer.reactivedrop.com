@@ -9,74 +9,77 @@
 	left: calc(var(--xhalf) - var(--yres) * 300);
 	top: calc(var(--yres) * 40);
 	width: calc(var(--yres) * 155);
-	height: calc(var(--yres) * 414);
+	height: calc(var(--yres) * 415);
+}
+.loadout-medals-label {
+	left: calc(var(--xhalf) - var(--yres) * 100);
+	top: calc(var(--yres) * 320);
+	width: calc(var(--yres) * 375);
+	height: calc(var(--yres) * 20);
+	text-align: center;
 }
 .loadout-medal {
-	top: calc(var(--yres) * 40);
-	width: calc(var(--yres) * 50);
-	height: calc(var(--yres) * 50);
+	top: calc(var(--yres) * 345);
+	width: calc(var(--yres) * 75);
+	height: calc(var(--yres) * 75);
+}
+.loadout-medal-label {
+	top: calc(var(--yres) * 425);
+	width: calc(var(--yres) * 75);
+	height: calc(var(--yres) * 24);
+	text-align: center;
 }
 .loadout-medal-0 {
-	left: calc(var(--xhalf) + var(--yres) * 145);
+	left: calc(var(--xhalf) - var(--yres) * 80);
 }
 .loadout-medal-1 {
-	left: calc(var(--xhalf) + var(--yres) * 197);
+	left: calc(var(--xhalf) + var(--yres) * 0);
 }
 .loadout-medal-2 {
-	left: calc(var(--xhalf) + var(--yres) * 249);
+	left: calc(var(--xhalf) + var(--yres) * 80);
+}
+.loadout-medal-promo {
+	left: calc(var(--xhalf) + var(--yres) * 175);
+}
+.loadout-marines-label {
+	left: calc(var(--xhalf) - var(--yres) * 100);
+	top: calc(var(--yres) * 40);
+	width: calc(var(--yres) * 375);
+	height: calc(var(--yres) * 20);
+	text-align: center;
 }
 .loadout-marine {
-	left: calc(var(--xhalf) - var(--yres) * 143);
-	width: calc(var(--yres) * 286);
-	height: calc(var(--yres) * 50);
+	width: calc(var(--yres) * 75);
+	height: calc(var(--yres) * 75);
 }
-.loadout-marine-suit {
-	left: calc(var(--yres) * 2);
-	top: calc(var(--yres) * 2);
-	width: calc(var(--yres) * 46);
-	height: calc(var(--yres) * 46);
+.loadout-marine-label {
+	width: calc(var(--yres) * 75);
+	height: calc(var(--yres) * 12);
+	text-align: center;
 }
-.loadout-marine-weapon-primary {
-	left: calc(var(--yres) * 50);
-	top: calc(var(--yres) * 2);
-	width: calc(var(--yres) * 92);
-	height: calc(var(--yres) * 46);
+.loadout-marine-row1 {
+	top: calc(var(--yres) * 100);
 }
-.loadout-marine-weapon-secondary {
-	left: calc(var(--yres) * 144);
-	top: calc(var(--yres) * 2);
-	width: calc(var(--yres) * 92);
-	height: calc(var(--yres) * 46);
+.loadout-marine-label-row1 {
+	top: calc(var(--yres) * 177);
 }
-.loadout-marine-weapon-extra {
-	left: calc(var(--yres) * 238);
-	top: calc(var(--yres) * 2);
-	width: calc(var(--yres) * 46);
-	height: calc(var(--yres) * 46);
+.loadout-marine-row2 {
+	top: calc(var(--yres) * 200);
 }
-.loadout-marine-0 {
-	top: calc(var(--yres) * 40);
+.loadout-marine-label-row2 {
+	top: calc(var(--yres) * 277);
 }
-.loadout-marine-1 {
-	top: calc(var(--yres) * 92);
+.loadout-marine-officer {
+	left: calc(var(--xhalf) - var(--yres) * 100);
 }
-.loadout-marine-2 {
-	top: calc(var(--yres) * 144);
+.loadout-marine-specialweapons {
+	left: calc(var(--xhalf) + var(--yres) * 0);
 }
-.loadout-marine-3 {
-	top: calc(var(--yres) * 196);
+.loadout-marine-medic {
+	left: calc(var(--xhalf) + var(--yres) * 100);
 }
-.loadout-marine-4 {
-	top: calc(var(--yres) * 248);
-}
-.loadout-marine-5 {
-	top: calc(var(--yres) * 300);
-}
-.loadout-marine-6 {
-	top: calc(var(--yres) * 352);
-}
-.loadout-marine-7 {
-	top: calc(var(--yres) * 404);
+.loadout-marine-tech {
+	left: calc(var(--xhalf) + var(--yres) * 200);
 }
 </style>
 </head>
@@ -93,56 +96,31 @@
 <a href="interface-mockup-workshop.html"><div class="workshop-button">Workshop</div></a>
 </div>
 <div class="loadout-list">Loadout List</div>
+<div class="loadout-medals-label">Medals</div>
 <div class="loadout-medal loadout-medal-0">Medal 0</div>
+<div class="loadout-medal-label loadout-medal-0">Name</div>
 <div class="loadout-medal loadout-medal-1">Medal 1</div>
+<div class="loadout-medal-label loadout-medal-1">Name</div>
 <div class="loadout-medal loadout-medal-2">Medal 2</div>
-<div class="loadout-marine loadout-marine-0">
-<div class="loadout-marine-suit">Sarge</div>
-<div class="loadout-marine-weapon-primary">Primary Weapon</div>
-<div class="loadout-marine-weapon-secondary">Secondary Weapon</div>
-<div class="loadout-marine-weapon-extra">Equipment</div>
-</div>
-<div class="loadout-marine loadout-marine-1">
-<div class="loadout-marine-suit">Wildcat</div>
-<div class="loadout-marine-weapon-primary">Primary Weapon</div>
-<div class="loadout-marine-weapon-secondary">Secondary Weapon</div>
-<div class="loadout-marine-weapon-extra">Equipment</div>
-</div>
-<div class="loadout-marine loadout-marine-2">
-<div class="loadout-marine-suit">Faith</div>
-<div class="loadout-marine-weapon-primary">Primary Weapon</div>
-<div class="loadout-marine-weapon-secondary">Secondary Weapon</div>
-<div class="loadout-marine-weapon-extra">Equipment</div>
-</div>
-<div class="loadout-marine loadout-marine-3">
-<div class="loadout-marine-suit">Crash</div>
-<div class="loadout-marine-weapon-primary">Primary Weapon</div>
-<div class="loadout-marine-weapon-secondary">Secondary Weapon</div>
-<div class="loadout-marine-weapon-extra">Equipment</div>
-</div>
-<div class="loadout-marine loadout-marine-4">
-<div class="loadout-marine-suit">Jaeger</div>
-<div class="loadout-marine-weapon-primary">Primary Weapon</div>
-<div class="loadout-marine-weapon-secondary">Secondary Weapon</div>
-<div class="loadout-marine-weapon-extra">Equipment</div>
-</div>
-<div class="loadout-marine loadout-marine-5">
-<div class="loadout-marine-suit">Wolfe</div>
-<div class="loadout-marine-weapon-primary">Primary Weapon</div>
-<div class="loadout-marine-weapon-secondary">Secondary Weapon</div>
-<div class="loadout-marine-weapon-extra">Equipment</div>
-</div>
-<div class="loadout-marine loadout-marine-6">
-<div class="loadout-marine-suit">Bastille</div>
-<div class="loadout-marine-weapon-primary">Primary Weapon</div>
-<div class="loadout-marine-weapon-secondary">Secondary Weapon</div>
-<div class="loadout-marine-weapon-extra">Equipment</div>
-</div>
-<div class="loadout-marine loadout-marine-7">
-<div class="loadout-marine-suit">Vegas</div>
-<div class="loadout-marine-weapon-primary">Primary Weapon</div>
-<div class="loadout-marine-weapon-secondary">Secondary Weapon</div>
-<div class="loadout-marine-weapon-extra">Equipment</div>
-</div>
+<div class="loadout-medal-label loadout-medal-2">Name</div>
+<div class="loadout-medal loadout-medal-promo">Promotion Medal</div>
+<div class="loadout-medal-label loadout-medal-promo">Name</div>
+<div class="loadout-marines-label">Marines</div>
+<div class="loadout-marine loadout-marine-officer loadout-marine-row1">Sarge</div>
+<div class="loadout-marine-label loadout-marine-officer loadout-marine-label-row1">Name</div>
+<div class="loadout-marine loadout-marine-specialweapons loadout-marine-row1">Wildcat</div>
+<div class="loadout-marine-label loadout-marine-specialweapons loadout-marine-label-row1">Name</div>
+<div class="loadout-marine loadout-marine-medic loadout-marine-row1">Faith</div>
+<div class="loadout-marine-label loadout-marine-medic loadout-marine-label-row1">Name</div>
+<div class="loadout-marine loadout-marine-tech loadout-marine-row1">Crash</div>
+<div class="loadout-marine-label loadout-marine-tech loadout-marine-label-row1">Name</div>
+<div class="loadout-marine loadout-marine-officer loadout-marine-row2">Jaeger</div>
+<div class="loadout-marine-label loadout-marine-officer loadout-marine-label-row2">Name</div>
+<div class="loadout-marine loadout-marine-specialweapons loadout-marine-row2">Wolfe</div>
+<div class="loadout-marine-label loadout-marine-specialweapons loadout-marine-label-row2">Name</div>
+<div class="loadout-marine loadout-marine-medic loadout-marine-row2">Bastille</div>
+<div class="loadout-marine-label loadout-marine-medic loadout-marine-label-row2">Name</div>
+<div class="loadout-marine loadout-marine-tech loadout-marine-row2">Vegas</div>
+<div class="loadout-marine-label loadout-marine-tech loadout-marine-label-row2">Name</div>
 </body>
 </html>
