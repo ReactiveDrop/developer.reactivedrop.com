@@ -52,6 +52,11 @@ These files are:
 
 Augmented files in your add-on should only contain content you added or changed. Do not include the entire contents of the file from the game, as that will cause higher memory usage and cause you to unintentionally revert changes from other add-ons.
 
+Certain files are loaded from all addons, but with different names for each addon. Replace `[id]` with your addon's workshop ID.
+
+- `cfg/autoexec_[id].cfg` (only for subscribed addons)
+- `scripts/addon_sounds_[id].txt`
+
 **Any filename not listed here other than `addoninfo.txt` and `addonimage.jpg` will only be loaded from one add-on.** Again, make sure your filenames are unique.
 
 ## Packaging an "Other" Add-On
