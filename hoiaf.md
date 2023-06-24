@@ -396,8 +396,8 @@
    | Campaign | Mission | Multiplier | Changes |
    | -------- | ------- | ---------- | ------- |
    | *Bonus Mission* | [Gluon Cave](https://steamcommunity.com/sharedfiles/filedetails/?id=2979008182) | 3.5 | New |
-   | *Bonus Mission* | [Gluon Cave (No Boss Version)](https://steamcommunity.com/sharedfiles/filedetails/?id=2979008182) | 3.5 | New |
-   | *Bonus Mission* | [Gluon Cave (Short Version)](https://steamcommunity.com/sharedfiles/filedetails/?id=2979008182) | 3.5 | New |
+   | *Bonus Mission* | [Gluon Cave (No Boss Version)](https://steamcommunity.com/sharedfiles/filedetails/?id=2979008182) | 1.75 | New |
+   | *Bonus Mission* | [Gluon Cave (Short Version)](https://steamcommunity.com/sharedfiles/filedetails/?id=2979008182) | 1.25 | New |
 
 ## July 1, 2023 (Season 13)
 
