@@ -401,7 +401,9 @@
 
 ## July 1, 2023 (Season 13)
 
-- The scoring algorithm has been updated for endless missions.
+- Servers now check for updates to the addon list and scoring parameters on every level load. A server.dll update is no longer required to change the HoIAF mission or challenge lists.
+- Created an [official workshop collection](https://steamcommunity.com/sharedfiles/filedetails/?id=2994125702) replacing the previous collection used for marking addons for download on dedicated servers (2816464806).
+- The scoring algorithm has been updated to account for endless missions.
    1. If the mission score is less than Min Score, the mission is considered to have been failed.
    1. If the mission score is at least Min Score and the mission allows leaderboard scores to be uploaded for failures, the mission is considered to have succeeded.
    1. The existing score calculation logic is run with the Base Multiplier defined for the mission.
@@ -415,10 +417,20 @@
    1. The mission score is added to the points earned for the mission before diminishing returns for repeating a mission are calculated.
 - Initial endless mission ratings defined:
    | Mission | Base Multiplier | Score Multiplier | Min Score | Max Score | Exponent | Difficulty Contribution | Challenge Contribution | ASBI Multiplier | Changes |
-   | ------- | --------------- | ---------------- | --------- | --------- | -------- | ----------------------- | ---------------------- | ------------------- | ------- |
+   | ------- | --------------- | ---------------- | --------- | --------- | -------- | ----------------------- | ---------------------- | --------------- | ------- |
    | [Infinite Landing Bay](https://steamcommunity.com/sharedfiles/filedetails/?id=2809765323) | 0.001 | 1.4 | 1 | 25 | 1.35 | 1.0 | 1.0 | 1.0 | New |
    | IAF Marine Academy | 0.001 | 0.075 | 1 | 1000 | 1.5 | 0.0 | 1.0 | 5.0 | New |
    | [The Gauntlet: Arctic](https://steamcommunity.com/sharedfiles/filedetails/?id=2990264624) | 0.001 | 0.0002 | 500 | 200000 | 1.05 | 1.0 | 1.0 | 1.0 | New |
+- Updated mission ratings:
+   | Campaign | Mission | Multiplier | Changes |
+   | -------- | ------- | ---------- | ------- |
+   | [AMBER Project](https://steamcommunity.com/sharedfiles/filedetails/?id=2091618233) | Information Department | *not rated* | Removed Workshop version of official campaign to save space |
+   | AMBER Project | Powerhood | *not rated* | Removed Workshop version of official campaign to save space |
+   | AMBER Project | Research Center | *not rated* | Removed Workshop version of official campaign to save space |
+   | AMBER Project | AMBER Complex | *not rated* | Removed Workshop version of official campaign to save space |
+   | [Accident 32](https://steamcommunity.com/workshop/filedetails/?id=2814753147) | Confined Facility | *not rated* | Removed Workshop version of official campaign to save space |
+   | Accident 32 | J5 Connector | *not rated* | Removed Workshop version of official campaign to save space |
+   | Accident 32 | Lab Ruins | *not rated* | Removed Workshop version of official campaign to save space |
 - Updated challenge ratings:
    | Challenge | Ruleset | Multiplier | Changes |
    | --------- | ------- | ---------- | ------- |
