@@ -415,6 +415,7 @@
    1. The mission score is multiplied by the challenge multiplier raised to the Challenge Contribution'th power.
    1. If the mission has a multiplier for the ruleset, the mission score is multiplied by that value.
    1. The mission score is added to the points earned for the mission before diminishing returns for repeating a mission are calculated.
+- Added a new system where dynamic multipliers can be assigned to challenges that change their difficulty based on factors other than mission settings.
 - Initial endless mission ratings defined:
    | Mission | Base Multiplier | Score Multiplier | Min Score | Max Score | Exponent | Difficulty Contribution | Challenge Contribution | ASBI Multiplier | Changes |
    | ------- | --------------- | ---------------- | --------- | --------- | -------- | ----------------------- | ---------------------- | --------------- | ------- |
@@ -437,4 +438,12 @@
    | [ASBI 2077](https://steamcommunity.com/sharedfiles/filedetails/?id=2381921032) | ASBI | *not rated* | Removed from HoIAF as it is no longer accessible on the Steam Workshop |
    | [Resident Evil First Person](https://steamcommunity.com/sharedfiles/filedetails/?id=2953250066) | Standard | 3.5 | New |
    | [Resident Evil Third Person](https://steamcommunity.com/sharedfiles/filedetails/?id=2953250066) | Standard | 3.5 | New |
-   | [Risk of Rain](https://steamcommunity.com/sharedfiles/filedetails/?id=2985633068) | Standard | 1.1 | New |
+   | [Risk of Rain](https://steamcommunity.com/sharedfiles/filedetails/?id=2985633068) | Standard | *dynamic* | New |
+   | [Campaign Execution](https://steamcommunity.com/sharedfiles/filedetails/?id=2811007850) | Standard | *dynamic* | New |
+   | [ASBI Campaign Execution](https://steamcommunity.com/sharedfiles/filedetails/?id=2811007850) | ASBI | *dynamic* | New |
+- Initial dynamic challenge rating algorithms:
+   | Challenge | Multiplier Algorithm |
+   | --------- | -------------------- |
+   | [Risk of Rain](https://steamcommunity.com/sharedfiles/filedetails/?id=2985633068) | *TBD* |
+   | [Campaign Execution](https://steamcommunity.com/sharedfiles/filedetails/?id=2811007850) | *TBD* |
+   | [ASBI Campaign Execution](https://steamcommunity.com/sharedfiles/filedetails/?id=2811007850) | *TBD* |
