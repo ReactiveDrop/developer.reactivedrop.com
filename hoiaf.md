@@ -438,6 +438,6 @@
    | [ASBI 2077](https://steamcommunity.com/sharedfiles/filedetails/?id=2381921032) | ASBI | *not rated* | Removed from HoIAF as it is no longer accessible on the Steam Workshop |
    | [Resident Evil First Person](https://steamcommunity.com/sharedfiles/filedetails/?id=2953250066) | Standard | 3.5 | New |
    | [Resident Evil Third Person](https://steamcommunity.com/sharedfiles/filedetails/?id=2953250066) | Standard | 3.5 | New |
-   | [Risk of Rain](https://steamcommunity.com/sharedfiles/filedetails/?id=2985633068) | Standard | *TBD* | New |
+   | [Risk of Rain](https://steamcommunity.com/sharedfiles/filedetails/?id=2985633068) | Standard | if boss killed, 2.0 times current stage number; otherwise 0.5 | New |
    | [Campaign Execution](https://steamcommunity.com/sharedfiles/filedetails/?id=2811007850) | Standard | 1.0 plus 0.25 for each completed mission in the campaign | New |
    | [ASBI Campaign Execution](https://steamcommunity.com/sharedfiles/filedetails/?id=2811007850) | ASBI | 1.0 plus 0.35 for each completed mission in the campaign | New |
