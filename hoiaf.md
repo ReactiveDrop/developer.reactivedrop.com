@@ -436,6 +436,9 @@
    | Challenge | Ruleset | Multiplier | Changes |
    | --------- | ------- | ---------- | ------- |
    | [ASBI 2077](https://steamcommunity.com/sharedfiles/filedetails/?id=2381921032) | ASBI | *not rated* | Removed from HoIAF as it is no longer accessible on the Steam Workshop |
+   | [Tower Defense](https://steamcommunity.com/sharedfiles/filedetails/?id=2922947680) | Standard | *not rated* | Removed from HoIAF by request of author |
+   | [Tower Defense VanASBI](https://steamcommunity.com/sharedfiles/filedetails/?id=2922947680) | Standard | *not rated* | Removed from HoIAF by request of author |
+   | [Tower Defense ASBI](https://steamcommunity.com/sharedfiles/filedetails/?id=2922947680) | ASBI | *not rated* | Removed from HoIAF by request of author |
    | [Resident Evil First Person](https://steamcommunity.com/sharedfiles/filedetails/?id=2953250066) | Standard | 3.5 | New |
    | [Resident Evil Third Person](https://steamcommunity.com/sharedfiles/filedetails/?id=2953250066) | Standard | 3.5 | New |
    | [Risk of Rain](https://steamcommunity.com/sharedfiles/filedetails/?id=2985633068) | Standard | if boss killed, 2.0 times current stage number; otherwise 0.5 | New |
