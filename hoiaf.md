@@ -1,5 +1,283 @@
 # Heroes of the Interstellar Armed Forces Scoring Changelog
 
+## July 1, 2023 (Season 13)
+
+- Servers now check for updates to the addon list and scoring parameters on every level load. A server.dll update is no longer required to change the HoIAF mission or challenge lists.
+- Created an [official workshop collection](https://steamcommunity.com/sharedfiles/filedetails/?id=2994125702) replacing the previous collection used for marking addons for download on dedicated servers (2816464806).
+- The scoring algorithm has been updated to account for endless missions.
+   1. If the mission score is less than Min Score, the mission is considered to have been failed.
+   1. If the mission score is at least Min Score and the mission allows leaderboard scores to be uploaded for failures, the mission is considered to have succeeded.
+   1. The existing score calculation logic is run with the Base Multiplier defined for the mission.
+   1. Before diminishing returns for repeating the same mission is checked:
+   1. If the mission score is higher than Max Score, it is reduced to Max Score.
+   1. The mission score is multiplied by Score Multiplier.
+   1. The mission score is raised to the Exponent'th power.
+   1. The mission score is multiplied by the difficulty base score for the current ruleset raised to the Difficulty Contribution'th power.
+   1. The mission score is multiplied by the challenge multiplier raised to the Challenge Contribution'th power.
+   1. If the mission has a multiplier for the ruleset, the mission score is multiplied by that value.
+   1. The mission score is added to the points earned for the mission before diminishing returns for repeating a mission are calculated.
+- Added a new system where dynamic multipliers can be assigned to challenges that change their difficulty based on factors other than mission settings.
+- Initial endless mission ratings defined:
+   | Mission | Base Multiplier | Score Multiplier | Min Score | Max Score | Exponent | Difficulty Contribution | Challenge Contribution | ASBI Multiplier | Changes |
+   | ------- | --------------- | ---------------- | --------- | --------- | -------- | ----------------------- | ---------------------- | --------------- | ------- |
+   | [Infinite Landing Bay](https://steamcommunity.com/sharedfiles/filedetails/?id=2809765323) | 0.001 | 1.4 | 1 | 25 | 1.35 | 1.0 | 1.0 | 1.0 | New |
+   | IAF Marine Academy | 0.001 | 0.075 | 1 | 1000 | 1.5 | 0.0 | 1.0 | 5.0 | New |
+   | [The Gauntlet: Arctic](https://steamcommunity.com/sharedfiles/filedetails/?id=2990264624) | 0.001 | 0.0002 | 500 | 200000 | 1.05 | 1.0 | 1.0 | 1.0 | New |
+- Updated mission ratings:
+   | Campaign | Mission | Multiplier | Changes |
+   | -------- | ------- | ---------- | ------- |
+   | [AMBER Project](https://steamcommunity.com/sharedfiles/filedetails/?id=2091618233) | Information Department | *not rated* | Removed Workshop version of official campaign to save space |
+   | AMBER Project | Powerhood | *not rated* | Removed Workshop version of official campaign to save space |
+   | AMBER Project | Research Center | *not rated* | Removed Workshop version of official campaign to save space |
+   | AMBER Project | AMBER Complex | *not rated* | Removed Workshop version of official campaign to save space |
+   | [Accident 32](https://steamcommunity.com/workshop/filedetails/?id=2814753147) | Confined Facility | *not rated* | Removed Workshop version of official campaign to save space |
+   | Accident 32 | J5 Connector | *not rated* | Removed Workshop version of official campaign to save space |
+   | Accident 32 | Lab Ruins | *not rated* | Removed Workshop version of official campaign to save space |
+- Updated challenge ratings:
+   | Challenge | Ruleset | Multiplier | Changes |
+   | --------- | ------- | ---------- | ------- |
+   | [ASBI 2077](https://steamcommunity.com/sharedfiles/filedetails/?id=2381921032) | ASBI | *not rated* | Removed from HoIAF as it is no longer accessible on the Steam Workshop |
+   | [Tower Defense](https://steamcommunity.com/sharedfiles/filedetails/?id=2922947680) | Standard | *not rated* | Removed from HoIAF by request of author |
+   | [Tower Defense VanASBI](https://steamcommunity.com/sharedfiles/filedetails/?id=2922947680) | Standard | *not rated* | Removed from HoIAF by request of author |
+   | [Tower Defense ASBI](https://steamcommunity.com/sharedfiles/filedetails/?id=2922947680) | ASBI | *not rated* | Removed from HoIAF by request of author |
+   | [Resident Evil First Person](https://steamcommunity.com/sharedfiles/filedetails/?id=2953250066) | Standard | 3.5 | New |
+   | [Resident Evil Third Person](https://steamcommunity.com/sharedfiles/filedetails/?id=2953250066) | Standard | 3.5 | New |
+   | [Risk of Rain](https://steamcommunity.com/sharedfiles/filedetails/?id=2985633068) | Standard | if boss killed, 2.0 times current stage number; otherwise 0.5 | New |
+   | [Campaign Execution](https://steamcommunity.com/sharedfiles/filedetails/?id=2811007850) | Standard | 1.0 plus 0.25 for each completed mission in the campaign | New |
+   | [ASBI Campaign Execution](https://steamcommunity.com/sharedfiles/filedetails/?id=2811007850) | ASBI | 1.0 plus 0.35 for each completed mission in the campaign | New |
+
+## June 1, 2023 (Season 12)
+
+- Updated mission ratings:
+   | Campaign | Mission | Multiplier | Changes |
+   | -------- | ------- | ---------- | ------- |
+   | *Bonus Mission* | [Gluon Cave](https://steamcommunity.com/sharedfiles/filedetails/?id=2979008182) | 3.5 | New |
+   | *Bonus Mission* | [Gluon Cave (No Boss Version)](https://steamcommunity.com/sharedfiles/filedetails/?id=2979008182) | 1.75 | New |
+   | *Bonus Mission* | [Gluon Cave (Short Version)](https://steamcommunity.com/sharedfiles/filedetails/?id=2979008182) | 1.25 | New |
+
+## May 15, 2023 (Season 11)
+
+- Updated challenge ratings:
+   | Challenge | Ruleset | Multiplier | Changes |
+   | --------- | ------- | ---------- | ------- |
+   | [Tower Defense ASBI](https://steamcommunity.com/sharedfiles/filedetails/?id=2922947680) | ASBI | 1.5 | Decreased multiplier from 3.0 |
+
+## May 12, 2023 (Season 11)
+
+- Updated challenge ratings:
+   | Challenge | Ruleset | Multiplier | Changes |
+   | --------- | ------- | ---------- | ------- |
+   | First Person | Standard | 1.0 | New |
+   | Third Person | Standard | 1.0 | New |
+   | [Weapons Balancing VanASBI](https://steamcommunity.com/sharedfiles/filedetails/?id=2082369328) | Standard | 1.3 (1.0) | Now has a multiplier of 1.0 if onslaught is disabled |
+   | [VanASBI Blox](https://steamcommunity.com/sharedfiles/filedetails/?id=2326134727) | Standard | 1.3 (1.0) | Decreased multiplier from 1.4<br>Now has a multiplier of 1.0 if onslaught is disabled |
+   | [Resident Evil](https://steamcommunity.com/sharedfiles/filedetails/?id=2953250066) | Standard | 3.5 | New |
+   | [Carnage x5](https://steamcommunity.com/sharedfiles/filedetails/?id=918455573) | Standard | 3.5 | New |
+   | [Shared Damage](https://steamcommunity.com/sharedfiles/filedetails/?id=2966183425) | Standard | 1.6 | New |
+   | [Shared Damage ASBI](https://steamcommunity.com/sharedfiles/filedetails/?id=2966183425) | ASBI | 1.5 | New |
+   | [Gnome](https://steamcommunity.com/sharedfiles/filedetails/?id=2916269416) | Standard | 2.5 | New |
+   | [Tower Defense](https://steamcommunity.com/sharedfiles/filedetails/?id=2922947680) | Standard | 3.5 | New |
+   | [Tower Defense VanASBI](https://steamcommunity.com/sharedfiles/filedetails/?id=2922947680) | Standard | 4.5 (3.5) | New |
+   | [Tower Defense ASBI](https://steamcommunity.com/sharedfiles/filedetails/?id=2922947680) | ASBI | 3.0 | New |
+   | [Football Special](https://steamcommunity.com/sharedfiles/filedetails/?id=1690620315) | Standard | 1.0 | New |
+   | [ASBI Football](https://steamcommunity.com/sharedfiles/filedetails/?id=1690620315) | ASBI | 1.0 | New |
+   | [Super Shotgun](https://steamcommunity.com/sharedfiles/filedetails/?id=2946879059) | Standard | 2.0 | New |
+   | [Super Shotgun VanASBI](https://steamcommunity.com/sharedfiles/filedetails/?id=2946879059) | Standard | 2.6 (2.0) | New |
+   | [Super Shotgun ASBI](https://steamcommunity.com/sharedfiles/filedetails/?id=2946879059) | ASBI | 1.5 | New |
+
+## April 20, 2023 (Season 10)
+
+- Fixed a bug where points could carry over between seasons if the first mission completed was unrated.
+- Medals awarded in seasons 1-10 will no longer be awarded in season 11 and later.
+- After this season, players can no longer receive multiple medals per season; instead, only the most prestigious medal a player qualifies for per season will be awarded.
+- Added new medals starting in season 11:
+   - [Participating in a season of Heroes of the Interstellar Armed Forces.](https://stats.reactivedrop.com/static/medals/hoiaf_participant_11plus.png)
+   - [Placing in the top 100 for a March, April, or May season.](https://stats.reactivedrop.com/static/medals/hoiaf_elite_green_11plus.png)
+   - [Placing in the top 100 for a June, July, or August season.](https://stats.reactivedrop.com/static/medals/hoiaf_elite_red_11plus.png)
+   - [Placing in the top 100 for a September, October, or November season.](https://stats.reactivedrop.com/static/medals/hoiaf_elite_yellow_11plus.png)
+   - [Placing in the top 100 for a December, January, or February season.](https://stats.reactivedrop.com/static/medals/hoiaf_elite_blue_11plus.png)
+   - [Placing in the top 20 for a March, April, or May season.](https://stats.reactivedrop.com/static/medals/hoiaf_elite_top20_green_11plus.png)
+   - [Placing in the top 20 for a June, July, or August season.](https://stats.reactivedrop.com/static/medals/hoiaf_elite_top20_red_11plus.png)
+   - [Placing in the top 20 for a September, October, or November season.](https://stats.reactivedrop.com/static/medals/hoiaf_elite_top20_yellow_11plus.png)
+   - [Placing in the top 20 for a December, January, or February season.](https://stats.reactivedrop.com/static/medals/hoiaf_elite_top20_blue_11plus.png)
+- Updated mission ratings:
+   | Campaign | Mission | Multiplier | Changes |
+   | -------- | ------- | ---------- | ------- |
+   | Accident 32 | Information Department | 2.0 | This mission has been officially released |
+   | Accident 32 | Powerhood | 2.25 | This mission has been officially released |
+   | Accident 32 | Research Center | 1.75 | This mission has been officially released |
+   | Accident 32 | Confined Facility | 2.5 | This mission has been officially released |
+   | Accident 32 | J5 Connector | 3.0 | This mission has been officially released |
+   | Accident 32 | Lab Ruins | 3.5 | This mission has been officially released |
+   | *Bonus Mission* | AMBER Complex | 4.5 | This mission has been officially released |
+   | *Bonus Mission* | Reversed Sewer Junction B5 | 1.25 | New |
+   | *Bonus Mission* | Reversed Rydberg Reactor | 1.5 | New |
+   | *Bonus Mission* | Reversed Cargo Elevator | 1.5 | New |
+   | *Bonus Mission* | Reversed Landing Bay | 1.4 | New |
+- Updated challenge ratings:
+   | Challenge | Ruleset | Multiplier | Changes |
+   | --------- | ------- | ---------- | ------- |
+   | [ASBI WB RNG4](https://steamcommunity.com/sharedfiles/filedetails/?id=2082369328) | ASBI | 3.0 | Decreased multiplier from 4.0 |
+
+## February 1, 2023 (Season 8)
+
+- Scoring algorithm changes:
+   - Completing the same mission multiple times within the past 6 missions now applies the penalty multiple times.
+   - Repeated mission penalty changed from 75% to 50%. (Both changes together change the multipliers from 1/0.25/0.25/0.25/0.25/0.25/0.25 to 1/0.5/0.25/0.125/0.0625/0.03125/0.015625.)
+- Updated mission ratings:
+   | Campaign | Mission | Multiplier | Changes |
+   | -------- | ------- | ---------- | ------- |
+   | [Blitz Campaign](https://steamcommunity.com/sharedfiles/filedetails/?id=2821100493) | Lightmare | 1.2 | New |
+   | Blitz Campaign | Syntek 2 | 2.0 | New |
+   | Blitz Campaign | Nightmare | 1.3 | New |
+   | Blitz Campaign | Lazer Range | 1.2 | New |
+   | Blitz Campaign | Jevent 2 | 3.0 | New |
+   | Blitz Campaign | Asteroid Quarry | 1.75 | New |
+   | [Reduction](https://steamcommunity.com/sharedfiles/filedetails/?id=914071790) | Reduction - Mission 1 | 2.25 | New |
+   | Reduction | Reduction - Mission 2 | 1.5 | New |
+   | Reduction | Reduction - Mission 3 | 1.75 | New |
+   | Reduction | Reduction - Mission 4 | 1.75 | New |
+   | Reduction | Reduction - Mission 5 | *not rated* | *There is no combat in this mission.* |
+   | Reduction | Reduction - Mission 6 | 3.0 | New |
+   | *Bonus Mission* | [Crude Infestation](https://steamcommunity.com/sharedfiles/filedetails/?id=1519884777) | 2.5 | New |
+   | [Nitro Canister MR](https://steamcommunity.com/sharedfiles/filedetails/?id=1313628775) | Breach | 2.25 | New |
+   | *Bonus Mission* | [Warehouse](https://steamcommunity.com/sharedfiles/filedetails/?id=1312255876) | 1.75 | New |
+   | *Bonus Mission* | [Chemical Facility](https://steamcommunity.com/sharedfiles/filedetails/?id=1109961848) | 3.0 | New |
+   | *Bonus Mission* | [Delusion](https://steamcommunity.com/sharedfiles/filedetails/?id=935549703) | 2.0 | New |
+   | [Ground Zero](https://steamcommunity.com/sharedfiles/filedetails/?id=930171604) | Crash Landed | 2.25 | New |
+   | Ground Zero | Ground Zero | 2.5 | New |
+   | [The Beginning](https://steamcommunity.com/sharedfiles/filedetails/?id=880002363) | Keep it up! | 1.75 | New |
+   | The Beginning | Underground! | 2.25 | New |
+   | The Beginning | Upperground | 2.75 | New |
+   | The Beginning | A beautiful night. | 1.5 | New |
+   | *Bonus Mission* | [Nest](https://steamcommunity.com/sharedfiles/filedetails/?id=848331447) | 1.5 | New |
+   | [Absolute madness](https://steamcommunity.com/sharedfiles/filedetails/?id=2120875626) | Madness begins | 3.0 | New |
+   | [Ancient Ruins](https://steamcommunity.com/sharedfiles/filedetails/?id=915370759) | Sacred Bridge | 1.75 | New |
+   | Ancient Ruins | Renovated Station | 2.0 | New |
+   | [edge](https://steamcommunity.com/sharedfiles/filedetails/?id=914421802) | colony | 2.25 | New |
+   | edge | crash | 2.0 | New |
+   | edge | truckin | 1.25 | New |
+   | edge | relay | 2.25 | New |
+   | edge | theship | 2.25 | New |
+- Updated challenge ratings:
+   | Challenge | Ruleset | Multiplier | Changes |
+   | --------- | ------- | ---------- | ------- |
+   | [Bounds](https://steamcommunity.com/sharedfiles/filedetails/?id=1584605820) | Standard | 1.3 | New |
+   | [Darkness](https://steamcommunity.com/sharedfiles/filedetails/?id=1757080639) | Standard | 1.6 | New |
+   | [Kill Or Die](https://steamcommunity.com/sharedfiles/filedetails/?id=937399666) | Standard | 1.6 | New |
+   | [Elite](https://steamcommunity.com/sharedfiles/filedetails/?id=2461568606) | Standard | 2.5 | Increased multiplier from 1.6 |
+   | [Elite Carnage 2](https://steamcommunity.com/sharedfiles/filedetails/?id=2461568606) | Standard | 3.5 | Increased multiplier from 2.5 |
+   | [Kamikaze Drones](https://steamcommunity.com/sharedfiles/filedetails/?id=2885875069) | Standard | 3.5 | New |
+   | [Invisible Aliens](https://steamcommunity.com/sharedfiles/filedetails/?id=2592381597) | Standard | 3.5 | New |
+   | [Darkness ASBI](https://steamcommunity.com/sharedfiles/filedetails/?id=1757080639) | ASBI | 1.5 | New |
+   | [ASBI KillOrDie](https://steamcommunity.com/sharedfiles/filedetails/?id=937405470) | ASBI | 1.5 | New |
+   | [ASBI 3.0](https://steamcommunity.com/sharedfiles/filedetails/?id=1297056081) | ASBI | 2.3 | New |
+   | [Kamikaze Drones ASBI](https://steamcommunity.com/sharedfiles/filedetails/?id=2885875069) | ASBI | 3.0 | New |
+   | [ASBI Invisible Aliens](https://steamcommunity.com/sharedfiles/filedetails/?id=2592381597) | ASBI | 3.0 | New |
+   | [Turbo ASBI WB RNG2 C2](https://steamcommunity.com/sharedfiles/filedetails/?id=2178770089) | ASBI | 6.0 | Increased multiplier from 3.0 |
+   | [ASBI Bounds](https://steamcommunity.com/sharedfiles/filedetails/?id=2921394571) | ASBI | 1.2 | New |
+
+## November 1, 2022 (Season 5)
+
+- Scoring algorithm changes:
+   - The Alive Bonus for the Standard Ruleset has been changed from 3 to 1. (Reverted previous change.)
+   - Computer-controlled marines no longer count as alive for the purpose of scoring.
+- Updated mission ratings:
+   | Campaign | Mission | Multiplier | Changes |
+   | -------- | ------- | ---------- | ------- |
+   | Operation Cleansweep | Landing Bay 7 | 1.5 | Increased multiplier from 1.2 |
+   | BioGen Corporation | Operation X5 | 2.5 | Increased multiplier from 2.0 |
+
+## October 20, 2022 (Season 4)
+
+- Updated mission ratings:
+   | Campaign | Mission | Multiplier | Changes |
+   | -------- | ------- | ---------- | ------- |
+   | Accident 32 | Confined Facility | 2.5 | Increased multiplier from 2.0 (official, beta branch only) |
+   | Accident 32 | J5 Connector | 3.0 | Increased multiplier from 2.5 (official, beta branch only) |
+   | Accident 32 | Lab Ruins | 3.5 | Increased multiplier from 3.0 (official, beta branch only) |
+- Updated challenge ratings:
+   | Challenge | Ruleset | Multiplier | Changes |
+   | --------- | ------- | ---------- | ------- |
+   | [Turbo ASBI WB RNG2 C2](https://steamcommunity.com/sharedfiles/filedetails/?id=2178770089) | ASBI | 3.0 | Decreased multiplier from 6.0 while we investigate problems with dedicated servers receiving updates for this addon. |
+
+## September 3, 2022 (Season 3)
+
+- Seasons are now monthly, rather than every 3 months.
+- Scoring algorithm changes:
+   - The Alive Bonus for the Standard Ruleset has been changed from 1 to 3.
+   - Having onslaught disabled now sets the score to `score / 2 + 1` instead of subtracting 2 points.
+- Updated mission ratings:
+   | Campaign | Mission | Multiplier | Changes |
+   | -------- | ------- | ---------- | ------- |
+   | Operation Cleansweep | Landing Bay 7 | 1.2 | Decreased multiplier from 1.7 |
+- Updated challenge ratings:
+   | Challenge | Ruleset | Multiplier | Changes |
+   | --------- | ------- | ---------- | ------- |
+   | [VanASBI](https://steamcommunity.com/sharedfiles/filedetails/?id=1098363725) | Standard | 1.3 (1.0) | Now has a multiplier of 1.0 if onslaught is disabled |
+   | [ASBI Weapon Balancing + RNG2](https://steamcommunity.com/sharedfiles/filedetails/?id=2082369328) | ASBI | 2.3 | Increased multiplier from 1.5 |
+   | [ASBI Elite](https://steamcommunity.com/sharedfiles/filedetails/?id=2461568606) | ASBI | 2.3 | Increased multiplier from 1.5 |
+   | [ASBI WB RNG3](https://steamcommunity.com/sharedfiles/filedetails/?id=2082369328) | ASBI | 3.0 | Increased multiplier from 1.8 |
+   | [ASBI Weapon Balancing + RNG C2](https://steamcommunity.com/sharedfiles/filedetails/?id=2082369328) | ASBI | 2.3 | Increased multiplier from 1.8 |
+   | [Turbo ASBI](https://steamcommunity.com/sharedfiles/filedetails/?id=2178770089) | ASBI | 2.3 | Increased multiplier from 1.8 |
+   | [ASBI Elite Carnage 2](https://steamcommunity.com/sharedfiles/filedetails/?id=2461568606) | ASBI | 3.0 | Increased multiplier from 1.8 |
+   | [ASBI Weapon Balancing + RNG2 C2](https://steamcommunity.com/sharedfiles/filedetails/?id=2082369328) | ASBI | 3.0 | Increased multiplier from 2.3 |
+   | [ASBI WB RNG3 C2](https://steamcommunity.com/sharedfiles/filedetails/?id=2082369328) | ASBI | 4.0 | Increased multiplier from 2.3 |
+   | [ASBI WB RNG4](https://steamcommunity.com/sharedfiles/filedetails/?id=2082369328) | ASBI | 4.0 | Increased multiplier from 2.3 |
+   | [Turbo ASBI WB RNG2](https://steamcommunity.com/sharedfiles/filedetails/?id=2178770089) | ASBI | 3.0 | Increased multiplier from 2.3 |
+   | [ASBI 2077](https://steamcommunity.com/sharedfiles/filedetails/?id=2381921032) | ASBI | 3.0 | Increased multiplier from 2.3 |
+   | [ASBI Hordes](https://steamcommunity.com/sharedfiles/filedetails/?id=1664826545) | ASBI | 2.5 | Increased multiplier from 2.0 |
+   | [Turbo ASBI WB RNG2 C2](https://steamcommunity.com/sharedfiles/filedetails/?id=2178770089) | ASBI | 6.0 | Increased multiplier from 2.6 |
+   | [ASBI WB RNG4 C2](https://steamcommunity.com/sharedfiles/filedetails/?id=2082369328) | ASBI | 6.0 | Increased multiplier from 2.9 |
+   | [One Hit ASBI](https://steamcommunity.com/sharedfiles/filedetails/?id=1447743649) | ASBI | 2.5 | Increased multiplier from 1.7 |
+   | [ASBI Tier 1](https://steamcommunity.com/sharedfiles/filedetails/?id=1167497265) | ASBI | 2.5 | Increased multiplier from 1.7 |
+   | [ASBI Tier 1 Carnage x2](https://steamcommunity.com/sharedfiles/filedetails/?id=1167497265) | ASBI | 3.5 | Increased multiplier from 2.0 |
+
+## July 25, 2022 (Season 2)
+
+- Added medals (awarded retroactively) for:
+   - [Participating in a season of Heroes of the Interstellar Armed Forces.](https://stats.reactivedrop.com/static/medals/hoiaf_participant_new.png)
+   - [Placing in the top 100 for a March-April-May season.](https://stats.reactivedrop.com/static/medals/hoiaf_elite_green.png)
+   - [Placing in the top 100 for a June-July-August season.](https://stats.reactivedrop.com/static/medals/hoiaf_elite_red.png)
+   - [Placing in the top 100 for a September-October-November season.](https://stats.reactivedrop.com/static/medals/hoiaf_elite_yellow.png)
+   - [Placing in the top 100 for a December-January-February season.](https://stats.reactivedrop.com/static/medals/hoiaf_elite_blue.png)
+   - [Placing in the top 20 for a season.](https://stats.reactivedrop.com/static/medals/hoiaf_elite_top20.png)
+
+## July 8, 2022 (Season 2)
+
+- Updated mission ratings:
+   | Campaign | Mission | Multiplier | Changes |
+   | -------- | ------- | ---------- | ------- |
+   | Accident 32 | Information Department | 2.0 | New (official, beta branch only) |
+   | Accident 32 | Powerhood | 2.25 | New (official, beta branch only) |
+   | Accident 32 | Research Center | 1.75 | New (official, beta branch only) |
+   | Accident 32 | Confined Facility | 2.0 | New (official, beta branch only) |
+   | Accident 32 | J5 Connector | 2.5 | New (official, beta branch only) |
+   | Accident 32 | Lab Ruins | 3.0 | New (official, beta branch only) |
+   | *Bonus Mission* | AMBER Complex | 4.5 | New (official, beta branch only) |
+   | [AMBER Project](https://steamcommunity.com/sharedfiles/filedetails/?id=2091618233) | AMBER Complex | 4.5 | Increased multiplier from 3.75 |
+   | [Accident 32](https://steamcommunity.com/workshop/filedetails/?id=2814753147) | Confined Facility | 2.0 | Increased multiplier from 1.75 |
+   | Accident 32 | J5 Connector | 2.5 | Increased multiplier from 2.25 |
+   | Accident 32 | Lab Ruins | 3.0 | Increased multiplier from 2.25 |
+
+## June 1, 2022 (Season 2)
+
+- Updated mission ratings:
+   | Campaign | Mission | Multiplier | Changes |
+   | -------- | ------- | ---------- | ------- |
+   | [Adanaxis](https://steamcommunity.com/sharedfiles/filedetails/?id=1093180806) | Dark Path | 1.1 | Decreased multiplier from 2.25 |
+   | Adanaxis | Fuel Junction | 1.1 | Decreased multiplier from 2.25 |
+   | Adanaxis | Forbidden Outpost | 1.1 | Decreased multiplier from 2.25 |
+   | [Accident 32](https://steamcommunity.com/workshop/filedetails/?id=2814753147) | Confined Facility | 1.75 | New |
+   | Accident 32 | J5 Connector | 2.25 | New |
+   | Accident 32 | Lab Ruins | 2.25 | New |
+- Updated challenge ratings:
+   | Challenge | Ruleset | Multiplier | Changes |
+   | --------- | ------- | ---------- | ------- |
+   | [ASBI WB RNG4](https://steamcommunity.com/sharedfiles/filedetails/?id=2082369328) | ASBI | 2.3 | New |
+   | [Turbo ASBI WB RNG2 C2](https://steamcommunity.com/sharedfiles/filedetails/?id=2178770089) | ASBI | 2.9 | Increased multiplier from 2.6 |
+   | [ASBI WB RNG4 C2](https://steamcommunity.com/sharedfiles/filedetails/?id=2082369328) | ASBI | 2.9 | New |
+
 ## April 20, 2022 (Season 1)
 
 - Seasons last 3 months (March-April-May, June-July-August, September-October-November, December-January-February).
@@ -166,281 +444,3 @@
    | [ASBI Blox](https://steamcommunity.com/sharedfiles/filedetails/?id=2326134727) | ASBI | 1.1 | New |
    | [Good Weapons ASBI](https://steamcommunity.com/sharedfiles/filedetails/?id=1333152091) | ASBI | 1.0 | New |
    | [Good Weapons ASBI Carnage x2](https://steamcommunity.com/sharedfiles/filedetails/?id=1333152091) | ASBI | 1.4 | New |
-
-## June 1, 2022 (Season 2)
-
-- Updated mission ratings:
-   | Campaign | Mission | Multiplier | Changes |
-   | -------- | ------- | ---------- | ------- |
-   | [Adanaxis](https://steamcommunity.com/sharedfiles/filedetails/?id=1093180806) | Dark Path | 1.1 | Decreased multiplier from 2.25 |
-   | Adanaxis | Fuel Junction | 1.1 | Decreased multiplier from 2.25 |
-   | Adanaxis | Forbidden Outpost | 1.1 | Decreased multiplier from 2.25 |
-   | [Accident 32](https://steamcommunity.com/workshop/filedetails/?id=2814753147) | Confined Facility | 1.75 | New |
-   | Accident 32 | J5 Connector | 2.25 | New |
-   | Accident 32 | Lab Ruins | 2.25 | New |
-- Updated challenge ratings:
-   | Challenge | Ruleset | Multiplier | Changes |
-   | --------- | ------- | ---------- | ------- |
-   | [ASBI WB RNG4](https://steamcommunity.com/sharedfiles/filedetails/?id=2082369328) | ASBI | 2.3 | New |
-   | [Turbo ASBI WB RNG2 C2](https://steamcommunity.com/sharedfiles/filedetails/?id=2178770089) | ASBI | 2.9 | Increased multiplier from 2.6 |
-   | [ASBI WB RNG4 C2](https://steamcommunity.com/sharedfiles/filedetails/?id=2082369328) | ASBI | 2.9 | New |
-
-## July 8, 2022 (Season 2)
-
-- Updated mission ratings:
-   | Campaign | Mission | Multiplier | Changes |
-   | -------- | ------- | ---------- | ------- |
-   | Accident 32 | Information Department | 2.0 | New (official, beta branch only) |
-   | Accident 32 | Powerhood | 2.25 | New (official, beta branch only) |
-   | Accident 32 | Research Center | 1.75 | New (official, beta branch only) |
-   | Accident 32 | Confined Facility | 2.0 | New (official, beta branch only) |
-   | Accident 32 | J5 Connector | 2.5 | New (official, beta branch only) |
-   | Accident 32 | Lab Ruins | 3.0 | New (official, beta branch only) |
-   | *Bonus Mission* | AMBER Complex | 4.5 | New (official, beta branch only) |
-   | [AMBER Project](https://steamcommunity.com/sharedfiles/filedetails/?id=2091618233) | AMBER Complex | 4.5 | Increased multiplier from 3.75 |
-   | [Accident 32](https://steamcommunity.com/workshop/filedetails/?id=2814753147) | Confined Facility | 2.0 | Increased multiplier from 1.75 |
-   | Accident 32 | J5 Connector | 2.5 | Increased multiplier from 2.25 |
-   | Accident 32 | Lab Ruins | 3.0 | Increased multiplier from 2.25 |
-
-## July 25, 2022 (Season 2)
-
-- Added medals (awarded retroactively) for:
-   - [Participating in a season of Heroes of the Interstellar Armed Forces.](https://stats.reactivedrop.com/static/medals/hoiaf_participant_new.png)
-   - [Placing in the top 100 for a March-April-May season.](https://stats.reactivedrop.com/static/medals/hoiaf_elite_green.png)
-   - [Placing in the top 100 for a June-July-August season.](https://stats.reactivedrop.com/static/medals/hoiaf_elite_red.png)
-   - [Placing in the top 100 for a September-October-November season.](https://stats.reactivedrop.com/static/medals/hoiaf_elite_yellow.png)
-   - [Placing in the top 100 for a December-January-February season.](https://stats.reactivedrop.com/static/medals/hoiaf_elite_blue.png)
-   - [Placing in the top 20 for a season.](https://stats.reactivedrop.com/static/medals/hoiaf_elite_top20.png)
-
-## September 3, 2022 (Season 3)
-
-- Seasons are now monthly, rather than every 3 months.
-- Scoring algorithm changes:
-   - The Alive Bonus for the Standard Ruleset has been changed from 1 to 3.
-   - Having onslaught disabled now sets the score to `score / 2 + 1` instead of subtracting 2 points.
-- Updated mission ratings:
-   | Campaign | Mission | Multiplier | Changes |
-   | -------- | ------- | ---------- | ------- |
-   | Operation Cleansweep | Landing Bay 7 | 1.2 | Decreased multiplier from 1.7 |
-- Updated challenge ratings:
-   | Challenge | Ruleset | Multiplier | Changes |
-   | --------- | ------- | ---------- | ------- |
-   | [VanASBI](https://steamcommunity.com/sharedfiles/filedetails/?id=1098363725) | Standard | 1.3 (1.0) | Now has a multiplier of 1.0 if onslaught is disabled |
-   | [ASBI Weapon Balancing + RNG2](https://steamcommunity.com/sharedfiles/filedetails/?id=2082369328) | ASBI | 2.3 | Increased multiplier from 1.5 |
-   | [ASBI Elite](https://steamcommunity.com/sharedfiles/filedetails/?id=2461568606) | ASBI | 2.3 | Increased multiplier from 1.5 |
-   | [ASBI WB RNG3](https://steamcommunity.com/sharedfiles/filedetails/?id=2082369328) | ASBI | 3.0 | Increased multiplier from 1.8 |
-   | [ASBI Weapon Balancing + RNG C2](https://steamcommunity.com/sharedfiles/filedetails/?id=2082369328) | ASBI | 2.3 | Increased multiplier from 1.8 |
-   | [Turbo ASBI](https://steamcommunity.com/sharedfiles/filedetails/?id=2178770089) | ASBI | 2.3 | Increased multiplier from 1.8 |
-   | [ASBI Elite Carnage 2](https://steamcommunity.com/sharedfiles/filedetails/?id=2461568606) | ASBI | 3.0 | Increased multiplier from 1.8 |
-   | [ASBI Weapon Balancing + RNG2 C2](https://steamcommunity.com/sharedfiles/filedetails/?id=2082369328) | ASBI | 3.0 | Increased multiplier from 2.3 |
-   | [ASBI WB RNG3 C2](https://steamcommunity.com/sharedfiles/filedetails/?id=2082369328) | ASBI | 4.0 | Increased multiplier from 2.3 |
-   | [ASBI WB RNG4](https://steamcommunity.com/sharedfiles/filedetails/?id=2082369328) | ASBI | 4.0 | Increased multiplier from 2.3 |
-   | [Turbo ASBI WB RNG2](https://steamcommunity.com/sharedfiles/filedetails/?id=2178770089) | ASBI | 3.0 | Increased multiplier from 2.3 |
-   | [ASBI 2077](https://steamcommunity.com/sharedfiles/filedetails/?id=2381921032) | ASBI | 3.0 | Increased multiplier from 2.3 |
-   | [ASBI Hordes](https://steamcommunity.com/sharedfiles/filedetails/?id=1664826545) | ASBI | 2.5 | Increased multiplier from 2.0 |
-   | [Turbo ASBI WB RNG2 C2](https://steamcommunity.com/sharedfiles/filedetails/?id=2178770089) | ASBI | 6.0 | Increased multiplier from 2.6 |
-   | [ASBI WB RNG4 C2](https://steamcommunity.com/sharedfiles/filedetails/?id=2082369328) | ASBI | 6.0 | Increased multiplier from 2.9 |
-   | [One Hit ASBI](https://steamcommunity.com/sharedfiles/filedetails/?id=1447743649) | ASBI | 2.5 | Increased multiplier from 1.7 |
-   | [ASBI Tier 1](https://steamcommunity.com/sharedfiles/filedetails/?id=1167497265) | ASBI | 2.5 | Increased multiplier from 1.7 |
-   | [ASBI Tier 1 Carnage x2](https://steamcommunity.com/sharedfiles/filedetails/?id=1167497265) | ASBI | 3.5 | Increased multiplier from 2.0 |
-
-## October 20, 2022 (Season 4)
-
-- Updated mission ratings:
-   | Campaign | Mission | Multiplier | Changes |
-   | -------- | ------- | ---------- | ------- |
-   | Accident 32 | Confined Facility | 2.5 | Increased multiplier from 2.0 (official, beta branch only) |
-   | Accident 32 | J5 Connector | 3.0 | Increased multiplier from 2.5 (official, beta branch only) |
-   | Accident 32 | Lab Ruins | 3.5 | Increased multiplier from 3.0 (official, beta branch only) |
-- Updated challenge ratings:
-   | Challenge | Ruleset | Multiplier | Changes |
-   | --------- | ------- | ---------- | ------- |
-   | [Turbo ASBI WB RNG2 C2](https://steamcommunity.com/sharedfiles/filedetails/?id=2178770089) | ASBI | 3.0 | Decreased multiplier from 6.0 while we investigate problems with dedicated servers receiving updates for this addon. |
-
-## November 1, 2022 (Season 5)
-
-- Scoring algorithm changes:
-   - The Alive Bonus for the Standard Ruleset has been changed from 3 to 1. (Reverted previous change.)
-   - Computer-controlled marines no longer count as alive for the purpose of scoring.
-- Updated mission ratings:
-   | Campaign | Mission | Multiplier | Changes |
-   | -------- | ------- | ---------- | ------- |
-   | Operation Cleansweep | Landing Bay 7 | 1.5 | Increased multiplier from 1.2 |
-   | BioGen Corporation | Operation X5 | 2.5 | Increased multiplier from 2.0 |
-
-## February 1, 2023 (Season 8)
-
-- Scoring algorithm changes:
-   - Completing the same mission multiple times within the past 6 missions now applies the penalty multiple times.
-   - Repeated mission penalty changed from 75% to 50%. (Both changes together change the multipliers from 1/0.25/0.25/0.25/0.25/0.25/0.25 to 1/0.5/0.25/0.125/0.0625/0.03125/0.015625.)
-- Updated mission ratings:
-   | Campaign | Mission | Multiplier | Changes |
-   | -------- | ------- | ---------- | ------- |
-   | [Blitz Campaign](https://steamcommunity.com/sharedfiles/filedetails/?id=2821100493) | Lightmare | 1.2 | New |
-   | Blitz Campaign | Syntek 2 | 2.0 | New |
-   | Blitz Campaign | Nightmare | 1.3 | New |
-   | Blitz Campaign | Lazer Range | 1.2 | New |
-   | Blitz Campaign | Jevent 2 | 3.0 | New |
-   | Blitz Campaign | Asteroid Quarry | 1.75 | New |
-   | [Reduction](https://steamcommunity.com/sharedfiles/filedetails/?id=914071790) | Reduction - Mission 1 | 2.25 | New |
-   | Reduction | Reduction - Mission 2 | 1.5 | New |
-   | Reduction | Reduction - Mission 3 | 1.75 | New |
-   | Reduction | Reduction - Mission 4 | 1.75 | New |
-   | Reduction | Reduction - Mission 5 | *not rated* | *There is no combat in this mission.* |
-   | Reduction | Reduction - Mission 6 | 3.0 | New |
-   | *Bonus Mission* | [Crude Infestation](https://steamcommunity.com/sharedfiles/filedetails/?id=1519884777) | 2.5 | New |
-   | [Nitro Canister MR](https://steamcommunity.com/sharedfiles/filedetails/?id=1313628775) | Breach | 2.25 | New |
-   | *Bonus Mission* | [Warehouse](https://steamcommunity.com/sharedfiles/filedetails/?id=1312255876) | 1.75 | New |
-   | *Bonus Mission* | [Chemical Facility](https://steamcommunity.com/sharedfiles/filedetails/?id=1109961848) | 3.0 | New |
-   | *Bonus Mission* | [Delusion](https://steamcommunity.com/sharedfiles/filedetails/?id=935549703) | 2.0 | New |
-   | [Ground Zero](https://steamcommunity.com/sharedfiles/filedetails/?id=930171604) | Crash Landed | 2.25 | New |
-   | Ground Zero | Ground Zero | 2.5 | New |
-   | [The Beginning](https://steamcommunity.com/sharedfiles/filedetails/?id=880002363) | Keep it up! | 1.75 | New |
-   | The Beginning | Underground! | 2.25 | New |
-   | The Beginning | Upperground | 2.75 | New |
-   | The Beginning | A beautiful night. | 1.5 | New |
-   | *Bonus Mission* | [Nest](https://steamcommunity.com/sharedfiles/filedetails/?id=848331447) | 1.5 | New |
-   | [Absolute madness](https://steamcommunity.com/sharedfiles/filedetails/?id=2120875626) | Madness begins | 3.0 | New |
-   | [Ancient Ruins](https://steamcommunity.com/sharedfiles/filedetails/?id=915370759) | Sacred Bridge | 1.75 | New |
-   | Ancient Ruins | Renovated Station | 2.0 | New |
-   | [edge](https://steamcommunity.com/sharedfiles/filedetails/?id=914421802) | colony | 2.25 | New |
-   | edge | crash | 2.0 | New |
-   | edge | truckin | 1.25 | New |
-   | edge | relay | 2.25 | New |
-   | edge | theship | 2.25 | New |
-- Updated challenge ratings:
-   | Challenge | Ruleset | Multiplier | Changes |
-   | --------- | ------- | ---------- | ------- |
-   | [Bounds](https://steamcommunity.com/sharedfiles/filedetails/?id=1584605820) | Standard | 1.3 | New |
-   | [Darkness](https://steamcommunity.com/sharedfiles/filedetails/?id=1757080639) | Standard | 1.6 | New |
-   | [Kill Or Die](https://steamcommunity.com/sharedfiles/filedetails/?id=937399666) | Standard | 1.6 | New |
-   | [Elite](https://steamcommunity.com/sharedfiles/filedetails/?id=2461568606) | Standard | 2.5 | Increased multiplier from 1.6 |
-   | [Elite Carnage 2](https://steamcommunity.com/sharedfiles/filedetails/?id=2461568606) | Standard | 3.5 | Increased multiplier from 2.5 |
-   | [Kamikaze Drones](https://steamcommunity.com/sharedfiles/filedetails/?id=2885875069) | Standard | 3.5 | New |
-   | [Invisible Aliens](https://steamcommunity.com/sharedfiles/filedetails/?id=2592381597) | Standard | 3.5 | New |
-   | [Darkness ASBI](https://steamcommunity.com/sharedfiles/filedetails/?id=1757080639) | ASBI | 1.5 | New |
-   | [ASBI KillOrDie](https://steamcommunity.com/sharedfiles/filedetails/?id=937405470) | ASBI | 1.5 | New |
-   | [ASBI 3.0](https://steamcommunity.com/sharedfiles/filedetails/?id=1297056081) | ASBI | 2.3 | New |
-   | [Kamikaze Drones ASBI](https://steamcommunity.com/sharedfiles/filedetails/?id=2885875069) | ASBI | 3.0 | New |
-   | [ASBI Invisible Aliens](https://steamcommunity.com/sharedfiles/filedetails/?id=2592381597) | ASBI | 3.0 | New |
-   | [Turbo ASBI WB RNG2 C2](https://steamcommunity.com/sharedfiles/filedetails/?id=2178770089) | ASBI | 6.0 | Increased multiplier from 3.0 |
-   | [ASBI Bounds](https://steamcommunity.com/sharedfiles/filedetails/?id=2921394571) | ASBI | 1.2 | New |
-
-## April 20, 2023 (Season 10)
-
-- Fixed a bug where points could carry over between seasons if the first mission completed was unrated.
-- Medals awarded in seasons 1-10 will no longer be awarded in season 11 and later.
-- After this season, players can no longer receive multiple medals per season; instead, only the most prestigious medal a player qualifies for per season will be awarded.
-- Added new medals starting in season 11:
-   - [Participating in a season of Heroes of the Interstellar Armed Forces.](https://stats.reactivedrop.com/static/medals/hoiaf_participant_11plus.png)
-   - [Placing in the top 100 for a March, April, or May season.](https://stats.reactivedrop.com/static/medals/hoiaf_elite_green_11plus.png)
-   - [Placing in the top 100 for a June, July, or August season.](https://stats.reactivedrop.com/static/medals/hoiaf_elite_red_11plus.png)
-   - [Placing in the top 100 for a September, October, or November season.](https://stats.reactivedrop.com/static/medals/hoiaf_elite_yellow_11plus.png)
-   - [Placing in the top 100 for a December, January, or February season.](https://stats.reactivedrop.com/static/medals/hoiaf_elite_blue_11plus.png)
-   - [Placing in the top 20 for a March, April, or May season.](https://stats.reactivedrop.com/static/medals/hoiaf_elite_top20_green_11plus.png)
-   - [Placing in the top 20 for a June, July, or August season.](https://stats.reactivedrop.com/static/medals/hoiaf_elite_top20_red_11plus.png)
-   - [Placing in the top 20 for a September, October, or November season.](https://stats.reactivedrop.com/static/medals/hoiaf_elite_top20_yellow_11plus.png)
-   - [Placing in the top 20 for a December, January, or February season.](https://stats.reactivedrop.com/static/medals/hoiaf_elite_top20_blue_11plus.png)
-- Updated mission ratings:
-   | Campaign | Mission | Multiplier | Changes |
-   | -------- | ------- | ---------- | ------- |
-   | Accident 32 | Information Department | 2.0 | This mission has been officially released |
-   | Accident 32 | Powerhood | 2.25 | This mission has been officially released |
-   | Accident 32 | Research Center | 1.75 | This mission has been officially released |
-   | Accident 32 | Confined Facility | 2.5 | This mission has been officially released |
-   | Accident 32 | J5 Connector | 3.0 | This mission has been officially released |
-   | Accident 32 | Lab Ruins | 3.5 | This mission has been officially released |
-   | *Bonus Mission* | AMBER Complex | 4.5 | This mission has been officially released |
-   | *Bonus Mission* | Reversed Sewer Junction B5 | 1.25 | New |
-   | *Bonus Mission* | Reversed Rydberg Reactor | 1.5 | New |
-   | *Bonus Mission* | Reversed Cargo Elevator | 1.5 | New |
-   | *Bonus Mission* | Reversed Landing Bay | 1.4 | New |
-- Updated challenge ratings:
-   | Challenge | Ruleset | Multiplier | Changes |
-   | --------- | ------- | ---------- | ------- |
-   | [ASBI WB RNG4](https://steamcommunity.com/sharedfiles/filedetails/?id=2082369328) | ASBI | 3.0 | Decreased multiplier from 4.0 |
-
-## May 12, 2023 (Season 11)
-
-- Updated challenge ratings:
-   | Challenge | Ruleset | Multiplier | Changes |
-   | --------- | ------- | ---------- | ------- |
-   | First Person | Standard | 1.0 | New |
-   | Third Person | Standard | 1.0 | New |
-   | [Weapons Balancing VanASBI](https://steamcommunity.com/sharedfiles/filedetails/?id=2082369328) | Standard | 1.3 (1.0) | Now has a multiplier of 1.0 if onslaught is disabled |
-   | [VanASBI Blox](https://steamcommunity.com/sharedfiles/filedetails/?id=2326134727) | Standard | 1.3 (1.0) | Decreased multiplier from 1.4<br>Now has a multiplier of 1.0 if onslaught is disabled |
-   | [Resident Evil](https://steamcommunity.com/sharedfiles/filedetails/?id=2953250066) | Standard | 3.5 | New |
-   | [Carnage x5](https://steamcommunity.com/sharedfiles/filedetails/?id=918455573) | Standard | 3.5 | New |
-   | [Shared Damage](https://steamcommunity.com/sharedfiles/filedetails/?id=2966183425) | Standard | 1.6 | New |
-   | [Shared Damage ASBI](https://steamcommunity.com/sharedfiles/filedetails/?id=2966183425) | ASBI | 1.5 | New |
-   | [Gnome](https://steamcommunity.com/sharedfiles/filedetails/?id=2916269416) | Standard | 2.5 | New |
-   | [Tower Defense](https://steamcommunity.com/sharedfiles/filedetails/?id=2922947680) | Standard | 3.5 | New |
-   | [Tower Defense VanASBI](https://steamcommunity.com/sharedfiles/filedetails/?id=2922947680) | Standard | 4.5 (3.5) | New |
-   | [Tower Defense ASBI](https://steamcommunity.com/sharedfiles/filedetails/?id=2922947680) | ASBI | 3.0 | New |
-   | [Football Special](https://steamcommunity.com/sharedfiles/filedetails/?id=1690620315) | Standard | 1.0 | New |
-   | [ASBI Football](https://steamcommunity.com/sharedfiles/filedetails/?id=1690620315) | ASBI | 1.0 | New |
-   | [Super Shotgun](https://steamcommunity.com/sharedfiles/filedetails/?id=2946879059) | Standard | 2.0 | New |
-   | [Super Shotgun VanASBI](https://steamcommunity.com/sharedfiles/filedetails/?id=2946879059) | Standard | 2.6 (2.0) | New |
-   | [Super Shotgun ASBI](https://steamcommunity.com/sharedfiles/filedetails/?id=2946879059) | ASBI | 1.5 | New |
-
-## May 15, 2023 (Season 11)
-
-- Updated challenge ratings:
-   | Challenge | Ruleset | Multiplier | Changes |
-   | --------- | ------- | ---------- | ------- |
-   | [Tower Defense ASBI](https://steamcommunity.com/sharedfiles/filedetails/?id=2922947680) | ASBI | 1.5 | Decreased multiplier from 3.0 |
-
-## June 1, 2023 (Season 12)
-
-- Updated mission ratings:
-   | Campaign | Mission | Multiplier | Changes |
-   | -------- | ------- | ---------- | ------- |
-   | *Bonus Mission* | [Gluon Cave](https://steamcommunity.com/sharedfiles/filedetails/?id=2979008182) | 3.5 | New |
-   | *Bonus Mission* | [Gluon Cave (No Boss Version)](https://steamcommunity.com/sharedfiles/filedetails/?id=2979008182) | 1.75 | New |
-   | *Bonus Mission* | [Gluon Cave (Short Version)](https://steamcommunity.com/sharedfiles/filedetails/?id=2979008182) | 1.25 | New |
-
-## July 1, 2023 (Season 13)
-
-- Servers now check for updates to the addon list and scoring parameters on every level load. A server.dll update is no longer required to change the HoIAF mission or challenge lists.
-- Created an [official workshop collection](https://steamcommunity.com/sharedfiles/filedetails/?id=2994125702) replacing the previous collection used for marking addons for download on dedicated servers (2816464806).
-- The scoring algorithm has been updated to account for endless missions.
-   1. If the mission score is less than Min Score, the mission is considered to have been failed.
-   1. If the mission score is at least Min Score and the mission allows leaderboard scores to be uploaded for failures, the mission is considered to have succeeded.
-   1. The existing score calculation logic is run with the Base Multiplier defined for the mission.
-   1. Before diminishing returns for repeating the same mission is checked:
-   1. If the mission score is higher than Max Score, it is reduced to Max Score.
-   1. The mission score is multiplied by Score Multiplier.
-   1. The mission score is raised to the Exponent'th power.
-   1. The mission score is multiplied by the difficulty base score for the current ruleset raised to the Difficulty Contribution'th power.
-   1. The mission score is multiplied by the challenge multiplier raised to the Challenge Contribution'th power.
-   1. If the mission has a multiplier for the ruleset, the mission score is multiplied by that value.
-   1. The mission score is added to the points earned for the mission before diminishing returns for repeating a mission are calculated.
-- Added a new system where dynamic multipliers can be assigned to challenges that change their difficulty based on factors other than mission settings.
-- Initial endless mission ratings defined:
-   | Mission | Base Multiplier | Score Multiplier | Min Score | Max Score | Exponent | Difficulty Contribution | Challenge Contribution | ASBI Multiplier | Changes |
-   | ------- | --------------- | ---------------- | --------- | --------- | -------- | ----------------------- | ---------------------- | --------------- | ------- |
-   | [Infinite Landing Bay](https://steamcommunity.com/sharedfiles/filedetails/?id=2809765323) | 0.001 | 1.4 | 1 | 25 | 1.35 | 1.0 | 1.0 | 1.0 | New |
-   | IAF Marine Academy | 0.001 | 0.075 | 1 | 1000 | 1.5 | 0.0 | 1.0 | 5.0 | New |
-   | [The Gauntlet: Arctic](https://steamcommunity.com/sharedfiles/filedetails/?id=2990264624) | 0.001 | 0.0002 | 500 | 200000 | 1.05 | 1.0 | 1.0 | 1.0 | New |
-- Updated mission ratings:
-   | Campaign | Mission | Multiplier | Changes |
-   | -------- | ------- | ---------- | ------- |
-   | [AMBER Project](https://steamcommunity.com/sharedfiles/filedetails/?id=2091618233) | Information Department | *not rated* | Removed Workshop version of official campaign to save space |
-   | AMBER Project | Powerhood | *not rated* | Removed Workshop version of official campaign to save space |
-   | AMBER Project | Research Center | *not rated* | Removed Workshop version of official campaign to save space |
-   | AMBER Project | AMBER Complex | *not rated* | Removed Workshop version of official campaign to save space |
-   | [Accident 32](https://steamcommunity.com/workshop/filedetails/?id=2814753147) | Confined Facility | *not rated* | Removed Workshop version of official campaign to save space |
-   | Accident 32 | J5 Connector | *not rated* | Removed Workshop version of official campaign to save space |
-   | Accident 32 | Lab Ruins | *not rated* | Removed Workshop version of official campaign to save space |
-- Updated challenge ratings:
-   | Challenge | Ruleset | Multiplier | Changes |
-   | --------- | ------- | ---------- | ------- |
-   | [ASBI 2077](https://steamcommunity.com/sharedfiles/filedetails/?id=2381921032) | ASBI | *not rated* | Removed from HoIAF as it is no longer accessible on the Steam Workshop |
-   | [Tower Defense](https://steamcommunity.com/sharedfiles/filedetails/?id=2922947680) | Standard | *not rated* | Removed from HoIAF by request of author |
-   | [Tower Defense VanASBI](https://steamcommunity.com/sharedfiles/filedetails/?id=2922947680) | Standard | *not rated* | Removed from HoIAF by request of author |
-   | [Tower Defense ASBI](https://steamcommunity.com/sharedfiles/filedetails/?id=2922947680) | ASBI | *not rated* | Removed from HoIAF by request of author |
-   | [Resident Evil First Person](https://steamcommunity.com/sharedfiles/filedetails/?id=2953250066) | Standard | 3.5 | New |
-   | [Resident Evil Third Person](https://steamcommunity.com/sharedfiles/filedetails/?id=2953250066) | Standard | 3.5 | New |
-   | [Risk of Rain](https://steamcommunity.com/sharedfiles/filedetails/?id=2985633068) | Standard | if boss killed, 2.0 times current stage number; otherwise 0.5 | New |
-   | [Campaign Execution](https://steamcommunity.com/sharedfiles/filedetails/?id=2811007850) | Standard | 1.0 plus 0.25 for each completed mission in the campaign | New |
-   | [ASBI Campaign Execution](https://steamcommunity.com/sharedfiles/filedetails/?id=2811007850) | ASBI | 1.0 plus 0.35 for each completed mission in the campaign | New |

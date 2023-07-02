@@ -1,11 +1,17 @@
 # Alien Swarm: Reactive Drop Developer Information
 
+- [FAQ](/faq.html)
 - [Data Tables](/tables.html)
 - [Physical Dimensions](/dimensions.html)
 - [Add-On Packaging Guide](/packaging.html)
 - [Translation Files](/language.html)
 - [Door Model Creation](/door.html)
 - [Donation Items](/donation-items.html)
+- [Heroes of the Interstellar Armed Forces Changelog](/hoiaf.html)
+- [Donation Item Creation](/donation-items.html)
+- [Encrypted Key-Values Files](/ekv/)
+- [Item Name Colors](/item-guidelines.html)
+- [2024 Anniversary Update Planning](/2024/)
 
 ## Quick Links
 
