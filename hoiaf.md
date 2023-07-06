@@ -1,5 +1,9 @@
 # Heroes of the Interstellar Armed Forces Scoring Changelog
 
+## July 6, 2023 (Season 13)
+
+- Changed diminishing returns to only affect non-endless missions. Endless missions are still counted towards the 6 most recent missions. That is, the multiplier for playing a mission multiple times in a row is now 0.5/0.25/0.125/0.0625/0.03125/0.015625 for campaign missions and bonus missions (the same as before), and 1/1/1/1/1/1 for endless missions.
+
 ## July 1, 2023 (Season 13)
 
 - Servers now check for updates to the addon list and scoring parameters on every level load. A server.dll update is no longer required to change the HoIAF mission or challenge lists.
