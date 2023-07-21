@@ -80,3 +80,101 @@ If you're missing an achievement due to a bug, [check the feedback forum](https:
 First: try shooting it with your gun. Most of the bugs die if they are shot with bullets.
 
 If it's not that kind of bug, please [create an issue report](https://github.com/ReactiveDrop/reactivedrop_public_src/issues), [post on the feedback forum](https://steamcommunity.com/app/563560/discussions/2/), or tell a developer about it in the official Steam or Discord chats. If it's a bug with a Workshop addon, tell the author of that addon.
+
+# Partnerships
+
+## I'm running a "cloud gaming" service where users can pay a subscription fee for access to a machine where they can play a game over remote desktop.
+
+Great! As long as your platform downloads the game's content from Steam and players log in using their Steam accounts, you don't need any special permission to allow your users to run Alien Swarm: Reactive Drop on your computers.
+
+## I would like to run a dedicated server for Alien Swarm: Reactive Drop and don't know where to start.
+
+You'll need to use [SteamCMD](https://developer.valvesoftware.com/wiki/SteamCMD) to download the server files, and after that you can run them like you would run any other EXE. The two apps you need to install are 563560 and 1007 (in the same folder). The dedicated server app is 582400, but there are currently issues with getting it to download a specific branch, and the files you'd get by installing 1007 and 563560 are exactly the same files you would get by installing 582400 if everything worked correctly.
+
+You can run the server just by double-clicking srcds.exe, but most server hosts will want to set up a script to start the server in a loop, with a call to SteamCMD before each run to do a light-weight check for updates.
+
+On Linux hosts, you will need to set a variable in SteamCMD to allow downloading the Windows version of the game, which you can run through Wine, Proton, or something similar: `@sSteamCmdForcePlatformType windows`
+
+An example of a script to run the server repeatedly on Linux is:
+
+```
+#!/bin/bash
+
+cleanup() {
+	wineserver -k
+}
+
+trap cleanup EXIT
+
+while true; do
+
+steamcmd +force_install_dir ~/reactivedrop_server \
+	+login anonymous \
+	+@sSteamCmdForcePlatformType windows \
+	+app_update 1007 \
+	+app_update 563560 -beta beta \
+	+quit
+
+(cd reactivedrop_server &&
+./srcds_console.exe -console -condebug \
+	-game reactivedrop \
+	+exec server \
+	+map lobby)
+
+done
+```
+
+In `(server root directory)/reactivedrop/cfg/server.cfg`, you'll want something like:
+
+```
+// hostname determines how your server shows up in the server browser.
+hostname "My Cool Server"
+
+// you'll want your rcon password to be impossible to guess.
+// rcon gives full administrative access to the server console.
+// don't use this one, obviously.
+rcon_password iEmXNGpU5cMcnoDAj53JXGNGQ9jtyazkHwcauN4jNvI8rHyPOxCCXEtGZjnQ0qr
+
+// you can decide the maximum number of players for your server.
+// any players not controlling a marine will be spectators.
+maxplayers 12
+
+// make the server process exit when the last player leaves
+// (this makes it very easy to keep the server up-to-date as a
+// player failing to join your server while it is empty due to
+// a version mismatch will cause it to update with a script
+// like what is shown above)
+rd_server_shutdown_when_empty 1
+```
+
+You can make a file named `(server root directory)/reactivedrop/cfg/workshop.cfg` to subscribe your server to various Steam Workshop addons. Each command in this script should be `rd_enable_workshop_item` followed by the shared file ID of the workshop addon or collection you want your server to subscribe to.
+
+## I want my dedicated server to participate in Heroes of the Interstellar Armed Forces!
+
+Servers participating in Heroes of the Interstellar Armed Forces have additional requirements:
+
+- The server must be running at the default tick rate.
+- The server must have a static IP address and port.
+- The server must have a stable internet connection.
+- The server must not be modded (non-gameplay-affecting SourceMod plugins may be allowed on a case-by-case basis).
+- Workshop addons should be kept to the list installed automatically on ranked servers to avoid confusing players with mission choices that will earn them no points. (Some participating server hosts choose to run a separate unranked server with a wider variety of addons installed.)
+- The server and its administrator(s) should be well-known and trusted in the community.
+
+See [the Contributing to AS:RD thread](https://steamcommunity.com/app/563560/discussions/0/3361397532258443696/) for more information, including how to apply.
+
+## Someone stole my content and uploaded it to the Steam Workshop as their own.
+
+File a [DMCA takedown request](https://steamcommunity.com/dmca/create/) with information about what was plagiarized. Uploading content to the Steam Community requires signing a legal document stating the uploader must have legal ownership of the content being uploaded, and we take breaches of this requirement very seriously.
+
+## I would like to propose a business partnership with the Reactive Drop Team.
+
+First, Alien Swarm: Reactive Drop is classified as a [non-commercial Source Engine mod](https://partner.steamgames.com/doc/sdk/uploading/distributing_source_engine) on Steam. This means:
+
+- We cannot include advertising in our game or on its Steam Store or Community pages.
+- We cannot sell access to content.
+- We *can* accept donations in exchange for non-gameplay-affecting cosmetic items.
+- We cannot add Steam Trading Cards, badges, emoticons, or profile backgrounds to our game.
+- We *can* add stickers, animated avatars, avatar frames, animated profile backgrounds, and mini-profile backgrounds to the Steam points shop, but are unlikely to do so as part of a business partnership.
+- We are unlikely to be able to distribute the game outside of Steam. (And it requires Steam API services for many of its features, so there would be no benefit in most cases.)
+
+If you still think your proposal might be accepted, feel free to send us a message on [the feedback website](https://feedback.reactivedrop.com/) or at [our support email address](mailto:support@reactivedrop.com). For example, announcing a game-related competition or event run by a third party is likely something we *will* be able to do. We are also open to proposals for in-game medals that can be earned via an achievement in another Steam game (these are not considered to be advertising).
