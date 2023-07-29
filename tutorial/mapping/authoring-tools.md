@@ -32,7 +32,7 @@ If that sounds like a lot, don't worry. You're not going to use all of these at 
 	3. **Face Poser.** You will rarely use this, if ever. This tool can be used to set up very advanced choreography with NPCs.
 	4. **Reactive Drop (Tools Mode).** This is where you'll go to create custom particle effects and color correction presets.
 - **Utilities.** Using these will let you adjust the developer tools to work with a different installation of Alien Swarm: Reactive Drop, such as a total conversion mod. You can safely ignore these unless you have a specific reason to use them.
-- **Documentation.** These are quick links to the Valve Developer Wiki (a fantastic resource) and the `sdk_content` folder that comes with the Alien Swarm: Reactive Drop Authoring Tools. Additional example content can be found on [the Reactive Drop GitHub repository](https://github.com/ReactiveDrop/reactivedrop_public_src/tree/reactivedrop_public/contentsrc).
+- **Documentation.** These are quick links to the [Valve Developer Wiki](https://developer.valvesoftware.com/) (a fantastic resource) and the `sdk_content` folder that comes with the Alien Swarm: Reactive Drop Authoring Tools. Additional example content can be found on [the Reactive Drop GitHub repository](https://github.com/ReactiveDrop/reactivedrop_public_src/tree/reactivedrop_public/contentsrc).
 
 One final note: If the tools crash when you try to open them, check `reactivedrop/cfg/video.txt` to see if `setting.defaultresheight` is set to the wrong number. If it looks okay, ask on the forums or in chat!
 
