@@ -13,7 +13,7 @@ Don't worry. This is the correct reaction to have when seeing Hammer for the fir
 Along the left side, you'll see some icons. These are the main way you'll be interacting with the program.
 
 - ![A red computer mouse cursor](tool-select.png) **Selection Tool.** This lets you select objects in the 2D or 3D views. It also lets you draw a box in the 2D views and then press enter to select multiple objects.
-- ![A red magnifying glass](tool-zoom.png) **Magnify.** You can use this to zoom in and out of the 2D views if your mouse does not have a scroll wheel. Hammer is *old*.
+- ![A red magnifying glass](tool-magnify.png) **Magnify.** You can use this to zoom in and out of the 2D views if your mouse does not have a scroll wheel. Hammer is *old*.
 - ![A red compact camera](tool-camera.png) **Camera.** This will allow you to move the 3D view. Most mappers will instead press Z to move the view with their mouse, scroll up or down to move the camera forward and backwards, or use WASD and arrow keys to move and rotate the 3D view's camera.
 - ![A white game piece pawn](tool-entity.png) **Entity Creation Tool.** This tool lets you place point entities like enemies, spawners, props, logic, and lighting. You'll use this a lot.
 - ![A white cube](tool-block.png) **Block Creation Tool.** This tool lets you draw a block by dragging on the 2D views, similar to how you can select multiple objects with the Selection Tool. Blocks (also called "brushes") are used for floors, walls, ceilings, terrain, and triggers. Anything that isn't a point entity is a brush entity, and vice versa. You'll use this a lot.
@@ -33,20 +33,20 @@ At the top, there are menus (File, Edit, Map, etc.) and some buttons. These butt
 
 On the right, there are several groups of buttons.
 
-**Selection Mode**
-![Select: Groups / Objects / Solids](side-select.png)
+**Selection Mode**  
+![Select: Groups / Objects / Solids](side-select.png)  
 In most cases, you'll want "Groups" to be enabled. If you need to work on something that's in a group without ungrouping it or work on a brush that is part of an entity without affecting other brushes in the same entity, pick Objects or Solids.
 
-**Textures**
-![Current Texture / Browse / Replace](side-texture.png)
+**Textures**  
+![Current Texture / Browse / Replace](side-texture.png)  
 This shows you the material that is currently selected. This material is what gets used by most of the tools on the left. Click Browse to search through available materials. Click Replace if you have a material you want to completely replace with another.
 
-**Filter Control**
-![VisGroups: User / Auto / Cordon](side-visgroups.png)
+**Filter Control**  
+![VisGroups: User / Auto / Cordon](side-visgroups.png)  
 You can temporarily hide categories of objects from your map, which might be useful if they're getting in the way while you're working on something specific. You can either define your own categories and add objects to them or use the automatic categories that Hammer provides, like "Lights" and "Triggers".
 
-**New Objects**
-![Move Selected to World / to Entity](side-objects.png)
+**New Objects**  
+![Move Selected to World / to Entity](side-objects.png)  
 This lets you fine-tune what the Entity and Block Creation Tools do. You can create shapes other than cubeoids, change what entity type gets created, and use the buttons as shortcuts for creating brush entities out of world brushes or vice versa.
 
 ---
