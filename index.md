@@ -1,6 +1,7 @@
 # Alien Swarm: Reactive Drop Developer Information
 
 - [FAQ](/faq.html)
+- [Tutorials](/tutorial/)
 - [Data Tables](/tables.html)
 - [Physical Dimensions](/dimensions.html)
 - [Add-On Packaging Guide](/packaging.html)
@@ -22,4 +23,5 @@
 - [Official Discord Guild](https://discord.com/invite/c43TDaQ)
 - [Stats Website](https://stats.reactivedrop.com/)
 - [Symbol Server](https://symsrv.reactivedrop.com/)
+- [Map Theme Generator](https://mapthemes.reactivedrop.com/)
 - [Alien Swarm: Reactive Drop Source Code](https://github.com/ReactiveDrop)
