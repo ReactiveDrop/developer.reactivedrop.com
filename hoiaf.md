@@ -7,7 +7,7 @@
 ## July 1, 2023 (Season 13)
 
 - Servers now check for updates to the addon list and scoring parameters on every level load. A server.dll update is no longer required to change the HoIAF mission or challenge lists.
-- Created an [official workshop collection](https://steamcommunity.com/sharedfiles/filedetails/?id=2994125702) replacing the previous collection used for marking addons for download on dedicated servers (2816464806).
+- Created an [official workshop collection](https://steamcommunity.com/sharedfiles/filedetails/?id=3009776383) replacing the previous collection used for marking addons for download on dedicated servers (2816464806).
 - The scoring algorithm has been updated to account for endless missions.
    1. If the mission score is less than Min Score, the mission is considered to have been failed.
    1. If the mission score is at least Min Score and the mission allows leaderboard scores to be uploaded for failures, the mission is considered to have succeeded.
