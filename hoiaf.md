@@ -1,5 +1,13 @@
 # Heroes of the Interstellar Armed Forces Scoring Changelog
 
+## August 14, 2023 (Season 13)
+
+- Updated endless mission ratings:
+   | Mission | Base Multiplier | Score Multiplier | Min Score | Max Score | Exponent | Difficulty Contribution | Challenge Contribution | ASBI Multiplier | Changes |
+   | ------- | --------------- | ---------------- | --------- | --------- | -------- | ----------------------- | ---------------------- | --------------- | ------- |
+   | IAF Marine Academy | 0.001 | 0.075 | 101 | 1000 | 1.5 | 0.0 | 1.0 | 5.0 | Minimum score increased from 1 to 101 |
+   | [The Gauntlet: Arctic](https://steamcommunity.com/sharedfiles/filedetails/?id=2990264624) | 0.001 | 0.0002 | 2000 | 200000 | 1.05 | 1.0 | 1.0 | 1.0 | Minimum score increased from 500 to 2000 |
+
 ## July 6, 2023 (Season 13)
 
 - Changed diminishing returns to only affect non-endless missions. Endless missions are still counted towards the 6 most recent missions. That is, the multiplier for playing a mission multiple times in a row is now 0.5/0.25/0.125/0.0625/0.03125/0.015625 for campaign missions and bonus missions (the same as before), and 1/1/1/1/1/1 for endless missions.
