@@ -1,5 +1,13 @@
 # Heroes of the Interstellar Armed Forces Scoring Changelog
 
+## September 1, 2023 (Season 14)
+
+- Updated challenge ratings:
+   | Challenge | Ruleset | Multiplier | Changes |
+   | --------- | ------- | ---------- | ------- |
+   | [Weapon Memory](https://steamcommunity.com/sharedfiles/filedetails/?id=3027355897) | Standard | 2.0 | New |
+   | [Weapon Memory ASBI](https://steamcommunity.com/sharedfiles/filedetails/?id=3027355897) | ASBI | 2.0 | New |
+
 ## August 14, 2023 (Season 13)
 
 - Updated endless mission ratings:
