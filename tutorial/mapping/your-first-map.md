@@ -38,4 +38,4 @@ If you see yellow text briefly appear and the game does not open, check to make 
 
 ---
 
-Next page: [Basic Lighting](basic-lighting.html)
+Next page: [Interlude: What Just Happened?](what-just-happened.html)
