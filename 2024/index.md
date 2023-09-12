@@ -2,6 +2,8 @@
 
 This folder is our current plan for the 7th anniversary update for Alien Swarm: Reactive Drop in 2024. Everything in here is subject to change, and the contents of this folder may be out of date. Let Ben know if anything seems wrong.
 
+**(Note: Many of these plans have been delayed due to their complexity; we're just doing a UI revamp and loadout sharing for the anniversary, and additional content is coming in a later update.)**
+
 ## The Big Picture: Headline Features
 
 The 6th anniversary was heavily geared towards giving mission and challenge authors more tools. We're also adding a lot of stuff for authors in the 7th anniversary update, but our main focus this year is features that players can use *right now*, not having to wait for someone else to make new content. [And maybe some lore.](telic.html) Some of these features also help to pave the foundation for Versus mode, which is not part of this year's update.
