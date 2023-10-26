@@ -1,5 +1,23 @@
 # Heroes of the Interstellar Armed Forces Scoring Changelog
 
+## November 1, 2023 (Season 17)
+
+- Updated mission ratings:
+   | Campaign | Mission | Multiplier | Changes |
+   | -------- | ------- | ---------- | ------- |
+   | Paranoia | Crucial Point | 2.5 | Increased multiplier from 1.75 |
+   | [Reduction](https://steamcommunity.com/sharedfiles/filedetails/?id=914071790) | Reduction - Mission 1 | *not rated* | Removed Workshop version of official campaign to save space |
+   | Reduction | Reduction - Mission 2 | *not rated* | Removed Workshop version of official campaign to save space |
+   | Reduction | Reduction - Mission 3 | *not rated* | Removed Workshop version of official campaign to save space |
+   | Reduction | Reduction - Mission 4 | *not rated* | Removed Workshop version of official campaign to save space |
+   | Reduction | Reduction - Mission 6 | *not rated* | Removed Workshop version of official campaign to save space |
+   | Reduction | Silent Station | 2.25 | This mission has been officially released |
+   | Reduction | Operation Sandstorm | 1.75 | This mission has been officially released |
+   | Reduction | Fallen City | 1.0 | This mission has been officially released |
+   | Reduction | Stowaway | 1.5 | This mission has been officially released |
+   | Reduction | Inevitable Escalation | 0.01 | This mission has been officially released |
+   | Reduction | Nuclear Escort | 2.25 | This mission has been officially released |
+
 ## September 1, 2023 (Season 15)
 
 - Updated challenge ratings:

@@ -4,7 +4,7 @@ We're adding **twelve** new unlockable weapons, and also a new way to unlock wea
 
 Eight new Primary/Secondary weapons:
 
-- [DRG19 Cryo Cannon](#new-weapon-drg19-cryo-cannon)
+- [TC19 DRG Cryo Cannon](#new-weapon-tc19-drg-cryo-cannon)
 - [G521 Plasma Thrower](#new-weapon-g521-plasma-thrower)
 - [X-117 Flechette Launcher](#new-weapon-flechette-launcher)
 - [v60 Ricochet Rifle](#new-weapon-ricochet-rifle)
@@ -20,7 +20,7 @@ Four new Extra/Equipment weapons:
 - [EX981 Speed Burst Module](#new-equipment-ex981-speed-burst-module)
 - [MA9128 Force Dome Generator](#new-equipment-ma9128-force-dome-generator)
 
-## New Weapon: DRG19 Cryo Cannon
+## New Weapon: TC19 DRG Cryo Cannon
 
 - Class Restriction: Special Weapons
 - Activation Type: Gun (projectile, spin-up, ammo)
