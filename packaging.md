@@ -193,6 +193,7 @@ Mission overviews have two main parts: the minimap and the mission details.
 	"regional_material" "unopened_synup_cola"
 	"regional_material" "roll_of_vent_tape"
 	"regional_material" "isotopes"
+	"regional_material" "cryotic"
 }
 ```
 
