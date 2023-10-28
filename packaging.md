@@ -183,6 +183,16 @@ Mission overviews have two main parts: the minimap and the mission details.
 	// For Deathmatch maps. Adds your mission to the Deathmatch tab in the mission chooser.
 	// Should not be part of a campaign. The map must contain an asw_deathmatch_mode entity.
 	"tag" "deathmatch"
+
+	// You can include up to three of these. Only include the ones that make sense for your mission's setting.
+	"regional_material" "pile_of_red_sand"
+	"regional_material" "antlion_carapace"
+	"regional_material" "corrosive_fluid_sample"
+	"regional_material" "cooled_volcanic_rock"
+	"regional_material" "retrieved_documents"
+	"regional_material" "unopened_synup_cola"
+	"regional_material" "roll_of_vent_tape"
+	"regional_material" "isotopes"
 }
 ```
 
