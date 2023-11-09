@@ -14,7 +14,6 @@
 	"mat_phong" "0"
 	"r_flashlightdepthtexture" "0"
 	"mat_grain_enable" "0"
-	"mat_motion_blur_enabled" "0"
 	"mat_disablehwmorph" "1"
 	"r_overlayfademin" "1750"
 	"r_overlayfademax" "2000"
