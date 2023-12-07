@@ -8,6 +8,8 @@ In the past, when we added new weapons, we increased the armory access level lim
 
 Additionally, some players enjoy progression in games beyond leveling up or competing on a leaderboard, so crafting will be a method of obtaining stat-tracking items, which debuted with the Air Time medal currently available from an easter egg in the Operation Sandstorm mission of the Reduction campaign.
 
+The Contract Campaigns that will eventually be playable to earn access to the next group of weapons added to the game will use a lot of the same systems that crafting materials use, and testing crafting materials first gives us a much simpler (and more importantly, repeatable) way of making sure the system is ready for general use.
+
 ### How do I get crafting materials?
 
 Each week that you play Alien Swarm: Reactive Drop, crafting materials will appear in missions. If you do not collect them all after they appear, they will remain collectable indefinitely, and the next week's materials will add to what you already have available. Additionally, if you play a lot, crafting materials may appear independently of the weekly refresh.
