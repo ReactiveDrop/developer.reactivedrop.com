@@ -66,6 +66,7 @@
    | *Bonus Mission* | Hostile Places + Close Contact | 3.25 |
    | *Bonus Mission* | High Tension + Crucial Point | 3.25 |
    | *Bonus Mission* | Power Plant | 3.5 |
+   | *Bonus Mission* | AMBER Complex | 4.0 |
    | *Bonus Mission* | Reversed Sewer Junction B5 | 1.25 |
    | *Bonus Mission* | Reversed Rydberg Reactor | 2.0 |
    | *Bonus Mission* | Reversed Cargo Elevator | 1.5 |
@@ -258,6 +259,7 @@
    | Dead City | Search And Rescue | 3.5 |  
    | Silent Corridors | Laboratory | 3.5 |    
    | NAAM | NAAM 0 | 3.75 | 
+   | *Bonus Mission* | AMBER Complex | 4.0 |
    | City 17 | Citadel | 4.0 |
    | Jacobs 7 in 2 | Jacobs 1 to 4 | 4.0 |
    | Jacobs 7 in 2 | Jacobs 5 to 7 | 4.0 |
