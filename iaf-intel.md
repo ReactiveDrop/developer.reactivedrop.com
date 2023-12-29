@@ -40,3 +40,13 @@ News items shown in the carousel on the main menu. There are a maximum of 5 copi
 - `ends` (type `uint64`) - Unix timestamp when the event expires. The timer will not appear on the main menu if the current time is after `ends`.
 
 Event timers shown on the side of the main menu. There are a maximum of 3 copies of this command in the IAF Intel document for now.
+
+## `chatAnnouncement` (structured)
+
+- `id` (type `string`) - Arbitrary string that identifies the announcement. Each announcement is only shown once.
+- `text_%LANG%` (type `string`) - The text of the announcement.
+- `not_before` (type `uint64`) - Unix timestamp before which the announcement should not be shown.
+- `not_after` (type `uint64`) - Unix timestamp after which the announcement should not be shown.
+- `color` (type `Color`) - Color of the message in chat (default red).
+
+Announcements that appear in game chat, similar to Warframe's Red Text.
