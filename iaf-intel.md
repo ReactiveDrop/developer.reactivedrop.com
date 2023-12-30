@@ -48,5 +48,6 @@ Event timers shown on the side of the main menu. There are a maximum of 3 copies
 - `not_before` (type `uint64`) - Unix timestamp before which the announcement should not be shown.
 - `not_after` (type `uint64`) - Unix timestamp after which the announcement should not be shown.
 - `color` (type `Color`) - Color of the message in chat (default red).
+- `font` (type `string`) - Font of the message (default `ChatFont`; defined in `ChatScheme.res`).
 
 Announcements that appear in game chat, similar to Warframe's Red Text.
