@@ -4,7 +4,7 @@ The IAF Intel file, accessible at `https://stats.reactivedrop.com/game_dynamic_s
 
 This document is intended to explain the purpose of the file, as players who pay close attention to network requests may notice it, as well as the `cfg/iicache.dat` file, which contains a copy of the latest downloaded configuration in case the server cannot be reached.
 
-The file is a binary KeyValues file with a single root key named `II` for "IAF Intel". Each subkey of the root is a command based on its name. For now, there are only a few commands, but this will expand in the future.
+The file is a [binary KeyValues](https://developer.valvesoftware.com/wiki/Binary_VDF) file with a single root key named `II` for "IAF Intel". Each subkey of the root is a command based on its name. For now, there are only a few commands, but this will expand in the future.
 
 ## Note on Translations
 
