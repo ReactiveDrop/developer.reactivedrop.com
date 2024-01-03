@@ -19,7 +19,7 @@ On the main menu, as well as somewhere in the UI while on participating servers,
 Things to decide:
 
 - Point reward (current proposal is 500\*mission multiplier).
-- How often a new bounty is added (current proposal is every 4 hours).
+- How often a new bounty is added (current proposal is every 8 hours).
 - How long a bounty is valid (current proposal is 24 hours).
 - How many missions are included in a bounty and how they are selected (current proposal is one complete campaign of at least three missions).
 
