@@ -1,3 +1,28 @@
+# Heroes of the Interstellar Armed Forces Bonus Points Proposal
+
+Starting in Season 20 (February 2024), we will be adding two new systems to Heroes of the Interstellar Armed Forces that add points to your total score on the leaderboard beyond what the system used in seasons 1-19 provided. That system isn't going away, but we will be adjusting mission and challenge multipliers as part of this season change.
+
+## Personal Best
+
+Each player will receive a point bonus based on their highest score for each mission. The first five missions award some large multiple of their best scores, the next five award half of that, and so on.
+
+Things to decide:
+
+- Multiplier for best scores (current proposal is x\^1.85).
+- Number of missions per group (current proposal is 5).
+- Multiplier for each group beyond the first (current proposal is 0.5).
+
+## Bounties
+
+On the main menu, as well as somewhere in the UI while on participating servers, mission bounties will be shown to the player. Mission bounties consist of a list of missions, a start and end time, and a flat point bonus reward for each mission on the list completed. Bonus points can only be earned once per player per mission per bounty, and the missions that a player has already completed would be marked in some way. Challenge and difficulty settings would not affect the bounty.
+
+Things to decide:
+
+- Point reward (current proposal is 500\*mission multiplier).
+- How often a new bounty is added (current proposal is every 4 hours).
+- How long a bounty is valid (current proposal is 24 hours).
+- How many missions are included in a bounty and how they are selected (current proposal is one complete campaign of at least three missions).
+
 ## Map Multipliers, Not Sorted
    | Campaign | Mission | Multiplier |
    | -------- | ------- | ---------- |
