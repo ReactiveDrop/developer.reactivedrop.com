@@ -18,10 +18,10 @@ On the main menu, as well as somewhere in the UI while on participating servers,
 
 Things to decide:
 
-- Point reward (current proposal is 500\*mission multiplier).
+- Point reward (current proposal is 150\*mission multiplier, or 400 for endless missions).
 - How often a new bounty is added (current proposal is every 8 hours).
 - How long a bounty is valid (current proposal is 24 hours).
-- How many missions are included in a bounty and how they are selected (current proposal is one complete campaign of at least three missions).
+- How many missions are included in a bounty and how they are selected (current proposal is one complete campaign of at least three missions, or 5-6 missions that are not in the former set).
 
 ## Map Multipliers, Not Sorted
    | Campaign | Mission | Multiplier |
