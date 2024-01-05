@@ -51,3 +51,13 @@ Event timers shown on the side of the main menu. There are a maximum of 3 copies
 - `font` (type `string`) - Font of the message (default `ChatFont`; defined in `ChatScheme.res`).
 
 Announcements that appear in game chat, similar to Warframe's Red Text.
+
+## `hoiafMissionBounty` (structured)
+
+- `id` (type `int`) - A unique identifier for the bounty. Used by the client to record whether the mission bounty has been previously completed.
+- `starts` (type `uint64`) - Unix timestamp of when eligibility for the bounty begins. The bounty should not be displayed to players before then.
+- `ends` (type `uint64`) - Unix timestamp of when eligibility for the bounty ends. The bounty should not be displayed to players after then.
+- `map` (type `string`) - Lower-case ASCII filename of the mission this bounty is for.
+- `points` (type `int`) - Number of bonus points that will be awarded to players who complete the bounty.
+
+Mission bounties award bonus points the first time a mission is completed in a participating server on any difficulty within a given time period. Multiple bounties overlap, and bounties with the same start time will have the same end time and should be grouped together.
