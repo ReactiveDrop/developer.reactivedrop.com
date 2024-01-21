@@ -108,9 +108,17 @@ The first eight Contract Campaigns are planned to be (titles are placeholders):
 
 [This section is not yet true; the crafting beta has not yet begun.]
 
-In the beta branch, you can find crafting materials in missions, and completing any mission in the beta branch will grant you a one-time gift of two strange (stat-tracking) weapons of your choice.
+In the beta branch, you can find crafting materials in missions, and collecting any material in the beta branch will grant you a one-time gift of two strange (stat-tracking) weapons of your choice.
 
 You can keep the strange weapons after the beta ends, and they will also work in the non-beta branch. Once the beta ends, the gift will no longer be available to players who have not obtained it.
+
+### How do I find crafting materials?
+
+There are currently two sources of Crafting Material Locations, which are invisible tokens that can be converted into actual crafting materials by finding them in a mission. The first is playing for 30 minutes, available once per week, and the second is playing for 6 hours, repeatable indefinitely. The weekly source of Crafting Material Locations grants more tokens than the "extended" source. There is a notification on the main menu when Crafting Material Locations are found. Crafting Material Locations do not expire.
+
+Missions may be marked as containing crafting materials in the mission chooser. Generally, all missions will be marked, but some materials (Salvaged Materials) are only available in certain missions. Up to 5 materials can spawn per mission. If multiple players have materials available, the materials will appear in the same locations, but may not necessarily be the same type of materials.
+
+Materials spawn near walls, crates, other solid objects, and cliffs. They're always within reach of at least one place that bot marines are instructed to stand, so you should be able to find them without taking time away from normal mission objectives to search. In short, they'll be in a place you should go near to a place you can't go. If you don't find a material during a mission, the Crafting Material Location will remain until you do. Crafting Material Locations are not tied to specific missions or locations within missions, but they do maintain the type of material that they represent. (If you don't pick up scrap metal, you'll find scrap metal later that you can pick up.)
 
 ### What's this about cosmetics?
 

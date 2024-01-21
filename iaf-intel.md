@@ -12,7 +12,7 @@ In this documentation, `%LANG%` is used to refer to any [Steam language API code
 
 ## `expires` (type `uint64`)
 
-The Unix timestamp at which recipients of this file should redownload it to check for changes. The updated file will, at minimum, have a changed `expires` field. For the initial release, `expires` increases by 6 hours each time the file is updated, but this may be changed in the future. There is always exactly one of this command, and it is always the first command. The expiration timestamp is also sent as an HTTP header.
+The Unix timestamp at which recipients of this file should redownload it to check for changes. The updated file will, at minimum, have a changed `expires` field. For the initial release, `expires` increases by 1 hour each time the file is updated, and the file is updated slightly before the expiration time to avoid fetching a stale document. There is always exactly one of this command, and it is always the first command. The expiration timestamp is also sent as an HTTP header.
 
 ## `rankedIP` (type `int`)
 
@@ -59,5 +59,7 @@ Announcements that appear in game chat, similar to Warframe's Red Text.
 - `ends` (type `uint64`) - Unix timestamp of when eligibility for the bounty ends. The bounty should not be displayed to players after then.
 - `map` (type `string`) - Lower-case ASCII filename of the mission this bounty is for.
 - `points` (type `int`) - Number of bonus points that will be awarded to players who complete the bounty.
+- `addon` (type `uint64`) - Workshop addon ID that contains this mission if it is not in the base game.
+- `addon_name` (type `string`) - Workshop addon name if `addon` is present.
 
 Mission bounties award bonus points the first time a mission is completed in a participating server on any difficulty within a given time period. Multiple bounties overlap, and bounties with the same start time will have the same end time and should be grouped together.
