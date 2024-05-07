@@ -1,5 +1,20 @@
 # Heroes of the Interstellar Armed Forces Scoring Changelog
 
+## June 1, 2024 (Season 24)
+
+- Updated mission ratings:
+   | Campaign | Mission | Multiplier | Changes |
+   | -------- | ------- | ---------- | ------- |
+   | [Magnum Opus](https://steamcommunity.com/sharedfiles/filedetails/?id=3142399089) | Promised land | 2.15 | New |
+
+- Updated challenge ratings:
+   | Challenge | Ruleset | Multiplier | Changes |
+   | --------- | ------- | ---------- | ------- |
+   | [ASBI Veteran](https://steamcommunity.com/sharedfiles/filedetails/?id=3236503229) | ASBI | 2.4 | New |
+   | [ASBI Veteran C2](https://steamcommunity.com/sharedfiles/filedetails/?id=3236503229) | ASBI | 2.75 | New |
+   | [ASBI Veteran T2](https://steamcommunity.com/sharedfiles/filedetails/?id=3236503229) | ASBI | 2.75 | New |
+   | [ASBI Veteran T2 C2](https://steamcommunity.com/sharedfiles/filedetails/?id=3236503229) | ASBI | 3.25 | New |
+
 ## February 1, 2024 (Season 20)
 
 - With the score system revamp, almost all ratings have been changed to better suit the new system.
