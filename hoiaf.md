@@ -6,14 +6,18 @@
    | Campaign | Mission | Multiplier | Changes |
    | -------- | ------- | ---------- | ------- |
    | [Magnum Opus](https://steamcommunity.com/sharedfiles/filedetails/?id=3142399089) | Promised land | 2.15 | New |
+   | *Bonus Mission* | [Downed Station](https://steamcommunity.com/sharedfiles/filedetails/?id=3247801260) | 1.5 | New |
+   | Absolute madness | Madness begins | *not rated* | Removed due to crashes on instant restart and to save space |
 
 - Updated challenge ratings:
    | Challenge | Ruleset | Multiplier | Changes |
    | --------- | ------- | ---------- | ------- |
    | [ASBI Veteran](https://steamcommunity.com/sharedfiles/filedetails/?id=3236503229) | ASBI | 2.4 | New |
-   | [ASBI Veteran C2](https://steamcommunity.com/sharedfiles/filedetails/?id=3236503229) | ASBI | 2.75 | New |
-   | [ASBI Veteran T2](https://steamcommunity.com/sharedfiles/filedetails/?id=3236503229) | ASBI | 2.75 | New |
-   | [ASBI Veteran T2 C2](https://steamcommunity.com/sharedfiles/filedetails/?id=3236503229) | ASBI | 3.25 | New |
+   | ASBI Veteran C2 | ASBI | 2.75 | New |
+   | ASBI Veteran T2 | ASBI | 2.75 | New |
+   | ASBI Veteran T2 C2 | ASBI | 3.25 | New |
+   | ASBI Veteran T3 | ASBI | 3.25 | New |
+   | ASBI Veteran T3 C2 | ASBI | 3.75 | New |
 
 ## February 1, 2024 (Season 20)
 
