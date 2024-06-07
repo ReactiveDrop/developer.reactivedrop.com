@@ -1,5 +1,17 @@
 # Heroes of the Interstellar Armed Forces Scoring Changelog
 
+## July 1, 2024 (Season 25)
+
+- Updated challenge ratings:
+   | Challenge | Ruleset | Multiplier | Changes |
+   | --------- | ------- | ---------- | ------- |
+   | [ASBI Veteran](https://steamcommunity.com/sharedfiles/filedetails/?id=3236503229) | ASBI | 1.5 | Decreased multiplier from 2.4 |
+   | ASBI Veteran C2 | ASBI | 2.0 | Decreased multiplier from 2.75 |
+   | ASBI Veteran T2 | ASBI | 2.0 | Decreased multiplier from 2.75 |
+   | ASBI Veteran T2 C2 | ASBI | 2.4 | Decreased multiplier from 3.25 |
+   | ASBI Veteran T3 | ASBI | 2.4 | Decreased multiplier from 3.25 |
+   | ASBI Veteran T3 C2 | ASBI | 2.75 | Decreased multiplier from 3.75 |
+
 ## June 1, 2024 (Season 24)
 
 - Updated mission ratings:
