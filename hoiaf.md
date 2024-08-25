@@ -1,5 +1,13 @@
 # Heroes of the Interstellar Armed Forces Scoring Changelog
 
+## September 1, 2024 (Season 27)
+
+- Updated challenge ratings:
+   | Challenge | Ruleset | Multiplier | Changes |
+   | --------- | ------- | ---------- | ------- |
+   | [Give Me the Power](https://steamcommunity.com/sharedfiles/filedetails/?id=1846586064) | Standard | 1.0 | New |
+   | [Get Away](https://steamcommunity.com/sharedfiles/filedetails/?id=1908746680) | Standard | 1.0 | New |
+
 ## July 1, 2024 (Season 25)
 
 - Updated challenge ratings:
