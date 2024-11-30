@@ -9,7 +9,7 @@
 - [Door Model Creation](/door.html)
 - [Donation Items](/donation-items.html)
 - [Heroes of the Interstellar Armed Forces Changelog](/hoiaf.html)
-- [Donation Item Creation](/donation-items.html)
+- [Crafting Materials Beta FAQ](/2024/crafting-beta-faq.html)
 - [Encrypted Key-Values Files](/ekv/)
 - [Item Name Colors](/item-guidelines.html)
 - [2024 Anniversary Update Planning](/2024/)
