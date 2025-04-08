@@ -1,5 +1,12 @@
 # Heroes of the Interstellar Armed Forces Scoring Changelog
 
+## May 1, 2025 (Season 35)
+ 
+ - Updated mission ratings:
+    | Campaign | Mission | Multiplier | Changes |
+    | -------- | ------- | ---------- | ------- |
+    | [Magnum Opus](https://steamcommunity.com/sharedfiles/filedetails/?id=3142399089) | Heliopolis | 2.75 | New |
+
 ## September 1, 2024 (Season 27)
 
 - Updated challenge ratings:
