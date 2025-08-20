@@ -1,5 +1,13 @@
 # Heroes of the Interstellar Armed Forces Scoring Changelog
 
+## September 1, 2025 (Season 39)
+ 
+ - Updated mission ratings:
+    | Campaign | Mission | Multiplier | Changes |
+    | -------- | ------- | ---------- | ------- |
+    | [Magnum Opus](https://steamcommunity.com/sharedfiles/filedetails/?id=3142399089) | Great Temple | 1.5 | New |
+    | *Bonus Mission* | [Downed Station](https://steamcommunity.com/sharedfiles/filedetails/?id=3247801260) | *not rated* | Removed by author's request |
+
 ## May 1, 2025 (Season 35)
  
  - Updated mission ratings:
