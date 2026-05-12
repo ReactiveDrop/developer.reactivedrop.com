@@ -63,3 +63,7 @@ Announcements that appear in game chat, similar to Warframe's Red Text.
 - `addon_name` (type `string`) - Workshop addon name if `addon` is present.
 
 Mission bounties award bonus points the first time a mission is completed in a participating server on any difficulty within a given time period. Multiple bounties overlap, and bounties with the same start time will have the same end time and should be grouped together.
+
+## `researchProjectsActive` (type `int`)
+
+This will be `1` if present. Tells the game client that the crafting research tab may have relevant information and should be shown.
