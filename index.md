@@ -20,7 +20,7 @@
 - [Alien Swarm Wiki](https://alienswarm.fandom.com/wiki/Alien_Swarm_Wiki)
 - [Download Alien Swarm: Reactive Drop](https://store.steampowered.com/app/563560/Alien_Swarm_Reactive_Drop/)
 - [Steam Community Hub](https://steamcommunity.com/app/563560)
-- [Official Discord Guild](https://discord.com/invite/c43TDaQ)
+- [Official Discord Guild](https://discord.com/invite/FXzTkf79U8)
 - [Stats Website](https://stats.reactivedrop.com/)
 - [Symbol Server](https://symsrv.reactivedrop.com/)
 - [Map Theme Generator](https://mapthemes.reactivedrop.com/)

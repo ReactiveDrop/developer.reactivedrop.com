@@ -20,7 +20,7 @@ If something in the game isn't working right, [leave a note on the issue tracker
 
 ### New Features, Content, and Ideas
 
-If there's something you want to see added to the game, [the feedback forum](https://steamcommunity.com/app/563560/discussions/2/) is a great place to post about it. There are also a lot of active people in the [official Discord guild](https://discord.com/invite/c43TDaQ) including members of the Reactive Drop Team who might be able to help you make your own idea real. No promises, of course.
+If there's something you want to see added to the game, [the feedback forum](https://steamcommunity.com/app/563560/discussions/2/) is a great place to post about it. There are also a lot of active people in the [official Discord guild](https://discord.com/invite/FXzTkf79U8) including members of the Reactive Drop Team who might be able to help you make your own idea real. No promises, of course.
 
 ## Specific Deadlines
 
