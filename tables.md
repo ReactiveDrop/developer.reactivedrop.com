@@ -31,7 +31,7 @@ Alien health is increased or decreased by 20% for each point of mission difficul
 | Drone         | 25    | 40    | 56    | 80    | 104   |
 | (Uber)        | 300   | 500   | 700   | 1000  | 1300  |
 | Ranger        | 60    | 101   | 141   | 202   | 262   |
-| Shieldbug     | 600   | 500   | 1400  | 2000  | 2600  |
+| Shieldbug     | 600   | 1000  | 1400  | 2000  | 2600  |
 | Buzzer        | 18    | 30    | 42    | 60    | 78    |
 | Boomer        | 480   | 800   | 1120  | 1600  | 2080  |
 | Parasite      | 15    | 25    | 35    | 50    | 65    |
