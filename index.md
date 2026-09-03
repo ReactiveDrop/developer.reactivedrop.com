@@ -23,5 +23,4 @@
 - [Official Discord Guild](https://discord.com/invite/FXzTkf79U8)
 - [Stats Website](https://stats.reactivedrop.com/)
 - [Symbol Server](https://symsrv.reactivedrop.com/)
-- [Map Theme Generator](https://mapthemes.reactivedrop.com/)
 - [Alien Swarm: Reactive Drop Source Code](https://github.com/ReactiveDrop)
